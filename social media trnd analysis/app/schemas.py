@@ -9,8 +9,9 @@ class HashtagCreate(HashtagBase):
 
 class HashtagOut(HashtagBase):
     id: int
+    frequency: int | None = None
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class PostBase(BaseModel):
     content: str
@@ -19,4 +20,27 @@ class PostOut(PostBase):
     id: int
     hashtags: List[HashtagOut] = []
     class Config:
-        orm_mode = True
+        from_attributes = True
+
+class CommentCreate(BaseModel):
+    text: str
+    user_id: int
+    post_id: int
+
+from typing import Optional, List
+
+class CommentResponse(BaseModel):
+    id: int
+    text: str
+    sentiment: str
+    polarity: float
+    subjectivity: float
+    user_id: int
+    post_id: int
+    parent_id: Optional[int] = None
+    replies: List['CommentResponse'] = []
+
+    class Config:
+        from_attributes = True
+
+CommentResponse.model_rebuild()
