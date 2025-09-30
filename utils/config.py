@@ -1,14 +1,27 @@
 import os
+from urllib.parse import quote_plus
 
 class Config:
-    # MySQL Configuration
-    MYSQL_USER = os.getenv("MYSQL_USER", "root")
-    MYSQL_PASSWORD = os.getenv("MYSQL_PASSWORD", "password")
+    # Attempt to load MySQL environment variables
+    MYSQL_USER = os.getenv("MYSQL_USER")
+    MYSQL_PASSWORD = os.getenv("MYSQL_PASSWORD")
+    MYSQL_DB = os.getenv("MYSQL_DB")
     MYSQL_HOST = os.getenv("MYSQL_HOST", "localhost")
-    MYSQL_DB = os.getenv("MYSQL_DB", "smart_learning")
 
-    # SQLAlchemy DB URI
-    SQLALCHEMY_DATABASE_URI = f"mysql+mysqlconnector://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}/{MYSQL_DB}"
+    # Check if MySQL variables are set. If not, fall back to a local SQLite database.
+    if all([MYSQL_USER, MYSQL_PASSWORD, MYSQL_DB]):
+        print("[DB] Using MySQL database configuration.")
+        encoded_password = quote_plus(MYSQL_PASSWORD)
+        # SQLAlchemy DB URI for MySQL
+        SQLALCHEMY_DATABASE_URI = f"mysql+mysqlconnector://{MYSQL_USER}:{encoded_password}@{MYSQL_HOST}/{MYSQL_DB}"
+    else:
+        print("="*60)
+        print("[DB WARNING] MySQL environment variables not set.".center(60))
+        print("Falling back to a temporary in-memory SQLite database.".center(60))
+        print("Create a .env file with MySQL credentials for persistence.".center(60))
+        print("="*60)
+        SQLALCHEMY_DATABASE_URI = "sqlite:///:memory:"
+        
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     # JWT Settings

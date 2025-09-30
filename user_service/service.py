@@ -3,9 +3,6 @@ from utils.database import engine, SessionLocal
 from sqlalchemy.exc import IntegrityError
 import bcrypt
 
-# Create tables
-Base.metadata.create_all(bind=engine)
-
 class UserService:
 
     @staticmethod
@@ -19,6 +16,17 @@ class UserService:
             return user
         except IntegrityError:
             db.rollback()
+            return None
+        finally:
+            db.close()
+
+    @staticmethod
+    def get_user_by_id(user_id):
+        db = SessionLocal()
+        try:
+            return db.query(User).filter(User.id == user_id).first()
+        except Exception as e:
+            print(f"[ERROR] {e}")
             return None
         finally:
             db.close()
