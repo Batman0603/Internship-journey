@@ -11,3 +11,12 @@ def get_user(user_id):
     if not user:
         return jsonify({"error": "User not found"}), 404
     return jsonify({"id": user.id, "username": user.username, "email": user.email, "role": user.role})
+
+@user_bp.route("/users", methods=["GET"])
+@role_required(["admin"])
+def get_all_users():
+    users = UserService.get_all_users()
+    users_list = [
+        {"id": user.id, "username": user.username, "email": user.email, "role": user.role} for user in users
+    ]
+    return jsonify(users_list), 200

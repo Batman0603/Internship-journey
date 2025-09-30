@@ -41,3 +41,25 @@ class UserService:
             return None
         finally:
             db.close()
+
+    @staticmethod
+    def get_all_users():
+        db = SessionLocal()
+        try:
+            return db.query(User).all()
+        except Exception as e:
+            print(f"[ERROR] {e}")
+            return []
+        finally:
+            db.close()
+
+    @staticmethod
+    def get_user_count():
+        db = SessionLocal()
+        try:
+            return db.query(User).count()
+        except Exception as e:
+            print(f"[ERROR] {e}")
+            return 0 # Return 0 if there's an error, implying no users found
+        finally:
+            db.close()

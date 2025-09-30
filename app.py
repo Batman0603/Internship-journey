@@ -1,15 +1,16 @@
 from flask import Flask, jsonify
 import sys
+from dotenv import load_dotenv # Moved to the top
+
+# Load environment variables from .env as early as possible
+load_dotenv()
+
 from routes.auth_routes import auth_bp
 from routes.user_routes import user_bp
 from user_service.models import Base
 from utils.database import engine
 from utils.seed_data import seed_users
-from dotenv import load_dotenv
 from sqlalchemy.exc import OperationalError
-
-# Load environment variables from .env
-load_dotenv()
 
 app = Flask(__name__)
 
