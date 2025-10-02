@@ -54,6 +54,41 @@ class UserService:
             db.close()
 
     @staticmethod
+    def update_user(user_id, username=None, email=None):
+        db = SessionLocal()
+        try:
+            user = db.query(User).filter(User.id == user_id).first()
+            if not user:
+                return None
+
+            if username:
+                user.username = username
+            if email:
+                user.email = email
+            
+            db.commit()
+            db.refresh(user)
+            return user
+        except IntegrityError:
+            db.rollback()
+            return "IntegrityError" # Indicates a duplicate username/email
+        finally:
+            db.close()
+
+    @staticmethod
+    def update_user_role(user_id, new_role):
+        db = SessionLocal()
+        try:
+            user = db.query(User).filter(User.id == user_id).first()
+            if user:
+                user.role = new_role
+                db.commit()
+                db.refresh(user) # Refresh the object to load the new state
+            return user
+        finally:
+            db.close()
+
+    @staticmethod
     def get_user_count():
         db = SessionLocal()
         try:

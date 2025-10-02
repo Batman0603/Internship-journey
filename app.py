@@ -6,9 +6,12 @@ from dotenv import load_dotenv # Moved to the top
 load_dotenv()
 
 from routes.auth_routes import auth_bp
-from routes.user_routes import user_bp
-from user_service.models import Base
-from utils.database import engine
+from routes.admin_routes import admin_bp # This will work after you move the file
+from routes.user_routes import user_bp   # This handles /user/profile
+from routes.course_routes import course_bp # Import course routes
+from utils.database import engine, Base # Import Base from the correct location
+from user_service import models as user_models # Ensure user models are loaded
+from course_service import models as course_models # Ensure course models are loaded
 from utils.seed_data import seed_users
 from sqlalchemy.exc import OperationalError
 
@@ -36,7 +39,9 @@ except (ValueError, OperationalError) as e:
 
 # Register Blueprints
 app.register_blueprint(auth_bp, url_prefix="/auth")
-app.register_blueprint(user_bp, url_prefix="/admin")
+app.register_blueprint(admin_bp, url_prefix="/admin")
+app.register_blueprint(user_bp, url_prefix="/user")
+app.register_blueprint(course_bp, url_prefix="/api") # Register course blueprint
 
 @app.route("/")
 def home():

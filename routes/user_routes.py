@@ -1,22 +1,35 @@
-from flask import Blueprint, jsonify, request
-from auth.rbac import role_required
+from flask import Blueprint, jsonify, request, g
+from auth.rbac import login_required
 from user_service.service import UserService
 
-user_bp = Blueprint("user", __name__)
+user_bp = Blueprint("user_profile", __name__)
 
-@user_bp.route("/users/<int:user_id>", methods=["GET"])
-@role_required(["admin"])
-def get_user(user_id):
-    user = UserService.get_user_by_id(user_id)
-    if not user:
-        return jsonify({"error": "User not found"}), 404
-    return jsonify({"id": user.id, "username": user.username, "email": user.email, "role": user.role})
+@user_bp.route("/profile", methods=["GET"])
+@login_required
+def get_profile():
+    # g.user is set by the @login_required decorator
+    user = g.user
+    return jsonify({
+        "id": user.id,
+        "username": user.username,
+        "email": user.email,
+        "role": user.role
+    }), 200
 
-@user_bp.route("/users", methods=["GET"])
-@role_required(["admin"])
-def get_all_users():
-    users = UserService.get_all_users()
-    users_list = [
-        {"id": user.id, "username": user.username, "email": user.email, "role": user.role} for user in users
-    ]
-    return jsonify(users_list), 200
+@user_bp.route("/profile", methods=["PUT"])
+@login_required
+def update_profile():
+    user_id = g.user.id
+    data = request.get_json()
+    username = data.get("username")
+    email = data.get("email")
+
+    if not username and not email:
+        return jsonify({"error": "Username or email is required for update"}), 400
+
+    updated_user = UserService.update_user(user_id, username, email)
+
+    if updated_user == "IntegrityError":
+        return jsonify({"error": "Username or email already exists"}), 409
+    
+    return jsonify({"message": "Profile updated successfully"}), 200
