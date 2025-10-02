@@ -12,6 +12,7 @@ class Course(Base):
 
     teacher = relationship("User", back_populates="courses")
     enrollments = relationship("Enrollment", back_populates="course", cascade="all, delete-orphan")
+    assignments = relationship("Assignment", back_populates="course", cascade="all, delete-orphan")
 
 class Enrollment(Base):
     __tablename__ = "enrollments"

@@ -15,3 +15,6 @@ class User(Base):
     # Relationships to link User with Courses and Enrollments
     courses = relationship("Course", back_populates="teacher")
     enrollments = relationship("Enrollment", back_populates="student")
+    
+    # Relationships for assignments
+    submissions = relationship("Submission", back_populates="student")
