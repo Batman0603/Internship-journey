@@ -1,0 +1,19 @@
+# Web Framework
+Flask
+
+# Database & ORM
+SQLAlchemy
+mysql-connector-python
+pydantic
+
+# Authentication & Security
+bcrypt
+PyJWT
+
+# RAG Engine & AI
+sentence-transformers
+faiss-cpu
+numpy
+
+# Utilities
+python-dotenv
