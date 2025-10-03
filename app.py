@@ -1,54 +1,102 @@
+"""
+Main application file for the Smart Learning Platform.
+"""
+import logging
+from dotenv import load_dotenv
 from flask import Flask, jsonify
-import sys
-from dotenv import load_dotenv # Moved to the top
+from sqlalchemy.exc import OperationalError
 
 # Load environment variables from .env as early as possible
 load_dotenv()
 
+from auth.rbac import role_required
+from course_service.service import CourseService
+from middleware.analytics_guard import analytics_guard_middleware
+from middleware.logging_middleware import log_request_middleware
+from middleware.rate_limiter import rate_limiter_middleware
+from routes.admin_routes import admin_bp
+from routes.analytics_routes import analytics_bp
+from routes.assignment_routes import assignment_bp
 from routes.auth_routes import auth_bp
-from routes.admin_routes import admin_bp # This will work after you move the file
-from routes.user_routes import user_bp   # This handles /user/profile
-from routes.course_routes import course_bp # Import course routes
-from routes.assignment_routes import assignment_bp # Import assignment routes
-from utils.database import engine, Base # Import Base from the correct location
-from user_service import models as user_models # Ensure user models are loaded
-from course_service import models as course_models # Ensure course models are loaded
-from assignment_service import models as assignment_models # Ensure assignment models are loaded
+from routes.course_routes import course_bp
+from routes.user_routes import user_bp
+from utils.database import Base, engine, get_db
 from utils.seed_data import seed_users
-from sqlalchemy.exc import OperationalError
+
 
 app = Flask(__name__)
 
-# Create tables (ignore if already exist)
-try:
-    print("[DB] Initializing database and creating tables...")
-    Base.metadata.create_all(bind=engine)
-    print("[DB] Database tables created/verified.")
-    # Seed mock data from mock_data/users.json
-    seed_users()
-except (ValueError, OperationalError) as e:
-    print("\n" + "="*60)
-    print("FATAL: DATABASE INITIALIZATION FAILED".center(60))
-    print("="*60)
-    print(f"Error: {e}")
-    print("\nPlease ensure your .env file is in the project root and contains:")
-    print("  - MYSQL_USER=<your_username>")
-    print("  - MYSQL_PASSWORD=<your_password>")
-    print("  - MYSQL_DB=<your_database_name>")
-    print("Also, ensure your MySQL server is running and accessible.")
-    print("="*60 + "\n")
-    sys.exit(1) # Stop the application
+# Disable Werkzeug's default logger to avoid duplicate request logs
+log = logging.getLogger('werkzeug')
+log.disabled = True
+
+# Register Middleware
+log_request_middleware(app)
+analytics_guard_middleware(app)
+rate_limiter_middleware(app)
 
 # Register Blueprints
 app.register_blueprint(auth_bp, url_prefix="/auth")
 app.register_blueprint(admin_bp, url_prefix="/admin")
 app.register_blueprint(user_bp, url_prefix="/user")
-app.register_blueprint(course_bp, url_prefix="/api") # Register course blueprint
-app.register_blueprint(assignment_bp, url_prefix="/api") # Register assignment blueprint
+app.register_blueprint(course_bp, url_prefix="/api/courses")
+app.register_blueprint(assignment_bp, url_prefix="/api/assignments")
+app.register_blueprint(analytics_bp, url_prefix="/analytics")
+
 
 @app.route("/")
 def home():
+    """
+    Home route for the application.
+    """
     return jsonify({"message": "Smart Learning Platform Auth Service Running"}), 200
+
+
+# Dummy route for rate limiting test
+@app.route("/recommendations", methods=["GET"])
+@role_required(["student"])
+def recommendations(user):
+    """
+    A real recommendation engine.
+    Recommends courses the student is not currently enrolled in.
+    """
+    db = next(get_db()) # The user object is already attached to this session
+
+    # Get IDs of courses the user is enrolled in
+    enrolled_course_ids = {enrollment.course_id for enrollment in user.enrollments}
+
+    # Get all courses and filter out the ones the user is already in
+    all_courses, _ = CourseService.get_all_courses(db, page=1, limit=100)
+
+    recommended_courses = [
+        {"id": c.id, "title": c.title, "description": c.description}
+        for c in all_courses if c.id not in enrolled_course_ids
+    ]
+    return jsonify(recommended_courses)
+
+
+@app.cli.command("init-db")
+def init_db_command():
+    """Creates the database tables and seeds initial data."""
+    try:
+        print("[DB] Initializing database and creating tables...")
+        Base.metadata.create_all(bind=engine)
+        print("[DB] Database tables created/verified.")
+        # Seed mock data from mock_data/users.json
+        seed_users()
+        print("[DB] Database initialization complete.")
+    except (ValueError, OperationalError) as e:
+        print("\n" + "=" * 60)
+        print("FATAL: DATABASE INITIALIZATION FAILED".center(60))
+        print("=" * 60)
+        print(f"Error: {e}")
+        print("\nPlease ensure your .env file is in the project root and contains:")
+        print("  - MYSQL_USER=<your_username>")
+        print("  - MYSQL_PASSWORD=<your_password>")
+        print("  - MYSQL_DB=<your_database_name>")
+        print("Also, ensure your MySQL server is running and accessible.")
+        print("=" * 60 + "\n")
+
 
 if __name__ == "__main__":
     app.run(debug=True)

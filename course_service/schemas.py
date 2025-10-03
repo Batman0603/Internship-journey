@@ -13,7 +13,7 @@ class CourseResponse(CourseBase):
     teacher_id: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class EnrollmentResponse(BaseModel):
     id: int
@@ -21,4 +21,4 @@ class EnrollmentResponse(BaseModel):
     course_id: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True

@@ -16,8 +16,29 @@ class CourseService:
         return db_course
 
     @staticmethod
-    def get_all_courses(db: Session):
-        return db.query(models.Course).all()
+    def get_all_courses(db: Session, page: int, limit: int, category: str = None, sort: str = None):
+        query = db.query(models.Course)
+
+        # Filtering
+        if category:
+            # Assuming a 'category' field exists on the Course model.
+            # If not, this will need adjustment. For now, we'll filter by title as an example.
+            query = query.filter(models.Course.title.ilike(f"%{category}%"))
+
+        # Sorting
+        if sort:
+            if sort == "rating_desc":
+                # Assuming a 'rating' field exists.
+                # query = query.order_by(models.Course.rating.desc())
+                pass # Placeholder as 'rating' field doesn't exist
+            elif sort == "title_asc":
+                query = query.order_by(models.Course.title.asc())
+
+        # Pagination
+        offset = (page - 1) * limit
+        courses = query.offset(offset).limit(limit).all()
+        total_courses = query.count()
+        return courses, total_courses
 
     @staticmethod
     def enroll_student(db: Session, course_id: int, student_id: int):

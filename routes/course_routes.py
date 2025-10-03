@@ -2,6 +2,7 @@ from flask import Blueprint, request, jsonify
 from utils.database import get_db
 from sqlalchemy.orm import Session
 from course_service import service, schemas
+from utils.hateoas import add_hateoas_links
 from auth.rbac import role_required
 
 course_bp = Blueprint("courses", __name__)
@@ -28,9 +29,29 @@ def enroll(user, course_id):
 @course_bp.route("/courses", methods=["GET"])
 @role_required(["admin", "teacher"])
 def get_courses(user):
+    # Get query parameters
+    page = request.args.get('page', 1, type=int)
+    limit = request.args.get('limit', 5, type=int)
+    category = request.args.get('category', None, type=str)
+    sort = request.args.get('sort', None, type=str)
+
     db: Session = next(get_db())
-    courses = service.CourseService.get_all_courses(db)
-    return jsonify([{"id": c.id, "title": c.title, "teacher_id": c.teacher_id} for c in courses])
+    courses, total_courses = service.CourseService.get_all_courses(db, page, limit, category, sort)
+
+    courses_list = []
+    for c in courses:
+        course_dict = {"id": c.id, "title": c.title, "teacher_id": c.teacher_id}
+        # Add HATEOAS links for each course
+        courses_list.append(add_hateoas_links("courses", course_dict))
+
+    return jsonify({
+        "total_courses": total_courses,
+        "page": page,
+        "limit": limit,
+        "total_pages": (total_courses + limit - 1) // limit,
+        "data": courses_list
+    })
+
 
 # Admin/Teacher: View course enrollments
 @course_bp.route("/courses/<int:course_id>/enrollments", methods=["GET"])

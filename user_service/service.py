@@ -1,100 +1,68 @@
-from user_service.models import User, Base
-from utils.database import engine, SessionLocal
+from user_service.models import User
+from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
 import bcrypt
+from utils.database import SessionLocal # Keep for methods called outside request context
 
 class UserService:
-
+    # Service methods should consistently accept a db session.
+    # For methods called outside a request context (like signup), a new session can be created.
     @staticmethod
-    def create_user(username, email, password, role="student"):
-        db = SessionLocal()
+    def create_user(db: Session, username, email, password, role="student"):
         try:
             hashed_pw = bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
             user = User(username=username, email=email, password=hashed_pw, role=role)
             db.add(user)
             db.commit()
-            return user
-        except IntegrityError:
-            db.rollback()
-            return None
-        finally:
-            db.close()
-
-    @staticmethod
-    def get_user_by_id(user_id):
-        db = SessionLocal()
-        try:
-            return db.query(User).filter(User.id == user_id).first()
-        except Exception as e:
-            print(f"[ERROR] {e}")
-            return None
-        finally:
-            db.close()
-
-    @staticmethod
-    def get_user_by_email(email):
-        db = SessionLocal()
-        try:
-            return db.query(User).filter(User.email == email).first()
-        except Exception as e:
-            print(f"[ERROR] {e}")
-            return None
-        finally:
-            db.close()
-
-    @staticmethod
-    def get_all_users():
-        db = SessionLocal()
-        try:
-            return db.query(User).all()
-        except Exception as e:
-            print(f"[ERROR] {e}")
-            return []
-        finally:
-            db.close()
-
-    @staticmethod
-    def update_user(user_id, username=None, email=None):
-        db = SessionLocal()
-        try:
-            user = db.query(User).filter(User.id == user_id).first()
-            if not user:
-                return None
-
-            if username:
-                user.username = username
-            if email:
-                user.email = email
-            
-            db.commit()
             db.refresh(user)
             return user
         except IntegrityError:
             db.rollback()
-            return "IntegrityError" # Indicates a duplicate username/email
-        finally:
-            db.close()
+            return None
 
     @staticmethod
-    def update_user_role(user_id, new_role):
-        db = SessionLocal()
-        try:
-            user = db.query(User).filter(User.id == user_id).first()
-            if user:
-                user.role = new_role
-                db.commit()
-                db.refresh(user) # Refresh the object to load the new state
-            return user
-        finally:
-            db.close()
+    def get_user_by_id(db: Session, user_id: int):
+        return db.query(User).filter(User.id == user_id).first()
 
     @staticmethod
-    def get_user_count():
-        db = SessionLocal()
+    def get_user_by_email(db: Session, email: str):
+        return db.query(User).filter(User.email == email).first()
+
+    @staticmethod
+    def get_all_users(db: Session):
+        return db.query(User).all()
+
+    @staticmethod
+    def update_user(db: Session, user_id: int, username: str = None, email: str = None):
+        user = db.query(User).filter(User.id == user_id).first()
+        if not user:
+            return None
+
+        if username:
+            user.username = username
+        if email:
+            user.email = email
+        
         try:
-            return db.query(User).count()
-        except Exception as e:
-            print(f"[ERROR] {e}")
-            return 0 # Return 0 if there's an error, implying no users found
-        finally:
-            db.close()
+            db.commit()
+            db.refresh(user)
+        except IntegrityError:
+            db.rollback()
+            # Let the caller (the route) handle the exception
+            raise IntegrityError("Username or email already exists", params=None, orig=None)
+        
+        return user
+
+    @staticmethod
+    def update_user_role(db: Session, user_id: int, new_role: str):
+        user = db.query(User).filter(User.id == user_id).first()
+        if user:
+            user.role = new_role
+            db.commit()
+            db.refresh(user) # Refresh the object to load the new state
+        return user
+
+    @staticmethod
+    def get_user_count(db: Session):
+        # The session is managed by the caller (request context), so we should not close it here.
+        return db.query(User).count()

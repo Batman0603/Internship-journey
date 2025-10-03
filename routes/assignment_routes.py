@@ -1,10 +1,25 @@
 from flask import Blueprint, request, jsonify
 from werkzeug.utils import secure_filename
+import logging
 import os
 from utils.database import get_db
 from sqlalchemy.orm import Session
 from auth.rbac import role_required
-from assignment_service import service as assignment_service, schemas as assignment_schemas, rag_service, grading_service
+from assignment_service import service as assignment_service, schemas as assignment_schemas
+
+# --- Lazy Loading for RAG and Grading Services ---
+# These services can be slow to initialize (e.g., downloading models).
+# We defer their import and initialization until they are first needed.
+
+def get_rag_service():
+    from assignment_service import rag_service
+    return rag_service
+
+def get_grading_service():
+    from assignment_service import grading_service
+    return grading_service
+
+# --- End Lazy Loading ---
 
 assignment_bp = Blueprint("assignments", __name__)
 
@@ -27,7 +42,7 @@ def upload_notes_for_rag(user):
         file_path = os.path.join(UPLOAD_FOLDER, filename)
         file.save(file_path)
         
-        result = rag_service.process_teacher_notes(file_path)
+        result = get_rag_service().process_teacher_notes(file_path)
         return jsonify(result), 200
 
 @assignment_bp.route("/assignments/generate", methods=["POST"])
@@ -41,7 +56,7 @@ def generate_assignment_questions(user):
     if not query:
         return jsonify({"error": "Query is required"}), 400
         
-    questions = rag_service.create_assignment_with_rag(query, mode, num_q)
+    questions = get_rag_service().create_assignment_with_rag(query, mode, num_q)
     return jsonify(questions), 200
 
 # --- Assignment Management Endpoints (Teacher/Student) ---
@@ -84,6 +99,7 @@ def submit_assignment(user, assignment_id):
             file.save(file_path)
 
     if not content and not file_path:
+        logging.error(f"Assignment submission failed for assignment {assignment_id} by user {user.id}: No content or file provided.")
         return jsonify({"error": "Submission content or file is required"}), 400
 
     submission_data = assignment_schemas.SubmissionCreate(
@@ -118,7 +134,7 @@ def grade_submission(user, submission_id):
         return jsonify({"error": "Grade is required"}), 400
 
     db: Session = next(get_db())
-    submission = grading_service.grade_submission(db, submission_id, grade)
+    submission = get_grading_service().grade_submission(db, submission_id, grade)
     if not submission:
         return jsonify({"error": "Submission not found"}), 404
     

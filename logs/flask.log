@@ -1,0 +1,125 @@
+2025-10-03 11:09:51,371 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-03 11:09:51,371 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-03 11:09:51,371 - INFO -  * Restarting with stat
+2025-10-03 11:10:10,071 - WARNING -  * Debugger is active!
+2025-10-03 11:10:10,084 - INFO -  * Debugger PIN: 122-296-768
+2025-10-03 11:13:39,409 - INFO - Request from 127.0.0.1: POST /api/auth/login
+2025-10-03 11:13:39,410 - INFO - 127.0.0.1 - - [03/Oct/2025 11:13:39] "[33mPOST /api/auth/login HTTP/1.1[0m" 404 -
+2025-10-03 11:13:47,591 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-03 11:13:47,591 - INFO - 127.0.0.1 - - [03/Oct/2025 11:13:47] "[31m[1mPOST /auth/login HTTP/1.1[0m" 400 -
+2025-10-03 11:14:08,043 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-03 11:14:08,630 - INFO - 127.0.0.1 - - [03/Oct/2025 11:14:08] "POST /auth/login HTTP/1.1" 200 -
+2025-10-03 11:15:39,921 - INFO - Request from 127.0.0.1: GET /analytics/generateReport
+2025-10-03 11:15:39,924 - INFO - 127.0.0.1 - - [03/Oct/2025 11:15:39] "[35m[1mGET /analytics/generateReport?apiKey=validKey HTTP/1.1[0m" 202 -
+2025-10-03 11:16:10,743 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-03 11:16:10,777 - INFO - 127.0.0.1 - - [03/Oct/2025 11:16:10] "GET /admin/logs HTTP/1.1" 200 -
+2025-10-03 11:17:15,439 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-03 11:17:15,881 - INFO - 127.0.0.1 - - [03/Oct/2025 11:17:15] "POST /auth/login HTTP/1.1" 200 -
+2025-10-03 11:17:49,049 - INFO - Request from 127.0.0.1: GET /recommendations
+2025-10-03 11:17:49,160 - INFO - 127.0.0.1 - - [03/Oct/2025 11:17:49] "[35m[1mGET /recommendations HTTP/1.1[0m" 500 -
+2025-10-03 11:18:07,931 - INFO - Request from 127.0.0.1: GET /recommendations
+2025-10-03 11:18:07,948 - INFO - 127.0.0.1 - - [03/Oct/2025 11:18:07] "[35m[1mGET /recommendations HTTP/1.1[0m" 500 -
+2025-10-03 11:19:35,030 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\smart-learning backend\\app.py', reloading
+2025-10-03 11:19:37,038 - INFO -  * Restarting with stat
+2025-10-03 11:19:56,394 - WARNING -  * Debugger is active!
+2025-10-03 11:19:56,401 - INFO -  * Debugger PIN: 122-296-768
+2025-10-03 11:23:28,182 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\smart-learning backend\\routes\\admin_routes.py', reloading
+2025-10-03 11:23:31,568 - INFO -  * Restarting with stat
+2025-10-03 11:23:48,500 - WARNING -  * Debugger is active!
+2025-10-03 11:23:48,500 - INFO -  * Debugger PIN: 122-296-768
+2025-10-03 11:28:53,887 - INFO - Request from 127.0.0.1: GET /recommendations
+2025-10-03 11:28:53,909 - INFO - 127.0.0.1 - - [03/Oct/2025 11:28:53] "GET /recommendations HTTP/1.1" 200 -
+2025-10-03 11:29:20,420 - INFO - Request from 127.0.0.1: GET /analytics/generateReport
+2025-10-03 11:29:20,420 - INFO - 127.0.0.1 - - [03/Oct/2025 11:29:20] "[31m[1mGET /analytics/generateReport HTTP/1.1[0m" 403 -
+2025-10-03 11:41:53,413 - INFO - Request from 127.0.0.1: GET /recommendations
+2025-10-03 11:41:53,452 - INFO - 127.0.0.1 - - [03/Oct/2025 11:41:53] "GET /recommendations HTTP/1.1" 200 -
+2025-10-03 11:42:07,336 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-03 11:42:08,067 - INFO - 127.0.0.1 - - [03/Oct/2025 11:42:08] "POST /auth/login HTTP/1.1" 200 -
+2025-10-03 11:42:33,324 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-03 11:42:34,018 - INFO - 127.0.0.1 - - [03/Oct/2025 11:42:34] "POST /auth/login HTTP/1.1" 200 -
+2025-10-03 11:43:06,460 - INFO - Request from 127.0.0.1: POST /analytics/generateReport
+2025-10-03 11:43:06,461 - INFO - 127.0.0.1 - - [03/Oct/2025 11:43:06] "[31m[1mPOST /analytics/generateReport HTTP/1.1[0m" 403 -
+2025-10-03 11:43:30,497 - INFO - Request from 127.0.0.1: POST /analytics/generateReport
+2025-10-03 11:43:30,498 - INFO - 127.0.0.1 - - [03/Oct/2025 11:43:30] "[31m[1mPOST /analytics/generateReport?apiKey=validKey HTTP/1.1[0m" 405 -
+2025-10-03 11:43:34,965 - INFO - Request from 127.0.0.1: GET /analytics/generateReport
+2025-10-03 11:43:34,967 - INFO - 127.0.0.1 - - [03/Oct/2025 11:43:34] "[35m[1mGET /analytics/generateReport?apiKey=validKey HTTP/1.1[0m" 202 -
+2025-10-03 11:44:49,693 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-03 11:44:49,728 - INFO - 127.0.0.1 - - [03/Oct/2025 11:44:49] "GET /admin/logs HTTP/1.1" 200 -
+2025-10-03 11:48:52,152 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-03 11:48:52,152 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-03 11:48:52,156 - INFO -  * Restarting with stat
+2025-10-03 11:49:14,940 - WARNING -  * Debugger is active!
+2025-10-03 11:49:14,964 - INFO -  * Debugger PIN: 122-296-768
+2025-10-03 11:49:15,064 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-03 11:49:15,154 - INFO - 127.0.0.1 - - [03/Oct/2025 11:49:15] "GET /admin/logs HTTP/1.1" 200 -
+2025-10-03 11:59:33,970 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\smart-learning backend\\app.py', reloading
+2025-10-03 11:59:36,343 - INFO -  * Restarting with stat
+2025-10-03 12:00:10,925 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-03 12:00:10,925 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-03 12:00:10,930 - INFO -  * Restarting with stat
+2025-10-03 12:00:33,633 - WARNING -  * Debugger is active!
+2025-10-03 12:00:33,633 - INFO -  * Debugger PIN: 122-296-768
+2025-10-03 12:00:55,896 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-03 12:00:56,009 - INFO - 127.0.0.1 - - [03/Oct/2025 12:00:56] "GET /admin/logs HTTP/1.1" 200 -
+2025-10-03 12:01:36,845 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-03 12:01:36,845 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-03 12:01:36,856 - INFO -  * Restarting with stat
+2025-10-03 12:02:02,433 - WARNING -  * Debugger is active!
+2025-10-03 12:02:02,438 - INFO -  * Debugger PIN: 122-296-768
+2025-10-03 12:02:47,454 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\smart-learning backend\\course_service\\schemas.py', reloading
+2025-10-03 12:02:47,491 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\smart-learning backend\\course_service\\schemas.py', reloading
+2025-10-03 12:02:49,082 - INFO -  * Restarting with stat
+2025-10-03 12:02:49,456 - INFO -  * Restarting with stat
+2025-10-03 12:08:06,577 - INFO -  * Restarting with stat
+2025-10-03 12:08:07,589 - INFO -  * Restarting with stat
+2025-10-03 12:51:58,814 - INFO -  * Restarting with stat
+2025-10-03 12:57:09,899 - INFO -  * Restarting with stat
+2025-10-03 16:24:45,242 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-03 16:25:11,044 - INFO - Request from 127.0.0.1: GET /admin/users
+2025-10-03 16:25:11,049 - ERROR - Exception on /admin/users [GET]
+Traceback (most recent call last):
+  File "C:\Users\Windows\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Windows\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Windows\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Windows\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Windows\OneDrive\Documents\Presidio Intern\week 2\smart-learning backend\auth\rbac.py", line 58, in wrapper
+    return f(user, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Windows\OneDrive\Documents\Presidio Intern\week 2\smart-learning backend\routes\admin_routes.py", line 23, in get_all_users
+    users = UserService.get_all_users(db)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: UserService.get_all_users() takes 0 positional arguments but 1 was given
+2025-10-03 16:27:10,995 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-03 16:45:15,985 - INFO - Request from 127.0.0.1: GET /admin/l
+2025-10-03 21:25:11,065 - INFO - Loading faiss with AVX2 support.
+2025-10-03 21:25:11,107 - INFO - Successfully loaded faiss with AVX2 support.
+2025-10-03 21:25:11,132 - INFO - Use pytorch device_name: cpu
+2025-10-03 21:25:11,133 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-03 21:37:13,637 - INFO - Loading faiss with AVX2 support.
+2025-10-03 21:37:13,704 - INFO - Successfully loaded faiss with AVX2 support.
+2025-10-03 21:37:13,732 - INFO - Use pytorch device_name: cpu
+2025-10-03 21:37:13,732 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-03 21:41:39,076 - INFO - Loading faiss with AVX2 support.
+2025-10-03 21:41:39,117 - INFO - Successfully loaded faiss with AVX2 support.
+2025-10-03 21:41:39,133 - INFO - Use pytorch device_name: cpu
+2025-10-03 21:41:39,133 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-03 21:45:17,180 - INFO - Loading faiss with AVX2 support.
+2025-10-03 21:45:17,214 - INFO - Successfully loaded faiss with AVX2 support.
+2025-10-03 21:45:17,229 - INFO - Use pytorch device_name: cpu
+2025-10-03 21:45:17,230 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-03 21:46:18,549 - INFO - Loading faiss with AVX2 support.
+2025-10-03 21:46:18,584 - INFO - Successfully loaded faiss with AVX2 support.
+2025-10-03 21:46:18,600 - INFO - Use pytorch device_name: cpu
+2025-10-03 21:46:18,600 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2

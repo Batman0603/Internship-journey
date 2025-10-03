@@ -3,6 +3,8 @@ import jwt, datetime
 from utils.config import Config
 from user_service.service import UserService
 import bcrypt
+from utils.database import get_db
+from sqlalchemy.orm import Session
 
 def login():
     try:
@@ -13,7 +15,8 @@ def login():
         if not email or not password:
             return jsonify({"error": "Email and password required"}), 400
 
-        user = UserService.get_user_by_email(email)
+        db: Session = next(get_db())
+        user = UserService.get_user_by_email(db, email)
         if not user:
             return jsonify({"error": "User not found"}), 404
 
@@ -42,7 +45,8 @@ def signup():
         if not username or not email or not password:
             return jsonify({"error": "All fields required"}), 400
 
-        user = UserService.create_user(username, email, password, role)
+        db: Session = next(get_db())
+        user = UserService.create_user(db, username, email, password, role)
         if user:
             return jsonify({"message": "User created successfully"}), 201
         return jsonify({"error": "User already exists"}), 409
