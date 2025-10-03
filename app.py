@@ -3,7 +3,7 @@ Main application file for the Smart Learning Platform.
 """
 import logging
 from dotenv import load_dotenv
-from flask import Flask, jsonify
+from flask import Flask, jsonify, g
 from sqlalchemy.exc import OperationalError
 
 # Load environment variables from .env as early as possible
@@ -60,7 +60,8 @@ def recommendations(user):
     A real recommendation engine.
     Recommends courses the student is not currently enrolled in.
     """
-    db = next(get_db()) # The user object is already attached to this session
+    # Use the session from the decorator, to which the user object is already bound.
+    db = g.db
 
     # Get IDs of courses the user is enrolled in
     enrolled_course_ids = {enrollment.course_id for enrollment in user.enrollments}

@@ -32,12 +32,12 @@ def _get_user_from_token(db):
 def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
-        db = next(get_db())
-        user, error_response = _get_user_from_token(db)
+        g.db = next(get_db())
+        user, error_response = _get_user_from_token(g.db)
         if error_response:
             return error_response
         g.user = user  # Attach user to Flask's global context
-        # Note: The user object is attached to the session 'db'
+        # The user object is attached to the session g.db
         return f(*args, **kwargs)
     return decorated_function
 
@@ -46,7 +46,7 @@ def role_required(allowed_roles):
         @wraps(f)
         @login_required  # Reuse the login_required decorator to get the user
         def wrapper(*args, **kwargs):
-            user = g.user  # g.user is now set by @login_required
+            user = g.user  # g.user and g.db are now set by @login_required
 
             if user.role not in allowed_roles:
                 return jsonify({"error": "Access denied. You do not have the required role."}), 403
