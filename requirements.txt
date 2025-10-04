@@ -1,19 +1,21 @@
 # Web Framework
 Flask
+gunicorn
 
 # Database & ORM
 SQLAlchemy
 mysql-connector-python
-pydantic
 
 # Authentication & Security
 bcrypt
 PyJWT
 
-# RAG Engine & AI
+# AI & Vector Search
 sentence-transformers
 faiss-cpu
-numpy
 
 # Utilities
 python-dotenv
+
+# Data Validation
+pydantic

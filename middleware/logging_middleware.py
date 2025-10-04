@@ -7,12 +7,19 @@ import os
 LOG_DIR = "logs"
 os.makedirs(LOG_DIR, exist_ok=True)
 
-# Configure logging
-logging.basicConfig(
-    filename=os.path.join(LOG_DIR, "flask.log"),
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
-)
+# Get the root logger
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
+# Create a formatter
+formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+
+# Create a file handler to write logs to a file
+file_handler = logging.FileHandler(os.path.join(LOG_DIR, "flask.log"))
+file_handler.setFormatter(formatter)
+
+# Add both handlers to the root logger
+logger.addHandler(file_handler)
 
 def log_request_middleware(app):
     @app.before_request

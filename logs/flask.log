@@ -123,3 +123,29 @@ TypeError: UserService.get_all_users() takes 0 positional arguments but 1 was gi
 2025-10-03 21:46:18,584 - INFO - Successfully loaded faiss with AVX2 support.
 2025-10-03 21:46:18,600 - INFO - Use pytorch device_name: cpu
 2025-10-03 21:46:18,600 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-04 11:03:40,977 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-04 11:03:40,977 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-04 11:03:40,977 - INFO -  * Restarting with stat
+2025-10-04 11:03:42,407 - WARNING -  * Debugger is active!
+2025-10-04 11:03:42,425 - INFO -  * Debugger PIN: 122-296-768
+2025-10-04 11:05:49,082 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-04 11:05:49,677 - INFO - 127.0.0.1 - - [04/Oct/2025 11:05:49] "POST /auth/login HTTP/1.1" 200 -
+2025-10-04 11:06:46,962 - INFO - Request from 127.0.0.1: POST /analytics/generateReport
+2025-10-04 11:06:46,963 - INFO - 127.0.0.1 - - [04/Oct/2025 11:06:46] "[31m[1mPOST /analytics/generateReport HTTP/1.1[0m" 403 -
+2025-10-04 11:27:43,734 - INFO - Request from 127.0.0.1: POST /admin/users
+2025-10-04 11:27:43,736 - INFO - 127.0.0.1 - - [04/Oct/2025 11:27:43] "[31m[1mPOST /admin/users HTTP/1.1[0m" 405 -
+2025-10-04 11:27:47,465 - INFO - Request from 127.0.0.1: GET /admin/users
+2025-10-04 11:27:47,496 - INFO - 127.0.0.1 - - [04/Oct/2025 11:27:47] "GET /admin/users HTTP/1.1" 200 -
+2025-10-04 11:28:06,224 - INFO - Request from 127.0.0.1: GET /analytics/generateReport
+2025-10-04 11:28:06,230 - INFO - 127.0.0.1 - - [04/Oct/2025 11:28:06] "[31m[1mGET /analytics/generateReport HTTP/1.1[0m" 403 -
+2025-10-04 11:29:52,823 - INFO - Request from 127.0.0.1: GET /analytics/generateReport
+2025-10-04 11:29:52,823 - INFO - 127.0.0.1 - - [04/Oct/2025 11:29:52] "[31m[1mGET /analytics/generateReport?apiKey=your_secret_api_key HTTP/1.1[0m" 403 -
+2025-10-04 11:30:03,452 - INFO - Request from 127.0.0.1: POST /analytics/generateReport
+2025-10-04 11:30:03,454 - INFO - 127.0.0.1 - - [04/Oct/2025 11:30:03] "[31m[1mPOST /analytics/generateReport?apiKey=your_secret_api_key HTTP/1.1[0m" 403 -
+2025-10-04 11:49:49,186 - INFO - Request from 127.0.0.1: POST /analytics/generateReport
+2025-10-04 11:49:49,187 - INFO - 127.0.0.1 - - [04/Oct/2025 11:49:49] "[31m[1mPOST /analytics/generateReport?apiKey=a-secure-and-random-analytics-api-key-for-your-reports HTTP/1.1[0m" 405 -
+2025-10-04 11:49:55,724 - INFO - Request from 127.0.0.1: GET /analytics/generateReport
+2025-10-04 11:49:55,726 - INFO - 127.0.0.1 - - [04/Oct/2025 11:49:55] "[35m[1mGET /analytics/generateReport?apiKey=a-secure-and-random-analytics-api-key-for-your-reports HTTP/1.1[0m" 202 -
+2025-10-04 11:52:08,461 - INFO - Request from 127.0.0.1: GET /analytics/generateReport
+2025-10-04 11:52:08,462 - INFO - 127.0.0.1 - - [04/Oct/2025 11:52:08] "[31m[1mGET /analytics/generateReport HTTP/1.1[0m" 403 -

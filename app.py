@@ -26,9 +26,9 @@ from utils.seed_data import seed_users
 
 app = Flask(__name__)
 
-# Disable Werkzeug's default logger to avoid duplicate request logs
-log = logging.getLogger('werkzeug')
-log.disabled = True
+# The root logger is now configured in the middleware, so we can let Werkzeug log to the console.
+# log = logging.getLogger('werkzeug')
+# log.disabled = True
 
 # Register Middleware
 log_request_middleware(app)

@@ -1,6 +1,8 @@
-from flask import Blueprint, jsonify
+from flask import Blueprint, jsonify, send_from_directory
 import asyncio
 import threading
+import os
+import json
 from async_tasks.report_generator import generate_report
 
 analytics_bp = Blueprint("analytics", __name__)
@@ -20,3 +22,17 @@ def generate_report_route():
     thread = threading.Thread(target=run_async_task, args=(generate_report(),))
     thread.start()
     return jsonify({"message": "Report generation has started. It will be available shortly."}), 202
+
+@analytics_bp.route("/getReport", methods=["GET"])
+def get_report_route():
+    """Serves the generated report file if it exists."""
+    reports_dir = "reports"
+    report_filename = "report.json"
+    report_path = os.path.join(reports_dir, report_filename)
+
+    if not os.path.exists(report_path):
+        return jsonify({"status": "pending", "message": "Report is not yet available."}), 202
+
+    with open(report_path, "r") as f:
+        report_data = json.load(f)
+    return jsonify(report_data), 200
