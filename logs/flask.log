@@ -149,3 +149,53 @@ TypeError: UserService.get_all_users() takes 0 positional arguments but 1 was gi
 2025-10-04 11:49:55,726 - INFO - 127.0.0.1 - - [04/Oct/2025 11:49:55] "[35m[1mGET /analytics/generateReport?apiKey=a-secure-and-random-analytics-api-key-for-your-reports HTTP/1.1[0m" 202 -
 2025-10-04 11:52:08,461 - INFO - Request from 127.0.0.1: GET /analytics/generateReport
 2025-10-04 11:52:08,462 - INFO - 127.0.0.1 - - [04/Oct/2025 11:52:08] "[31m[1mGET /analytics/generateReport HTTP/1.1[0m" 403 -
+2025-10-07 11:55:39,542 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-07 11:55:39,543 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-07 11:55:39,545 - INFO -  * Restarting with stat
+2025-10-07 11:55:40,214 - WARNING -  * Debugger is active!
+2025-10-07 11:55:40,217 - INFO -  * Debugger PIN: 473-725-213
+2025-10-07 11:56:28,032 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-07 11:56:28,032 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-07 11:56:28,034 - INFO -  * Restarting with stat
+2025-10-07 11:56:28,714 - WARNING -  * Debugger is active!
+2025-10-07 11:56:28,717 - INFO -  * Debugger PIN: 473-725-213
+2025-10-07 11:58:18,150 - INFO - Request from 127.0.0.1: POST /auth/signup
+2025-10-07 11:58:18,483 - INFO - 127.0.0.1 - - [07/Oct/2025 11:58:18] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 500 -
+2025-10-07 12:01:47,767 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-07 12:01:47,768 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-07 12:01:47,769 - INFO -  * Restarting with stat
+2025-10-07 12:01:48,516 - WARNING -  * Debugger is active!
+2025-10-07 12:01:48,520 - INFO -  * Debugger PIN: 473-725-213
+2025-10-07 12:01:55,720 - INFO - Request from 127.0.0.1: POST /auth/signup
+2025-10-07 12:01:55,958 - INFO - 127.0.0.1 - - [07/Oct/2025 12:01:55] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 500 -
+2025-10-07 12:02:45,293 - INFO - Request from 127.0.0.1: POST /auth/signup
+2025-10-07 12:02:45,519 - INFO - 127.0.0.1 - - [07/Oct/2025 12:02:45] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 500 -
+2025-10-07 12:14:29,620 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-07 12:14:29,621 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-07 12:14:29,622 - INFO -  * Restarting with stat
+2025-10-07 12:14:30,341 - WARNING -  * Debugger is active!
+2025-10-07 12:14:30,344 - INFO -  * Debugger PIN: 473-725-213
+2025-10-07 12:14:35,726 - INFO - Request from 127.0.0.1: POST /auth/signup
+2025-10-07 12:14:35,969 - INFO - 127.0.0.1 - - [07/Oct/2025 12:14:35] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 201 -
+2025-10-07 12:15:42,402 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-07 12:15:42,621 - INFO - 127.0.0.1 - - [07/Oct/2025 12:15:42] "POST /auth/login HTTP/1.1" 200 -
+2025-10-07 12:18:00,623 - INFO -  * Detected change in 'C:\\Karan program\\Internship-journey\\utils\\seed_data.py', reloading
+2025-10-07 12:18:00,717 - INFO -  * Restarting with stat
+2025-10-07 12:18:01,479 - WARNING -  * Debugger is active!
+2025-10-07 12:18:01,482 - INFO -  * Debugger PIN: 473-725-213
+2025-10-07 12:18:19,699 - INFO -  * Detected change in 'C:\\Karan program\\Internship-journey\\utils\\seed_data.py', reloading
+2025-10-07 12:18:19,792 - INFO -  * Restarting with stat
+2025-10-07 12:18:20,557 - WARNING -  * Debugger is active!
+2025-10-07 12:18:20,560 - INFO -  * Debugger PIN: 473-725-213
+2025-10-07 12:18:25,636 - INFO -  * Detected change in 'C:\\Karan program\\Internship-journey\\utils\\seed_data.py', reloading
+2025-10-07 12:18:25,761 - INFO -  * Restarting with stat
+2025-10-07 12:18:26,518 - WARNING -  * Debugger is active!
+2025-10-07 12:18:26,523 - INFO -  * Debugger PIN: 473-725-213
+2025-10-07 12:18:30,590 - INFO -  * Detected change in 'C:\\Karan program\\Internship-journey\\utils\\seed_data.py', reloading
+2025-10-07 12:18:30,673 - INFO -  * Restarting with stat
+2025-10-07 12:18:31,432 - WARNING -  * Debugger is active!
+2025-10-07 12:18:31,436 - INFO -  * Debugger PIN: 473-725-213

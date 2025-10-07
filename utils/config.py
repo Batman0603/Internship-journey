@@ -1,6 +1,10 @@
 import os
 from urllib.parse import quote_plus
 import logging
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 class Config:
     # Attempt to load MySQL environment variables
