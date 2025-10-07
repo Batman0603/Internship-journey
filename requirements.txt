@@ -1,0 +1,21 @@
+# Web Framework
+Flask
+gunicorn
+
+# Database & ORM
+SQLAlchemy
+mysql-connector-python
+
+# Authentication & Security
+bcrypt
+PyJWT
+
+# AI & Vector Search
+sentence-transformers
+faiss-cpu
+
+# Utilities
+python-dotenv
+
+# Data Validation
+pydantic
