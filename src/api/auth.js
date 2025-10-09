@@ -2,7 +2,7 @@ import axios from "axios";
 
 export function login(role, credentials) {
   return axios.post(`/api/auth/login?role=${role}`, credentials, {
-    withCredentials: true // send cookies
+    withCredentials: true
   });
 }
 
