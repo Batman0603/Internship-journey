@@ -559,3 +559,23 @@ TypeError: UserService.get_all_users() takes 0 positional arguments but 1 was gi
 2025-10-10 23:24:43,203 - INFO - 127.0.0.1 - - [10/Oct/2025 23:24:43] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 500 -
 2025-10-10 23:26:18,963 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\auth\\jwt_auth.py', reloading
 2025-10-10 23:26:19,524 - INFO -  * Restarting with stat
+2025-10-10 23:31:21,039 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.73:5000
+2025-10-10 23:31:21,039 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-10 23:31:21,039 - INFO -  * Restarting with stat
+2025-10-10 23:31:23,099 - WARNING -  * Debugger is active!
+2025-10-10 23:31:23,108 - INFO -  * Debugger PIN: 122-296-768
+2025-10-10 23:31:48,572 - INFO - Request from 127.0.0.1: OPTIONS /auth/signup
+2025-10-10 23:31:48,573 - INFO - 127.0.0.1 - - [10/Oct/2025 23:31:48] "OPTIONS /auth/signup HTTP/1.1" 200 -
+2025-10-10 23:31:48,604 - INFO - Request from 127.0.0.1: POST /auth/signup
+2025-10-10 23:31:49,167 - INFO - 127.0.0.1 - - [10/Oct/2025 23:31:49] "[31m[1mPOST /auth/signup HTTP/1.1[0m" 409 -
+2025-10-10 23:31:57,867 - INFO - Request from 127.0.0.1: OPTIONS /auth/signup
+2025-10-10 23:31:57,868 - INFO - 127.0.0.1 - - [10/Oct/2025 23:31:57] "OPTIONS /auth/signup HTTP/1.1" 200 -
+2025-10-10 23:31:57,869 - INFO - Request from 127.0.0.1: POST /auth/signup
+2025-10-10 23:31:58,343 - INFO - 127.0.0.1 - - [10/Oct/2025 23:31:58] "[31m[1mPOST /auth/signup HTTP/1.1[0m" 409 -
+2025-10-10 23:32:08,000 - INFO - Request from 127.0.0.1: OPTIONS /auth/signup
+2025-10-10 23:32:08,018 - INFO - 127.0.0.1 - - [10/Oct/2025 23:32:08] "OPTIONS /auth/signup HTTP/1.1" 200 -
+2025-10-10 23:32:08,030 - INFO - Request from 127.0.0.1: POST /auth/signup
+2025-10-10 23:32:08,498 - INFO - 127.0.0.1 - - [10/Oct/2025 23:32:08] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 201 -
