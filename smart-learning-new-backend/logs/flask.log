@@ -1,0 +1,507 @@
+2025-10-03 11:09:51,371 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-03 11:09:51,371 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-03 11:09:51,371 - INFO -  * Restarting with stat
+2025-10-03 11:10:10,071 - WARNING -  * Debugger is active!
+2025-10-03 11:10:10,084 - INFO -  * Debugger PIN: 122-296-768
+2025-10-03 11:13:39,409 - INFO - Request from 127.0.0.1: POST /api/auth/login
+2025-10-03 11:13:39,410 - INFO - 127.0.0.1 - - [03/Oct/2025 11:13:39] "[33mPOST /api/auth/login HTTP/1.1[0m" 404 -
+2025-10-03 11:13:47,591 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-03 11:13:47,591 - INFO - 127.0.0.1 - - [03/Oct/2025 11:13:47] "[31m[1mPOST /auth/login HTTP/1.1[0m" 400 -
+2025-10-03 11:14:08,043 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-03 11:14:08,630 - INFO - 127.0.0.1 - - [03/Oct/2025 11:14:08] "POST /auth/login HTTP/1.1" 200 -
+2025-10-03 11:15:39,921 - INFO - Request from 127.0.0.1: GET /analytics/generateReport
+2025-10-03 11:15:39,924 - INFO - 127.0.0.1 - - [03/Oct/2025 11:15:39] "[35m[1mGET /analytics/generateReport?apiKey=validKey HTTP/1.1[0m" 202 -
+2025-10-03 11:16:10,743 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-03 11:16:10,777 - INFO - 127.0.0.1 - - [03/Oct/2025 11:16:10] "GET /admin/logs HTTP/1.1" 200 -
+2025-10-03 11:17:15,439 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-03 11:17:15,881 - INFO - 127.0.0.1 - - [03/Oct/2025 11:17:15] "POST /auth/login HTTP/1.1" 200 -
+2025-10-03 11:17:49,049 - INFO - Request from 127.0.0.1: GET /recommendations
+2025-10-03 11:17:49,160 - INFO - 127.0.0.1 - - [03/Oct/2025 11:17:49] "[35m[1mGET /recommendations HTTP/1.1[0m" 500 -
+2025-10-03 11:18:07,931 - INFO - Request from 127.0.0.1: GET /recommendations
+2025-10-03 11:18:07,948 - INFO - 127.0.0.1 - - [03/Oct/2025 11:18:07] "[35m[1mGET /recommendations HTTP/1.1[0m" 500 -
+2025-10-03 11:19:35,030 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\smart-learning backend\\app.py', reloading
+2025-10-03 11:19:37,038 - INFO -  * Restarting with stat
+2025-10-03 11:19:56,394 - WARNING -  * Debugger is active!
+2025-10-03 11:19:56,401 - INFO -  * Debugger PIN: 122-296-768
+2025-10-03 11:23:28,182 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\smart-learning backend\\routes\\admin_routes.py', reloading
+2025-10-03 11:23:31,568 - INFO -  * Restarting with stat
+2025-10-03 11:23:48,500 - WARNING -  * Debugger is active!
+2025-10-03 11:23:48,500 - INFO -  * Debugger PIN: 122-296-768
+2025-10-03 11:28:53,887 - INFO - Request from 127.0.0.1: GET /recommendations
+2025-10-03 11:28:53,909 - INFO - 127.0.0.1 - - [03/Oct/2025 11:28:53] "GET /recommendations HTTP/1.1" 200 -
+2025-10-03 11:29:20,420 - INFO - Request from 127.0.0.1: GET /analytics/generateReport
+2025-10-03 11:29:20,420 - INFO - 127.0.0.1 - - [03/Oct/2025 11:29:20] "[31m[1mGET /analytics/generateReport HTTP/1.1[0m" 403 -
+2025-10-03 11:41:53,413 - INFO - Request from 127.0.0.1: GET /recommendations
+2025-10-03 11:41:53,452 - INFO - 127.0.0.1 - - [03/Oct/2025 11:41:53] "GET /recommendations HTTP/1.1" 200 -
+2025-10-03 11:42:07,336 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-03 11:42:08,067 - INFO - 127.0.0.1 - - [03/Oct/2025 11:42:08] "POST /auth/login HTTP/1.1" 200 -
+2025-10-03 11:42:33,324 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-03 11:42:34,018 - INFO - 127.0.0.1 - - [03/Oct/2025 11:42:34] "POST /auth/login HTTP/1.1" 200 -
+2025-10-03 11:43:06,460 - INFO - Request from 127.0.0.1: POST /analytics/generateReport
+2025-10-03 11:43:06,461 - INFO - 127.0.0.1 - - [03/Oct/2025 11:43:06] "[31m[1mPOST /analytics/generateReport HTTP/1.1[0m" 403 -
+2025-10-03 11:43:30,497 - INFO - Request from 127.0.0.1: POST /analytics/generateReport
+2025-10-03 11:43:30,498 - INFO - 127.0.0.1 - - [03/Oct/2025 11:43:30] "[31m[1mPOST /analytics/generateReport?apiKey=validKey HTTP/1.1[0m" 405 -
+2025-10-03 11:43:34,965 - INFO - Request from 127.0.0.1: GET /analytics/generateReport
+2025-10-03 11:43:34,967 - INFO - 127.0.0.1 - - [03/Oct/2025 11:43:34] "[35m[1mGET /analytics/generateReport?apiKey=validKey HTTP/1.1[0m" 202 -
+2025-10-03 11:44:49,693 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-03 11:44:49,728 - INFO - 127.0.0.1 - - [03/Oct/2025 11:44:49] "GET /admin/logs HTTP/1.1" 200 -
+2025-10-03 11:48:52,152 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-03 11:48:52,152 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-03 11:48:52,156 - INFO -  * Restarting with stat
+2025-10-03 11:49:14,940 - WARNING -  * Debugger is active!
+2025-10-03 11:49:14,964 - INFO -  * Debugger PIN: 122-296-768
+2025-10-03 11:49:15,064 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-03 11:49:15,154 - INFO - 127.0.0.1 - - [03/Oct/2025 11:49:15] "GET /admin/logs HTTP/1.1" 200 -
+2025-10-03 11:59:33,970 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\smart-learning backend\\app.py', reloading
+2025-10-03 11:59:36,343 - INFO -  * Restarting with stat
+2025-10-03 12:00:10,925 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-03 12:00:10,925 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-03 12:00:10,930 - INFO -  * Restarting with stat
+2025-10-03 12:00:33,633 - WARNING -  * Debugger is active!
+2025-10-03 12:00:33,633 - INFO -  * Debugger PIN: 122-296-768
+2025-10-03 12:00:55,896 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-03 12:00:56,009 - INFO - 127.0.0.1 - - [03/Oct/2025 12:00:56] "GET /admin/logs HTTP/1.1" 200 -
+2025-10-03 12:01:36,845 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-03 12:01:36,845 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-03 12:01:36,856 - INFO -  * Restarting with stat
+2025-10-03 12:02:02,433 - WARNING -  * Debugger is active!
+2025-10-03 12:02:02,438 - INFO -  * Debugger PIN: 122-296-768
+2025-10-03 12:02:47,454 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\smart-learning backend\\course_service\\schemas.py', reloading
+2025-10-03 12:02:47,491 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\smart-learning backend\\course_service\\schemas.py', reloading
+2025-10-03 12:02:49,082 - INFO -  * Restarting with stat
+2025-10-03 12:02:49,456 - INFO -  * Restarting with stat
+2025-10-03 12:08:06,577 - INFO -  * Restarting with stat
+2025-10-03 12:08:07,589 - INFO -  * Restarting with stat
+2025-10-03 12:51:58,814 - INFO -  * Restarting with stat
+2025-10-03 12:57:09,899 - INFO -  * Restarting with stat
+2025-10-03 16:24:45,242 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-03 16:25:11,044 - INFO - Request from 127.0.0.1: GET /admin/users
+2025-10-03 16:25:11,049 - ERROR - Exception on /admin/users [GET]
+Traceback (most recent call last):
+  File "C:\Users\Windows\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Windows\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Windows\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Windows\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Windows\OneDrive\Documents\Presidio Intern\week 2\smart-learning backend\auth\rbac.py", line 58, in wrapper
+    return f(user, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Windows\OneDrive\Documents\Presidio Intern\week 2\smart-learning backend\routes\admin_routes.py", line 23, in get_all_users
+    users = UserService.get_all_users(db)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: UserService.get_all_users() takes 0 positional arguments but 1 was given
+2025-10-03 16:27:10,995 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-03 16:45:15,985 - INFO - Request from 127.0.0.1: GET /admin/l
+2025-10-03 21:25:11,065 - INFO - Loading faiss with AVX2 support.
+2025-10-03 21:25:11,107 - INFO - Successfully loaded faiss with AVX2 support.
+2025-10-03 21:25:11,132 - INFO - Use pytorch device_name: cpu
+2025-10-03 21:25:11,133 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-03 21:37:13,637 - INFO - Loading faiss with AVX2 support.
+2025-10-03 21:37:13,704 - INFO - Successfully loaded faiss with AVX2 support.
+2025-10-03 21:37:13,732 - INFO - Use pytorch device_name: cpu
+2025-10-03 21:37:13,732 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-03 21:41:39,076 - INFO - Loading faiss with AVX2 support.
+2025-10-03 21:41:39,117 - INFO - Successfully loaded faiss with AVX2 support.
+2025-10-03 21:41:39,133 - INFO - Use pytorch device_name: cpu
+2025-10-03 21:41:39,133 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-03 21:45:17,180 - INFO - Loading faiss with AVX2 support.
+2025-10-03 21:45:17,214 - INFO - Successfully loaded faiss with AVX2 support.
+2025-10-03 21:45:17,229 - INFO - Use pytorch device_name: cpu
+2025-10-03 21:45:17,230 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-03 21:46:18,549 - INFO - Loading faiss with AVX2 support.
+2025-10-03 21:46:18,584 - INFO - Successfully loaded faiss with AVX2 support.
+2025-10-03 21:46:18,600 - INFO - Use pytorch device_name: cpu
+2025-10-03 21:46:18,600 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-04 11:03:40,977 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-04 11:03:40,977 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-04 11:03:40,977 - INFO -  * Restarting with stat
+2025-10-04 11:03:42,407 - WARNING -  * Debugger is active!
+2025-10-04 11:03:42,425 - INFO -  * Debugger PIN: 122-296-768
+2025-10-04 11:05:49,082 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-04 11:05:49,677 - INFO - 127.0.0.1 - - [04/Oct/2025 11:05:49] "POST /auth/login HTTP/1.1" 200 -
+2025-10-04 11:06:46,962 - INFO - Request from 127.0.0.1: POST /analytics/generateReport
+2025-10-04 11:06:46,963 - INFO - 127.0.0.1 - - [04/Oct/2025 11:06:46] "[31m[1mPOST /analytics/generateReport HTTP/1.1[0m" 403 -
+2025-10-04 11:27:43,734 - INFO - Request from 127.0.0.1: POST /admin/users
+2025-10-04 11:27:43,736 - INFO - 127.0.0.1 - - [04/Oct/2025 11:27:43] "[31m[1mPOST /admin/users HTTP/1.1[0m" 405 -
+2025-10-04 11:27:47,465 - INFO - Request from 127.0.0.1: GET /admin/users
+2025-10-04 11:27:47,496 - INFO - 127.0.0.1 - - [04/Oct/2025 11:27:47] "GET /admin/users HTTP/1.1" 200 -
+2025-10-04 11:28:06,224 - INFO - Request from 127.0.0.1: GET /analytics/generateReport
+2025-10-04 11:28:06,230 - INFO - 127.0.0.1 - - [04/Oct/2025 11:28:06] "[31m[1mGET /analytics/generateReport HTTP/1.1[0m" 403 -
+2025-10-04 11:29:52,823 - INFO - Request from 127.0.0.1: GET /analytics/generateReport
+2025-10-04 11:29:52,823 - INFO - 127.0.0.1 - - [04/Oct/2025 11:29:52] "[31m[1mGET /analytics/generateReport?apiKey=your_secret_api_key HTTP/1.1[0m" 403 -
+2025-10-04 11:30:03,452 - INFO - Request from 127.0.0.1: POST /analytics/generateReport
+2025-10-04 11:30:03,454 - INFO - 127.0.0.1 - - [04/Oct/2025 11:30:03] "[31m[1mPOST /analytics/generateReport?apiKey=your_secret_api_key HTTP/1.1[0m" 403 -
+2025-10-04 11:49:49,186 - INFO - Request from 127.0.0.1: POST /analytics/generateReport
+2025-10-04 11:49:49,187 - INFO - 127.0.0.1 - - [04/Oct/2025 11:49:49] "[31m[1mPOST /analytics/generateReport?apiKey=a-secure-and-random-analytics-api-key-for-your-reports HTTP/1.1[0m" 405 -
+2025-10-04 11:49:55,724 - INFO - Request from 127.0.0.1: GET /analytics/generateReport
+2025-10-04 11:49:55,726 - INFO - 127.0.0.1 - - [04/Oct/2025 11:49:55] "[35m[1mGET /analytics/generateReport?apiKey=a-secure-and-random-analytics-api-key-for-your-reports HTTP/1.1[0m" 202 -
+2025-10-04 11:52:08,461 - INFO - Request from 127.0.0.1: GET /analytics/generateReport
+2025-10-04 11:52:08,462 - INFO - 127.0.0.1 - - [04/Oct/2025 11:52:08] "[31m[1mGET /analytics/generateReport HTTP/1.1[0m" 403 -
+2025-10-07 11:55:39,542 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-07 11:55:39,543 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-07 11:55:39,545 - INFO -  * Restarting with stat
+2025-10-07 11:55:40,214 - WARNING -  * Debugger is active!
+2025-10-07 11:55:40,217 - INFO -  * Debugger PIN: 473-725-213
+2025-10-07 11:56:28,032 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-07 11:56:28,032 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-07 11:56:28,034 - INFO -  * Restarting with stat
+2025-10-07 11:56:28,714 - WARNING -  * Debugger is active!
+2025-10-07 11:56:28,717 - INFO -  * Debugger PIN: 473-725-213
+2025-10-07 11:58:18,150 - INFO - Request from 127.0.0.1: POST /auth/signup
+2025-10-07 11:58:18,483 - INFO - 127.0.0.1 - - [07/Oct/2025 11:58:18] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 500 -
+2025-10-07 12:01:47,767 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-07 12:01:47,768 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-07 12:01:47,769 - INFO -  * Restarting with stat
+2025-10-07 12:01:48,516 - WARNING -  * Debugger is active!
+2025-10-07 12:01:48,520 - INFO -  * Debugger PIN: 473-725-213
+2025-10-07 12:01:55,720 - INFO - Request from 127.0.0.1: POST /auth/signup
+2025-10-07 12:01:55,958 - INFO - 127.0.0.1 - - [07/Oct/2025 12:01:55] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 500 -
+2025-10-07 12:02:45,293 - INFO - Request from 127.0.0.1: POST /auth/signup
+2025-10-07 12:02:45,519 - INFO - 127.0.0.1 - - [07/Oct/2025 12:02:45] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 500 -
+2025-10-07 12:14:29,620 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-07 12:14:29,621 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-07 12:14:29,622 - INFO -  * Restarting with stat
+2025-10-07 12:14:30,341 - WARNING -  * Debugger is active!
+2025-10-07 12:14:30,344 - INFO -  * Debugger PIN: 473-725-213
+2025-10-07 12:14:35,726 - INFO - Request from 127.0.0.1: POST /auth/signup
+2025-10-07 12:14:35,969 - INFO - 127.0.0.1 - - [07/Oct/2025 12:14:35] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 201 -
+2025-10-07 12:15:42,402 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-07 12:15:42,621 - INFO - 127.0.0.1 - - [07/Oct/2025 12:15:42] "POST /auth/login HTTP/1.1" 200 -
+2025-10-07 12:18:00,623 - INFO -  * Detected change in 'C:\\Karan program\\Internship-journey\\utils\\seed_data.py', reloading
+2025-10-07 12:18:00,717 - INFO -  * Restarting with stat
+2025-10-07 12:18:01,479 - WARNING -  * Debugger is active!
+2025-10-07 12:18:01,482 - INFO -  * Debugger PIN: 473-725-213
+2025-10-07 12:18:19,699 - INFO -  * Detected change in 'C:\\Karan program\\Internship-journey\\utils\\seed_data.py', reloading
+2025-10-07 12:18:19,792 - INFO -  * Restarting with stat
+2025-10-07 12:18:20,557 - WARNING -  * Debugger is active!
+2025-10-07 12:18:20,560 - INFO -  * Debugger PIN: 473-725-213
+2025-10-07 12:18:25,636 - INFO -  * Detected change in 'C:\\Karan program\\Internship-journey\\utils\\seed_data.py', reloading
+2025-10-07 12:18:25,761 - INFO -  * Restarting with stat
+2025-10-07 12:18:26,518 - WARNING -  * Debugger is active!
+2025-10-07 12:18:26,523 - INFO -  * Debugger PIN: 473-725-213
+2025-10-07 12:18:30,590 - INFO -  * Detected change in 'C:\\Karan program\\Internship-journey\\utils\\seed_data.py', reloading
+2025-10-07 12:18:30,673 - INFO -  * Restarting with stat
+2025-10-07 12:18:31,432 - WARNING -  * Debugger is active!
+2025-10-07 12:18:31,436 - INFO -  * Debugger PIN: 473-725-213
+2025-10-07 19:16:41,310 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-07 19:16:41,310 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-07 19:16:41,320 - INFO -  * Restarting with stat
+2025-10-07 19:16:43,196 - WARNING -  * Debugger is active!
+2025-10-07 19:16:43,202 - INFO -  * Debugger PIN: 122-296-768
+2025-10-07 19:17:07,839 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-07 19:17:08,472 - INFO - 127.0.0.1 - - [07/Oct/2025 19:17:08] "POST /auth/login HTTP/1.1" 200 -
+2025-10-08 11:43:50,302 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-08 11:43:50,302 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-08 11:43:50,302 - INFO -  * Restarting with stat
+2025-10-08 11:43:51,697 - WARNING -  * Debugger is active!
+2025-10-08 11:43:51,713 - INFO -  * Debugger PIN: 122-296-768
+2025-10-08 11:44:33,461 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-08 11:44:34,095 - INFO - 127.0.0.1 - - [08/Oct/2025 11:44:34] "[31m[1mPOST /auth/login HTTP/1.1[0m" 401 -
+2025-10-08 11:45:18,128 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-08 11:45:18,557 - INFO - 127.0.0.1 - - [08/Oct/2025 11:45:18] "POST /auth/login HTTP/1.1" 200 -
+2025-10-08 11:46:20,064 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-08 11:46:20,501 - INFO - 127.0.0.1 - - [08/Oct/2025 11:46:20] "POST /auth/login HTTP/1.1" 200 -
+2025-10-08 11:46:32,825 - INFO - Request from 127.0.0.1: GET /admin/users
+2025-10-08 11:46:32,852 - INFO - 127.0.0.1 - - [08/Oct/2025 11:46:32] "GET /admin/users HTTP/1.1" 200 -
+2025-10-08 11:46:52,134 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-08 11:46:52,169 - INFO - 127.0.0.1 - - [08/Oct/2025 11:46:52] "GET /admin/logs HTTP/1.1" 200 -
+2025-10-08 11:48:42,022 - INFO - Request from 127.0.0.1: POST /auth/signup
+2025-10-08 11:48:42,026 - INFO - 127.0.0.1 - - [08/Oct/2025 11:48:42] "[31m[1mPOST /auth/signup HTTP/1.1[0m" 400 -
+2025-10-08 11:49:40,889 - INFO - Request from 127.0.0.1: POST /auth/signup
+2025-10-08 11:49:41,356 - INFO - 127.0.0.1 - - [08/Oct/2025 11:49:41] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 201 -
+2025-10-08 11:50:03,260 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-08 11:50:03,686 - INFO - 127.0.0.1 - - [08/Oct/2025 11:50:03] "POST /auth/login HTTP/1.1" 200 -
+2025-10-08 11:50:23,286 - INFO - Request from 127.0.0.1: GET /recommendations
+2025-10-08 11:50:23,368 - INFO - 127.0.0.1 - - [08/Oct/2025 11:50:23] "GET /recommendations HTTP/1.1" 200 -
+2025-10-08 11:52:10,513 - INFO - Request from 127.0.0.1: OPTIONS /auth/login
+2025-10-08 11:52:10,513 - INFO - 127.0.0.1 - - [08/Oct/2025 11:52:10] "OPTIONS /auth/login HTTP/1.1" 200 -
+2025-10-08 11:52:12,377 - INFO - Request from 127.0.0.1: OPTIONS /auth/login
+2025-10-08 11:52:12,378 - INFO - 127.0.0.1 - - [08/Oct/2025 11:52:12] "OPTIONS /auth/login HTTP/1.1" 200 -
+2025-10-08 11:52:13,536 - INFO - Request from 127.0.0.1: OPTIONS /auth/login
+2025-10-08 11:52:13,536 - INFO - 127.0.0.1 - - [08/Oct/2025 11:52:13] "OPTIONS /auth/login HTTP/1.1" 200 -
+2025-10-08 22:21:56,505 - INFO - Request from 127.0.0.1: OPTIONS /login
+2025-10-08 22:21:56,535 - INFO - 127.0.0.1 - - [08/Oct/2025 22:21:56] "[33mOPTIONS /login HTTP/1.1[0m" 404 -
+2025-10-09 11:57:42,550 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-09 11:57:42,553 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-09 11:57:42,556 - INFO -  * Restarting with stat
+2025-10-09 11:57:44,323 - WARNING -  * Debugger is active!
+2025-10-09 11:57:44,334 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 11:58:15,617 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-09 11:58:16,382 - INFO - 127.0.0.1 - - [09/Oct/2025 11:58:16] "POST /auth/login HTTP/1.1" 200 -
+2025-10-09 11:58:30,318 - INFO - Request from 127.0.0.1: POST /admin/users
+2025-10-09 11:58:30,320 - INFO - 127.0.0.1 - - [09/Oct/2025 11:58:30] "[31m[1mPOST /admin/users HTTP/1.1[0m" 405 -
+2025-10-09 11:58:33,640 - INFO - Request from 127.0.0.1: GET /admin/users
+2025-10-09 11:58:33,667 - INFO - 127.0.0.1 - - [09/Oct/2025 11:58:33] "GET /admin/users HTTP/1.1" 200 -
+2025-10-09 11:58:43,605 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-09 11:58:43,657 - INFO - 127.0.0.1 - - [09/Oct/2025 11:58:43] "GET /admin/logs HTTP/1.1" 200 -
+2025-10-09 12:00:10,101 - INFO - Request from 127.0.0.1: POST /auth/signup
+2025-10-09 12:00:10,667 - INFO - 127.0.0.1 - - [09/Oct/2025 12:00:10] "[31m[1mPOST /auth/signup HTTP/1.1[0m" 409 -
+2025-10-09 12:00:25,550 - INFO - Request from 127.0.0.1: POST /auth/signup
+2025-10-09 12:00:26,120 - INFO - 127.0.0.1 - - [09/Oct/2025 12:00:26] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 201 -
+2025-10-09 12:00:41,306 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-09 12:00:41,813 - INFO - 127.0.0.1 - - [09/Oct/2025 12:00:41] "POST /auth/login HTTP/1.1" 200 -
+2025-10-09 12:00:58,576 - INFO - Request from 127.0.0.1: POST /recommendations
+2025-10-09 12:00:58,576 - INFO - 127.0.0.1 - - [09/Oct/2025 12:00:58] "[31m[1mPOST /recommendations HTTP/1.1[0m" 405 -
+2025-10-09 12:01:01,705 - INFO - Request from 127.0.0.1: GET /recommendations
+2025-10-09 12:01:01,751 - INFO - 127.0.0.1 - - [09/Oct/2025 12:01:01] "GET /recommendations HTTP/1.1" 200 -
+2025-10-09 12:02:18,947 - INFO - Request from 127.0.0.1: GET /generateReport
+2025-10-09 12:02:18,948 - INFO - 127.0.0.1 - - [09/Oct/2025 12:02:18] "[33mGET /generateReport?apikey=vailid_key HTTP/1.1[0m" 404 -
+2025-10-09 12:02:22,497 - INFO - Request from 127.0.0.1: POST /generateReport
+2025-10-09 12:02:22,499 - INFO - 127.0.0.1 - - [09/Oct/2025 12:02:22] "[33mPOST /generateReport?apikey=vailid_key HTTP/1.1[0m" 404 -
+2025-10-09 12:02:23,597 - INFO - Request from 127.0.0.1: POST /generateReport
+2025-10-09 12:02:23,598 - INFO - 127.0.0.1 - - [09/Oct/2025 12:02:23] "[33mPOST /generateReport?apikey=vailid_key HTTP/1.1[0m" 404 -
+2025-10-09 12:02:29,631 - INFO - Request from 127.0.0.1: POST /generateReport
+2025-10-09 12:02:29,633 - INFO - 127.0.0.1 - - [09/Oct/2025 12:02:29] "[33mPOST /generateReport?apikey=vailid_key HTTP/1.1[0m" 404 -
+2025-10-09 12:02:37,619 - INFO - Request from 127.0.0.1: POST /generateReport
+2025-10-09 12:02:37,627 - INFO - 127.0.0.1 - - [09/Oct/2025 12:02:37] "[33mPOST /generateReport?apikey==vailid_key HTTP/1.1[0m" 404 -
+2025-10-09 12:02:48,989 - INFO - Request from 127.0.0.1: POST /generateReport
+2025-10-09 12:02:48,991 - INFO - 127.0.0.1 - - [09/Oct/2025 12:02:48] "[33mPOST /generateReport?apikey==valid_key HTTP/1.1[0m" 404 -
+2025-10-09 12:02:54,975 - INFO - Request from 127.0.0.1: POST /generateReport
+2025-10-09 12:02:54,993 - INFO - 127.0.0.1 - - [09/Oct/2025 12:02:54] "[33mPOST /generateReport?apikey=valid_key HTTP/1.1[0m" 404 -
+2025-10-09 12:04:26,121 - INFO - Request from 127.0.0.1: POST /generateReport
+2025-10-09 12:04:26,130 - INFO - 127.0.0.1 - - [09/Oct/2025 12:04:26] "[33mPOST /generateReport HTTP/1.1[0m" 404 -
+2025-10-09 12:05:06,728 - INFO - Request from 127.0.0.1: POST /analytics/generateReport
+2025-10-09 12:05:06,751 - INFO - 127.0.0.1 - - [09/Oct/2025 12:05:06] "[31m[1mPOST /analytics/generateReport HTTP/1.1[0m" 403 -
+2025-10-09 12:05:48,812 - INFO - Request from 127.0.0.1: POST /analytics/generateReport
+2025-10-09 12:05:48,851 - INFO - 127.0.0.1 - - [09/Oct/2025 12:05:48] "[31m[1mPOST /analytics/generateReport?apikey=valid_key HTTP/1.1[0m" 403 -
+2025-10-09 12:06:01,871 - INFO - Request from 127.0.0.1: POST /analytics/generateReport
+2025-10-09 12:06:01,887 - INFO - 127.0.0.1 - - [09/Oct/2025 12:06:01] "[31m[1mPOST /analytics/generateReport?apikey=ANALYTICS_API_KEY HTTP/1.1[0m" 403 -
+2025-10-09 12:06:34,037 - INFO - Request from 127.0.0.1: POST /analytics/generateReport
+2025-10-09 12:06:34,289 - INFO - 127.0.0.1 - - [09/Oct/2025 12:06:34] "[31m[1mPOST /analytics/generateReport HTTP/1.1[0m" 403 -
+2025-10-09 12:08:35,601 - INFO - Request from 127.0.0.1: GET /analytics/generateReport
+2025-10-09 12:08:35,857 - INFO - 127.0.0.1 - - [09/Oct/2025 12:08:35] "[31m[1mGET /analytics/generateReport HTTP/1.1[0m" 403 -
+2025-10-09 12:09:53,698 - INFO - Request from 127.0.0.1: GET /api/courses/courses
+2025-10-09 12:09:53,712 - INFO - 127.0.0.1 - - [09/Oct/2025 12:09:53] "[31m[1mGET /api/courses/courses HTTP/1.1[0m" 403 -
+2025-10-09 12:10:43,840 - INFO - Request from 127.0.0.1: GET /recommendations
+2025-10-09 12:10:43,910 - INFO - 127.0.0.1 - - [09/Oct/2025 12:10:43] "GET /recommendations HTTP/1.1" 200 -
+2025-10-09 12:11:09,887 - INFO - Request from 127.0.0.1: GET /api/courses/1/enroll
+2025-10-09 12:11:09,888 - INFO - 127.0.0.1 - - [09/Oct/2025 12:11:09] "[33mGET /api/courses/1/enroll HTTP/1.1[0m" 404 -
+2025-10-09 12:11:13,297 - INFO - Request from 127.0.0.1: POST /api/courses/1/enroll
+2025-10-09 12:11:13,318 - INFO - 127.0.0.1 - - [09/Oct/2025 12:11:13] "[33mPOST /api/courses/1/enroll HTTP/1.1[0m" 404 -
+2025-10-09 12:11:15,201 - INFO - Request from 127.0.0.1: POST /api/courses/1/enroll
+2025-10-09 12:11:15,227 - INFO - 127.0.0.1 - - [09/Oct/2025 12:11:15] "[33mPOST /api/courses/1/enroll HTTP/1.1[0m" 404 -
+2025-10-09 12:11:30,818 - INFO - Request from 127.0.0.1: POST /api/courses/courses/1/enroll
+2025-10-09 12:11:30,854 - INFO - 127.0.0.1 - - [09/Oct/2025 12:11:30] "POST /api/courses/courses/1/enroll HTTP/1.1" 200 -
+2025-10-09 12:13:08,701 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/generate
+2025-10-09 12:13:08,728 - INFO - 127.0.0.1 - - [09/Oct/2025 12:13:08] "[31m[1mPOST /api/assignments/assignments/generate HTTP/1.1[0m" 403 -
+2025-10-09 12:14:21,497 - INFO - Request from 127.0.0.1: POST /auth.signup
+2025-10-09 12:14:21,499 - INFO - 127.0.0.1 - - [09/Oct/2025 12:14:21] "[33mPOST /auth.signup HTTP/1.1[0m" 404 -
+2025-10-09 12:14:26,409 - INFO - Request from 127.0.0.1: POST /auth/signup
+2025-10-09 12:14:28,147 - INFO - 127.0.0.1 - - [09/Oct/2025 12:14:28] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 201 -
+2025-10-09 12:14:44,623 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-09 12:14:46,903 - INFO - 127.0.0.1 - - [09/Oct/2025 12:14:46] "POST /auth/login HTTP/1.1" 200 -
+2025-10-09 12:15:16,368 - INFO - Request from 127.0.0.1: POST /api/assignemnts/assignents/generate
+2025-10-09 12:15:16,370 - INFO - 127.0.0.1 - - [09/Oct/2025 12:15:16] "[33mPOST /api/assignemnts/assignents/generate HTTP/1.1[0m" 404 -
+2025-10-09 12:15:35,929 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/generate
+2025-10-09 12:15:35,958 - INFO - 127.0.0.1 - - [09/Oct/2025 12:15:35] "[31m[1mPOST /api/assignments/assignments/generate HTTP/1.1[0m" 400 -
+2025-10-09 12:17:03,573 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/generate
+2025-10-09 12:17:25,549 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/generate
+2025-10-09 12:18:05,601 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/generate
+2025-10-09 12:18:57,723 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/generate
+2025-10-09 12:20:47,730 - INFO - Loading faiss with AVX2 support.
+2025-10-09 12:20:48,913 - INFO - Successfully loaded faiss with AVX2 support.
+2025-10-09 12:20:49,061 - INFO - Use pytorch device_name: cpu
+2025-10-09 12:20:49,124 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-09 12:20:59,549 - INFO - 127.0.0.1 - - [09/Oct/2025 12:20:59] "[35m[1mPOST /api/assignments/assignments/generate HTTP/1.1[0m" 500 -
+2025-10-09 12:20:59,551 - INFO - 127.0.0.1 - - [09/Oct/2025 12:20:59] "[35m[1mPOST /api/assignments/assignments/generate HTTP/1.1[0m" 500 -
+2025-10-09 12:20:59,561 - INFO - 127.0.0.1 - - [09/Oct/2025 12:20:59] "[35m[1mPOST /api/assignments/assignments/generate HTTP/1.1[0m" 500 -
+2025-10-09 12:20:59,566 - INFO - 127.0.0.1 - - [09/Oct/2025 12:20:59] "[35m[1mPOST /api/assignments/assignments/generate HTTP/1.1[0m" 500 -
+2025-10-09 12:41:10,259 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\backend\\routes\\course_routes.py', reloading
+2025-10-09 12:50:28,777 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-09 12:50:28,778 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-09 12:50:28,780 - INFO -  * Restarting with stat
+2025-10-09 12:50:31,505 - WARNING -  * Debugger is active!
+2025-10-09 12:50:31,518 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 12:51:51,566 - INFO - Request from 127.0.0.1: POST /assignments/upload-notes
+2025-10-09 12:51:51,569 - INFO - 127.0.0.1 - - [09/Oct/2025 12:51:51] "[33mPOST /assignments/upload-notes HTTP/1.1[0m" 404 -
+2025-10-09 12:55:36,957 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\backend\\routes\\assignment_routes.py', reloading
+2025-10-09 12:55:37,329 - INFO -  * Restarting with stat
+2025-10-09 12:55:42,077 - WARNING -  * Debugger is active!
+2025-10-09 12:55:42,104 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 12:55:43,389 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\backend\\routes\\assignment_routes.py', reloading
+2025-10-09 12:55:43,817 - INFO -  * Restarting with stat
+2025-10-09 12:55:48,822 - WARNING -  * Debugger is active!
+2025-10-09 12:55:48,833 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 12:56:02,716 - INFO - Request from 127.0.0.1: POST /api/assignments/upload-notes
+2025-10-09 12:56:02,721 - INFO - 127.0.0.1 - - [09/Oct/2025 12:56:02] "[33mPOST /api/assignments/upload-notes HTTP/1.1[0m" 404 -
+2025-10-09 12:56:03,920 - INFO - Request from 127.0.0.1: POST /api/assignments/upload-notes
+2025-10-09 12:56:03,923 - INFO - 127.0.0.1 - - [09/Oct/2025 12:56:03] "[33mPOST /api/assignments/upload-notes HTTP/1.1[0m" 404 -
+2025-10-09 12:56:41,481 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/upload-notes
+2025-10-09 12:58:42,669 - INFO - Loading faiss with AVX2 support.
+2025-10-09 12:58:43,467 - INFO - Successfully loaded faiss with AVX2 support.
+2025-10-09 12:58:43,520 - INFO - Use pytorch device_name: cpu
+2025-10-09 12:58:43,521 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-09 12:58:52,787 - INFO - 127.0.0.1 - - [09/Oct/2025 12:58:52] "POST /api/assignments/assignments/upload-notes HTTP/1.1" 200 -
+2025-10-09 12:59:07,096 - INFO - Request from 127.0.0.1: POST /assignments/assignments/upload-notes
+2025-10-09 12:59:07,096 - INFO - 127.0.0.1 - - [09/Oct/2025 12:59:07] "[33mPOST /assignments/assignments/upload-notes HTTP/1.1[0m" 404 -
+2025-10-09 13:03:50,757 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/upload-notes
+2025-10-09 13:04:42,251 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/upload-notes
+2025-10-09 13:04:58,186 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/upload-notes
+2025-10-09 13:05:38,203 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/generate
+2025-10-09 13:05:56,772 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/generate
+2025-10-09 13:07:22,688 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\backend\\routes\\assignment_routes.py', reloading
+2025-10-09 13:08:01,084 - INFO - 127.0.0.1 - - [09/Oct/2025 13:08:01] "[31m[1mPOST /api/assignments/assignments/generate HTTP/1.1[0m" 415 -
+2025-10-09 13:08:01,099 - INFO - 127.0.0.1 - - [09/Oct/2025 13:08:01] "[31m[1mPOST /api/assignments/assignments/generate HTTP/1.1[0m" 415 -
+2025-10-09 13:08:02,088 - INFO -  * Restarting with stat
+2025-10-09 13:08:03,606 - WARNING -  * Debugger is active!
+2025-10-09 13:08:03,616 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 13:08:10,570 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-09 13:08:10,570 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-09 13:08:10,570 - INFO -  * Restarting with stat
+2025-10-09 13:08:11,966 - WARNING -  * Debugger is active!
+2025-10-09 13:08:11,970 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 13:08:36,096 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/generate
+2025-10-09 13:08:36,168 - INFO - 127.0.0.1 - - [09/Oct/2025 13:08:36] "[31m[1mPOST /api/assignments/assignments/generate HTTP/1.1[0m" 415 -
+2025-10-09 13:09:06,518 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/upload-notes
+2025-10-09 13:09:18,512 - INFO - Loading faiss with AVX2 support.
+2025-10-09 13:09:18,670 - INFO - Successfully loaded faiss with AVX2 support.
+2025-10-09 13:09:18,689 - INFO - Use pytorch device_name: cpu
+2025-10-09 13:09:18,689 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-09 13:09:23,663 - INFO - 127.0.0.1 - - [09/Oct/2025 13:09:23] "POST /api/assignments/assignments/upload-notes HTTP/1.1" 200 -
+2025-10-09 13:12:00,664 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/generate
+2025-10-09 13:12:00,737 - INFO - 127.0.0.1 - - [09/Oct/2025 13:12:00] "[35m[1mPOST /api/assignments/assignments/generate HTTP/1.1[0m" 500 -
+2025-10-09 13:12:11,402 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/generate
+2025-10-09 13:12:11,448 - INFO - 127.0.0.1 - - [09/Oct/2025 13:12:11] "POST /api/assignments/assignments/generate HTTP/1.1" 200 -
+2025-10-09 13:12:27,582 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/generate
+2025-10-09 13:12:27,628 - INFO - 127.0.0.1 - - [09/Oct/2025 13:12:27] "POST /api/assignments/assignments/generate HTTP/1.1" 200 -
+2025-10-09 14:30:18,337 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-09 14:30:18,353 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-09 14:30:18,353 - INFO -  * Restarting with stat
+2025-10-09 14:30:19,654 - WARNING -  * Debugger is active!
+2025-10-09 14:30:19,670 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 14:42:31,279 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/upload-notes
+2025-10-09 14:42:31,279 - INFO - 127.0.0.1 - - [09/Oct/2025 14:42:31] "[31m[1mPOST /api/assignments/assignments/upload-notes HTTP/1.1[0m" 401 -
+2025-10-09 14:43:48,708 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-09 14:43:49,252 - INFO - 127.0.0.1 - - [09/Oct/2025 14:43:49] "POST /auth/login HTTP/1.1" 200 -
+2025-10-09 14:44:42,866 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/upload-notes
+2025-10-09 14:44:42,888 - INFO - 127.0.0.1 - - [09/Oct/2025 14:44:42] "[31m[1mPOST /api/assignments/assignments/upload-notes HTTP/1.1[0m" 400 -
+2025-10-09 14:44:47,245 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/upload-notes
+2025-10-09 14:45:39,770 - INFO - Loading faiss with AVX2 support.
+2025-10-09 14:45:40,237 - INFO - Successfully loaded faiss with AVX2 support.
+2025-10-09 14:45:40,263 - INFO - Use pytorch device_name: cpu
+2025-10-09 14:45:40,271 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-09 14:45:47,653 - INFO - 127.0.0.1 - - [09/Oct/2025 14:45:47] "POST /api/assignments/assignments/upload-notes HTTP/1.1" 200 -
+2025-10-09 14:49:34,330 - INFO - Request from 127.0.0.1: POST /api/assignments/course/2/assignments
+2025-10-09 14:49:34,330 - INFO - 127.0.0.1 - - [09/Oct/2025 14:49:34] "[33mPOST /api/assignments/course/2/assignments HTTP/1.1[0m" 404 -
+2025-10-09 14:49:39,374 - INFO - Request from 127.0.0.1: POST /api/assignments/course/1/assignments
+2025-10-09 14:49:39,374 - INFO - 127.0.0.1 - - [09/Oct/2025 14:49:39] "[33mPOST /api/assignments/course/1/assignments HTTP/1.1[0m" 404 -
+2025-10-09 14:50:07,176 - INFO - Request from 127.0.0.1: POST /api/assignments/assignments/generate
+2025-10-09 14:50:07,237 - INFO - 127.0.0.1 - - [09/Oct/2025 14:50:07] "POST /api/assignments/assignments/generate HTTP/1.1" 200 -
+2025-10-09 14:51:18,453 - INFO - Request from 127.0.0.1: POST /api/assignments/courses/1/assignments
+2025-10-09 14:51:18,514 - INFO - 127.0.0.1 - - [09/Oct/2025 14:51:18] "[35m[1mPOST /api/assignments/courses/1/assignments HTTP/1.1[0m" 201 -
+2025-10-09 14:52:02,885 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\backend\\routes\\assignment_routes.py', reloading
+2025-10-09 14:52:04,851 - INFO -  * Restarting with stat
+2025-10-09 14:52:06,516 - WARNING -  * Debugger is active!
+2025-10-09 14:52:06,516 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 14:57:48,668 - INFO - Request from 127.0.0.1: POST /user/profile
+2025-10-09 14:57:48,668 - INFO - 127.0.0.1 - - [09/Oct/2025 14:57:48] "[31m[1mPOST /user/profile HTTP/1.1[0m" 405 -
+2025-10-09 14:57:51,582 - INFO - Request from 127.0.0.1: GET /user/profile
+2025-10-09 14:57:51,660 - INFO - 127.0.0.1 - - [09/Oct/2025 14:57:51] "GET /user/profile HTTP/1.1" 200 -
+2025-10-09 15:04:36,613 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\backend\\routes\\course_routes.py', reloading
+2025-10-09 15:04:36,794 - INFO -  * Restarting with stat
+2025-10-09 15:04:40,720 - WARNING -  * Debugger is active!
+2025-10-09 15:04:40,734 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 15:05:15,821 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\backend\\routes\\course_routes.py', reloading
+2025-10-09 15:05:16,272 - INFO -  * Restarting with stat
+2025-10-09 15:05:21,221 - WARNING -  * Debugger is active!
+2025-10-09 15:05:21,221 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 15:05:34,809 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\backend\\routes\\course_routes.py', reloading
+2025-10-09 15:05:35,239 - INFO -  * Restarting with stat
+2025-10-09 15:05:39,638 - WARNING -  * Debugger is active!
+2025-10-09 15:05:39,656 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 15:11:01,561 - INFO - Request from 127.0.0.1: GET /api/course/NewCourses
+2025-10-09 15:11:01,561 - INFO - 127.0.0.1 - - [09/Oct/2025 15:11:01] "[33mGET /api/course/NewCourses HTTP/1.1[0m" 404 -
+2025-10-09 15:11:05,931 - INFO - Request from 127.0.0.1: POST /api/course/NewCourses
+2025-10-09 15:11:05,938 - INFO - 127.0.0.1 - - [09/Oct/2025 15:11:05] "[33mPOST /api/course/NewCourses HTTP/1.1[0m" 404 -
+2025-10-09 15:11:25,858 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-09 15:11:25,858 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-09 15:11:25,862 - INFO -  * Restarting with stat
+2025-10-09 15:11:27,770 - WARNING -  * Debugger is active!
+2025-10-09 15:11:27,775 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 15:11:27,919 - INFO - Request from 127.0.0.1: POST /api/courses/NewCourses
+2025-10-09 15:11:28,056 - INFO - 127.0.0.1 - - [09/Oct/2025 15:11:28] "POST /api/courses/NewCourses HTTP/1.1" 200 -
+2025-10-09 15:25:27,535 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\backend\\routes\\assignment_routes.py', reloading
+2025-10-09 15:25:27,822 - INFO -  * Restarting with stat
+2025-10-09 15:25:35,116 - WARNING -  * Debugger is active!
+2025-10-09 15:25:35,152 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 15:25:36,350 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\backend\\routes\\assignment_routes.py', reloading
+2025-10-09 15:25:36,560 - INFO -  * Restarting with stat
+2025-10-09 15:25:43,504 - WARNING -  * Debugger is active!
+2025-10-09 15:25:43,519 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 15:25:44,689 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\backend\\routes\\assignment_routes.py', reloading
+2025-10-09 15:25:45,014 - INFO -  * Restarting with stat
+2025-10-09 15:25:46,633 - WARNING -  * Debugger is active!
+2025-10-09 15:25:46,633 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 15:28:47,076 - INFO - Request from 127.0.0.1: GET /analytics/getReport
+2025-10-09 15:28:47,077 - INFO - 127.0.0.1 - - [09/Oct/2025 15:28:47] "[31m[1mGET /analytics/getReport HTTP/1.1[0m" 403 -
+2025-10-09 15:32:57,736 - INFO - Request from 127.0.0.1: GET /analytics/getReport
+2025-10-09 15:32:57,736 - INFO - 127.0.0.1 - - [09/Oct/2025 15:32:57] "[31m[1mGET /analytics/getReport?apikey=your_secret_analytics_key HTTP/1.1[0m" 403 -
+2025-10-09 15:32:58,781 - INFO - Request from 127.0.0.1: GET /analytics/getReport
+2025-10-09 15:32:58,781 - INFO - 127.0.0.1 - - [09/Oct/2025 15:32:58] "[31m[1mGET /analytics/getReport?apikey=your_secret_analytics_key HTTP/1.1[0m" 403 -
+2025-10-09 15:33:11,458 - INFO - Request from 127.0.0.1: GET /analytics/getReport
+2025-10-09 15:33:11,459 - INFO - 127.0.0.1 - - [09/Oct/2025 15:33:11] "[31m[1mGET /analytics/getReport?apikey=your_secret_analytics_key HTTP/1.1[0m" 403 -
+2025-10-09 15:33:59,756 - INFO - Request from 127.0.0.1: GET /analytics/getReport
+2025-10-09 15:33:59,757 - INFO - 127.0.0.1 - - [09/Oct/2025 15:33:59] "[31m[1mGET /analytics/getReport?apikey=your_secret_analytics_key HTTP/1.1[0m" 403 -
+2025-10-09 15:35:15,684 - INFO - Request from 127.0.0.1: GET /analytics/getReport
+2025-10-09 15:35:15,686 - INFO - 127.0.0.1 - - [09/Oct/2025 15:35:15] "[31m[1mGET /analytics/getReport?apiKey=your_secret_analytics_key HTTP/1.1[0m" 403 -
+2025-10-09 15:35:41,407 - INFO - Request from 127.0.0.1: POST /analytics/generateReport
+2025-10-09 15:35:41,408 - INFO - 127.0.0.1 - - [09/Oct/2025 15:35:41] "[31m[1mPOST /analytics/generateReport?apiKey=your_secret_analytics_key HTTP/1.1[0m" 403 -
+2025-10-09 15:36:21,983 - INFO - Request from 127.0.0.1: POST /analytics/generateReport
+2025-10-09 15:36:21,984 - INFO - 127.0.0.1 - - [09/Oct/2025 15:36:21] "[31m[1mPOST /analytics/generateReport?apiKey=a-secure-and-random-analytics-api-key-for-your-reports HTTP/1.1[0m" 405 -
+2025-10-09 15:36:25,983 - INFO - Request from 127.0.0.1: GET /analytics/generateReport
+2025-10-09 15:36:25,985 - INFO - 127.0.0.1 - - [09/Oct/2025 15:36:25] "[35m[1mGET /analytics/generateReport?apiKey=a-secure-and-random-analytics-api-key-for-your-reports HTTP/1.1[0m" 202 -
+2025-10-09 15:37:01,241 - INFO - Request from 127.0.0.1: GET /analytics/getReport
+2025-10-09 15:37:01,259 - INFO - 127.0.0.1 - - [09/Oct/2025 15:37:01] "GET /analytics/getReport?apiKey=a-secure-and-random-analytics-api-key-for-your-reports HTTP/1.1" 200 -
+2025-10-09 15:41:19,829 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\backend\\routes\\course_routes.py', reloading
+2025-10-09 15:41:20,864 - INFO -  * Restarting with stat
+2025-10-09 15:41:23,691 - WARNING -  * Debugger is active!
+2025-10-09 15:41:23,704 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 15:41:37,311 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\backend\\routes\\course_routes.py', reloading
+2025-10-09 15:41:38,325 - INFO -  * Restarting with stat
+2025-10-09 15:41:41,291 - WARNING -  * Debugger is active!
+2025-10-09 15:41:41,307 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 15:41:41,437 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\backend\\routes\\course_routes.py', reloading
+2025-10-09 15:41:41,942 - INFO -  * Restarting with stat
+2025-10-09 15:41:44,091 - WARNING -  * Debugger is active!
+2025-10-09 15:41:44,211 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 19:13:03,741 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\backend\\routes\\course_routes.py', reloading
+2025-10-09 19:13:04,777 - INFO -  * Restarting with stat
+2025-10-09 19:13:12,455 - WARNING -  * Debugger is active!
+2025-10-09 19:13:12,470 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 19:13:23,924 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\backend\\routes\\course_routes.py', reloading
+2025-10-09 19:13:24,409 - INFO -  * Restarting with stat
+2025-10-09 19:13:29,446 - WARNING -  * Debugger is active!
+2025-10-09 19:13:29,466 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 19:13:37,983 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\backend\\routes\\course_routes.py', reloading
+2025-10-09 19:13:38,487 - INFO -  * Restarting with stat
+2025-10-09 19:13:42,150 - WARNING -  * Debugger is active!
+2025-10-09 19:13:42,164 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 19:15:09,198 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\backend\\routes\\course_routes.py', reloading
+2025-10-09 19:15:09,422 - INFO -  * Restarting with stat
+2025-10-09 19:15:13,745 - WARNING -  * Debugger is active!
+2025-10-09 19:15:13,766 - INFO -  * Debugger PIN: 122-296-768
+2025-10-09 19:15:16,034 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\backend\\app.py', reloading
+2025-10-09 19:15:16,721 - INFO -  * Restarting with stat
