@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://127.0.0.1:5000';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:5000';
 
 export const authAPI = {
   login: async (email, password) => { // Changed parameter name for clarity
@@ -7,12 +7,13 @@ export const authAPI = {
       headers: {
         'Content-Type': 'application/json',
       },
+      credentials: 'include', // Important: tells the browser to send cookies
       body: JSON.stringify({ email, password }), // Changed 'username' to 'email' to match backend
     });
 
     if (!response.ok) {
-      const errorData = await response.json().catch(() => ({ message: 'Invalid Username or Password' }));
-      throw new Error(errorData.message || 'Invalid Username or Password');
+      const errorData = await response.json().catch(() => ({ error: 'Invalid Username or Password' }));
+      throw new Error(errorData.error || 'Invalid Username or Password');
     }
 
     return response.json();
@@ -24,6 +25,7 @@ export const authAPI = {
       headers: {
         'Content-Type': 'application/json',
       },
+      credentials: 'include', // Important: tells the browser to send cookies
       body: JSON.stringify({
         username,
         email,
@@ -39,7 +41,7 @@ export const authAPI = {
       } catch (e) {
         errorData = { message: 'An unknown registration error occurred.' };
       }
-      throw new Error(errorData.message || 'Registration failed');
+      throw new Error(errorData.error || 'Registration failed');
     }
 
     return response.json();

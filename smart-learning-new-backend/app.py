@@ -2,8 +2,10 @@
 Main application file for the Smart Learning Platform.
 """
 import logging
+import os
 from dotenv import load_dotenv
 from flask import Flask, jsonify, g
+from flask_cors import CORS
 from flasgger import Swagger
 from sqlalchemy.exc import OperationalError
 
@@ -26,6 +28,16 @@ from utils.seed_data import seed_users
 
 
 app = Flask(__name__)
+
+# --- CORS Configuration ---
+# Read allowed origins from an environment variable.
+# For local dev, this might be "http://localhost:5173,http://localhost:3000"
+# For production, this would be "https://your-frontend-domain.com"
+CORS_ORIGINS = os.getenv("CORS_ORIGINS", "http://localhost:5173,http://localhost:3000")
+allowed_origins = [origin.strip() for origin in CORS_ORIGINS.split(',')]
+CORS(app, resources={r"/*": {"origins": allowed_origins}}, supports_credentials=True)
+
+
 swagger = Swagger(app)
 
 # --- Swagger Configuration ---
@@ -109,4 +121,6 @@ def init_db_command():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # Use 0.0.0.0 to make the server accessible externally (for cloud deployment).
+    # The debug flag should be set to False in a production environment.
+    app.run(host="0.0.0.0", debug=True)

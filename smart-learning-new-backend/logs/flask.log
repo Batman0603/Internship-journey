@@ -505,3 +505,57 @@ TypeError: UserService.get_all_users() takes 0 positional arguments but 1 was gi
 2025-10-09 19:15:13,766 - INFO -  * Debugger PIN: 122-296-768
 2025-10-09 19:15:16,034 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Documents\\Presidio Intern\\week 2\\backend\\app.py', reloading
 2025-10-09 19:15:16,721 - INFO -  * Restarting with stat
+2025-10-10 23:13:58,781 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-10 23:13:58,782 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-10 23:13:58,784 - INFO -  * Restarting with stat
+2025-10-10 23:14:00,842 - WARNING -  * Debugger is active!
+2025-10-10 23:14:00,852 - INFO -  * Debugger PIN: 122-296-768
+2025-10-10 23:14:59,650 - INFO - Request from 127.0.0.1: GET /api/docs
+2025-10-10 23:14:59,650 - INFO - 127.0.0.1 - - [10/Oct/2025 23:14:59] "[33mGET /api/docs HTTP/1.1[0m" 404 -
+2025-10-10 23:14:59,801 - INFO - Request from 127.0.0.1: GET /favicon.ico
+2025-10-10 23:14:59,801 - INFO - 127.0.0.1 - - [10/Oct/2025 23:14:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-10 23:15:10,078 - INFO - Request from 127.0.0.1: GET /api/docs/
+2025-10-10 23:15:10,079 - INFO - 127.0.0.1 - - [10/Oct/2025 23:15:10] "[33mGET /api/docs/ HTTP/1.1[0m" 404 -
+2025-10-10 23:15:19,951 - INFO - Request from 127.0.0.1: GET /apidocs/
+2025-10-10 23:15:20,355 - INFO - 127.0.0.1 - - [10/Oct/2025 23:15:20] "GET /apidocs/ HTTP/1.1" 200 -
+2025-10-10 23:15:20,392 - INFO - Request from 127.0.0.1: GET /flasgger_static/swagger-ui.css
+2025-10-10 23:15:20,398 - INFO - Request from 127.0.0.1: GET /flasgger_static/swagger-ui-bundle.js
+2025-10-10 23:15:20,399 - INFO - Request from 127.0.0.1: GET /flasgger_static/swagger-ui-standalone-preset.js
+2025-10-10 23:15:20,418 - INFO - Request from 127.0.0.1: GET /flasgger_static/lib/jquery.min.js
+2025-10-10 23:15:20,793 - INFO - 127.0.0.1 - - [10/Oct/2025 23:15:20] "GET /flasgger_static/swagger-ui.css HTTP/1.1" 200 -
+2025-10-10 23:15:21,018 - INFO - 127.0.0.1 - - [10/Oct/2025 23:15:21] "GET /flasgger_static/lib/jquery.min.js HTTP/1.1" 200 -
+2025-10-10 23:15:21,180 - INFO - 127.0.0.1 - - [10/Oct/2025 23:15:21] "GET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2025-10-10 23:15:21,460 - INFO - 127.0.0.1 - - [10/Oct/2025 23:15:21] "GET /flasgger_static/swagger-ui-bundle.js HTTP/1.1" 200 -
+2025-10-10 23:15:21,683 - INFO - Request from 127.0.0.1: GET /apispec_1.json
+2025-10-10 23:15:21,760 - INFO - 127.0.0.1 - - [10/Oct/2025 23:15:21] "GET /apispec_1.json HTTP/1.1" 200 -
+2025-10-10 23:15:21,760 - INFO - Request from 127.0.0.1: GET /flasgger_static/favicon-32x32.png
+2025-10-10 23:15:21,790 - INFO - 127.0.0.1 - - [10/Oct/2025 23:15:21] "GET /flasgger_static/favicon-32x32.png HTTP/1.1" 200 -
+2025-10-10 23:15:38,158 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-10 23:15:38,159 - INFO - 127.0.0.1 - - [10/Oct/2025 23:15:38] "[31m[1mGET /admin/logs HTTP/1.1[0m" 401 -
+2025-10-10 23:18:07,044 - INFO - Request from 127.0.0.1: OPTIONS /auth/signup
+2025-10-10 23:18:07,048 - INFO - 127.0.0.1 - - [10/Oct/2025 23:18:07] "OPTIONS /auth/signup HTTP/1.1" 200 -
+2025-10-10 23:19:19,555 - INFO - Request from 127.0.0.1: OPTIONS /auth/login
+2025-10-10 23:19:19,603 - INFO - 127.0.0.1 - - [10/Oct/2025 23:19:19] "OPTIONS /auth/login HTTP/1.1" 200 -
+2025-10-10 23:19:43,032 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\app.py', reloading
+2025-10-10 23:19:43,932 - INFO -  * Restarting with stat
+2025-10-10 23:19:49,435 - WARNING -  * Debugger is active!
+2025-10-10 23:19:49,444 - INFO -  * Debugger PIN: 122-296-768
+2025-10-10 23:21:56,562 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\app.py', reloading
+2025-10-10 23:21:57,211 - INFO -  * Restarting with stat
+2025-10-10 23:22:07,999 - WARNING -  * Debugger is active!
+2025-10-10 23:22:08,009 - INFO -  * Debugger PIN: 122-296-768
+2025-10-10 23:23:09,734 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\app.py', reloading
+2025-10-10 23:23:10,514 - INFO -  * Restarting with stat
+2025-10-10 23:23:13,748 - WARNING -  * Debugger is active!
+2025-10-10 23:23:13,754 - INFO -  * Debugger PIN: 122-296-768
+2025-10-10 23:23:38,662 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\app.py', reloading
+2025-10-10 23:23:39,114 - INFO -  * Restarting with stat
+2025-10-10 23:23:41,779 - WARNING -  * Debugger is active!
+2025-10-10 23:23:41,788 - INFO -  * Debugger PIN: 122-296-768
+2025-10-10 23:24:42,660 - INFO - Request from 127.0.0.1: OPTIONS /auth/signup
+2025-10-10 23:24:42,669 - INFO - 127.0.0.1 - - [10/Oct/2025 23:24:42] "OPTIONS /auth/signup HTTP/1.1" 200 -
+2025-10-10 23:24:42,677 - INFO - Request from 127.0.0.1: POST /auth/signup
+2025-10-10 23:24:43,203 - INFO - 127.0.0.1 - - [10/Oct/2025 23:24:43] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 500 -
+2025-10-10 23:26:18,963 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\auth\\jwt_auth.py', reloading
+2025-10-10 23:26:19,524 - INFO -  * Restarting with stat

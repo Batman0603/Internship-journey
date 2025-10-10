@@ -7,11 +7,10 @@ from utils.database import get_db
 
 def _get_user_from_token(db):
     """Helper function to decode token, retrieve user, and handle errors."""
-    auth_header = request.headers.get("Authorization")
-    if not auth_header or not auth_header.startswith("Bearer "):
-        return None, (jsonify({"error": "Authorization header is missing or malformed"}), 401)
+    token = request.cookies.get("access_token")
 
-    token = auth_header.split(" ")[1]
+    if not token:
+        return None, (jsonify({"error": "Authentication token is missing"}), 401)
 
     try:
         payload = jwt.decode(token, Config.JWT_SECRET_KEY, algorithms=["HS256"])

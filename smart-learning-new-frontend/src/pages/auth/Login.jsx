@@ -15,8 +15,8 @@ export default function Login() {
         setLoading(true);
         setError('');
         try {
-            const data = await authAPI.login(username, password);
-            localStorage.setItem('token', data.token); // Store the token
+            // The cookie is set by the server, no need to handle the token here.
+            await authAPI.login(username, password);
             navigate('/dashboard');
         } catch (err) {
             setError(err.message || "An error occurred. Please try again.");
@@ -69,4 +69,3 @@ export default function Login() {
 
   );
 };
-

@@ -1,5 +1,5 @@
 from flask import Blueprint
-from auth.jwt_auth import login, signup
+from auth.jwt_auth import login, signup, logout
 
 auth_bp = Blueprint("auth", __name__)
 
@@ -69,3 +69,19 @@ def signup_route():
         description: User with this email already exists.
     """
     return signup()
+
+@auth_bp.route("/logout", methods=["POST"])
+def logout_route():
+    """
+    User Logout.
+    Clears the JWT access token cookie.
+    ---
+    tags:
+      - Authentication
+    responses:
+      200:
+        description: Logout successful.
+      500:
+        description: Logout failed.
+    """
+    return logout()
