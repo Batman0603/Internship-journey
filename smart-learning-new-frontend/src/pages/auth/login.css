@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full viewport height */
+    width: 100vw;
+    /* Full viewport width */
+    padding: 20px;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Styling for the form */
+.form {
+    background-color: #fff;
+    padding: 2.5rem;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Form title */
+.form-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+/* Error message */
+.error-message {
+    color: #B94A48;
+    background-color: #F2DEDE;
+    border: 1px solid #EED3D7;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Input container */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Labels for inputs */
+.input-container label {
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 4px;
+    color: #4B5563;
+    margin-bottom: 0.25rem;
+}
+
+/* Styling for input fields */
+.input-container input {
+    background-color: #fff;
+    color: #000;
+    padding: 0.75rem;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: border 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+.input-container input:focus {
+    border-color: #4F46E5;
+    outline: none;
+}
+
+/* Submit button */
+.submit {
+    display: block;
+    padding: 0.75rem;
+    background-color: #4F46E5;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+/* Hover effect for submit button */
+.submit:hover {
+    background-color: #4338CA;
+}
+
+/* Signup link */
+.signup-link {
+    color: #6B7280;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.signup-link a {
+    text-decoration: underline;
+    color: #4F46E5;
+}
