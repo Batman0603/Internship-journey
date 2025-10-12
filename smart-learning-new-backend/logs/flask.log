@@ -1460,3 +1460,30 @@ TypeError: UserService.get_all_users() takes 0 positional arguments but 1 was gi
 2025-10-12 15:42:08,429 - INFO - Request from 127.0.0.1: OPTIONS /user/profile
 2025-10-12 15:42:08,441 - INFO - 127.0.0.1 - - [12/Oct/2025 15:42:08] "[35m[1mOPTIONS /user/profile HTTP/1.1[0m" 500 -
 2025-10-12 15:44:03,753 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\app.py', reloading
+2025-10-12 15:44:04,555 - INFO -  * Restarting with stat
+2025-10-12 15:44:08,790 - WARNING -  * Debugger is active!
+2025-10-12 15:44:08,801 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 15:45:27,943 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 15:45:27,957 - INFO - 127.0.0.1 - - [12/Oct/2025 15:45:27] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 15:45:27,964 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 15:45:27,968 - INFO - 127.0.0.1 - - [12/Oct/2025 15:45:27] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 15:45:58,865 - INFO - Request from 127.0.0.1: OPTIONS /auth/login
+2025-10-12 15:45:58,868 - INFO - 127.0.0.1 - - [12/Oct/2025 15:45:58] "OPTIONS /auth/login HTTP/1.1" 200 -
+2025-10-12 15:45:58,877 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-12 15:45:59,469 - INFO - 127.0.0.1 - - [12/Oct/2025 15:45:59] "POST /auth/login HTTP/1.1" 200 -
+2025-10-12 15:45:59,546 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 15:45:59,549 - INFO - 127.0.0.1 - - [12/Oct/2025 15:45:59] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 15:45:59,550 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 15:45:59,560 - INFO - 127.0.0.1 - - [12/Oct/2025 15:45:59] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 15:52:49,436 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student/dashboard
+2025-10-12 15:52:49,438 - INFO - 127.0.0.1 - - [12/Oct/2025 15:52:49] "[33mOPTIONS /api/dashboard/student/dashboard HTTP/1.1[0m" 404 -
+2025-10-12 15:52:50,147 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student/dashboard
+2025-10-12 15:52:50,151 - INFO - 127.0.0.1 - - [12/Oct/2025 15:52:50] "[33mOPTIONS /api/dashboard/student/dashboard HTTP/1.1[0m" 404 -
+2025-10-12 15:53:01,688 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student/dashboard
+2025-10-12 15:53:01,688 - INFO - 127.0.0.1 - - [12/Oct/2025 15:53:01] "[33mOPTIONS /api/dashboard/student/dashboard HTTP/1.1[0m" 404 -
+2025-10-12 15:53:01,696 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student/dashboard
+2025-10-12 15:53:01,705 - INFO - 127.0.0.1 - - [12/Oct/2025 15:53:01] "[33mOPTIONS /api/dashboard/student/dashboard HTTP/1.1[0m" 404 -
+2025-10-12 15:53:08,948 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student/dashboard
+2025-10-12 15:53:08,951 - INFO - 127.0.0.1 - - [12/Oct/2025 15:53:08] "[33mOPTIONS /api/dashboard/student/dashboard HTTP/1.1[0m" 404 -
+2025-10-12 15:53:08,987 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student/dashboard
+2025-10-12 15:53:09,034 - INFO - 127.0.0.1 - - [12/Oct/2025 15:53:09] "[33mOPTIONS /api/dashboard/student/dashboard HTTP/1.1[0m" 404 -
