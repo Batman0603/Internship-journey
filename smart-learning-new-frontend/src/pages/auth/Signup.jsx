@@ -12,7 +12,7 @@ const Signup = () => {
     email: '',
     password: '',
     confirmPassword: '',
-    role: 'Student',
+    role: 'student', // Match backend role names
   });
   const navigate = useNavigate();
 
@@ -61,9 +61,20 @@ const Signup = () => {
         formData.password,
         formData.role
       );
-      setSuccess(`Account created for ${response.username || formData.username}! Redirecting to login...`);
-      // Optionally navigate to login after a short delay
-      setTimeout(() => navigate('/login'), 2000);
+      setSuccess(`Account created for ${formData.username}! Redirecting to your dashboard...`);
+
+      // The backend now logs the user in and returns the role.
+      // Redirect to the correct dashboard based on the role.
+      const { role } = response;
+      setTimeout(() => {
+        if (role === 'admin') {
+          navigate('/admin/dashboard');
+        } else if (role === 'teacher') {
+          navigate('/teacher/dashboard');
+        } else {
+          navigate('/student/dashboard');
+        }
+      }, 1500);
     } catch (err) {
       setError(err.message || 'An error occurred. Please try again.');
     } finally {
@@ -139,9 +150,9 @@ const Signup = () => {
               value={formData.role}
               onChange={handleInputChange}
             >
-              <option value="Student">Student</option>
-              <option value="Teacher">Teacher</option>
-              <option value="Admin">Admin</option>
+              <option value="student">Student</option>
+              <option value="teacher">Teacher</option>
+              <option value="admin">Admin</option>
             </select>
           </div>
 

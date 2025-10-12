@@ -3,6 +3,7 @@ Main application file for the Smart Learning Platform.
 """
 import logging
 import os
+from flask_jwt_extended import JWTManager
 from dotenv import load_dotenv
 from flask import Flask, jsonify, g
 from flask_cors import CORS
@@ -22,6 +23,7 @@ from routes.analytics_routes import analytics_bp
 from routes.assignment_routes import assignment_bp
 from routes.auth_routes import auth_bp
 from routes.course_routes import course_bp
+from routes.dashboard_routes import dashboard_bp
 from routes.user_routes import user_bp
 from utils.database import Base, engine, get_db
 from utils.seed_data import seed_users
@@ -29,13 +31,23 @@ from utils.seed_data import seed_users
 
 app = Flask(__name__)
 
-# --- CORS Configuration ---
-# Read allowed origins from an environment variable.
-# For local dev, this might be "http://localhost:5173,http://localhost:3000"
-# For production, this would be "https://your-frontend-domain.com"
-CORS_ORIGINS = os.getenv("CORS_ORIGINS", "http://localhost:5173,http://localhost:3000")
-allowed_origins = [origin.strip() for origin in CORS_ORIGINS.split(',')]
-CORS(app, resources={r"/*": {"origins": allowed_origins}}, supports_credentials=True)
+CORS(app,
+     origins=['http://127.0.0.1:5173', 'http://localhost:5173'],  # Your frontend URL
+     supports_credentials=True,  # 🔥 Allow cookies
+     allow_headers=['Content-Type', 'Authorization'],
+     expose_headers=['Content-Type'],
+     methods=['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'])
+
+# --- JWT Configuration (using flask-jwt-extended) ---
+app.config["JWT_SECRET_KEY"] = os.getenv("JWT_SECRET_KEY", "a_very_strong_and_secret_key")
+app.config["JWT_TOKEN_LOCATION"] = ["cookies"]
+app.config["JWT_COOKIE_SECURE"] = os.getenv('FLASK_ENV') != 'development'
+app.config["JWT_COOKIE_SAMESITE"] = "Lax" # Use "None" if frontend and backend are on different domains in production
+app.config["JWT_ACCESS_COOKIE_NAME"] = "access_token_cookie" # Explicitly set the cookie name
+app.config["JWT_COOKIE_CSRF_PROTECT"] = False # Set to True for better security if needed
+
+jwt = JWTManager(app)
+
 
 
 swagger = Swagger(app)
@@ -63,7 +75,7 @@ app.register_blueprint(user_bp, url_prefix="/user")
 app.register_blueprint(course_bp, url_prefix="/api/courses")
 app.register_blueprint(assignment_bp, url_prefix="/api/assignments")
 app.register_blueprint(analytics_bp, url_prefix="/analytics")
-
+app.register_blueprint(dashboard_bp, url_prefix="/api")
 
 @app.route("/")
 def home():

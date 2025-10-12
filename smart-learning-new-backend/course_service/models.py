@@ -8,7 +8,6 @@ class Course(Base):
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String(100), nullable=False)
     description = Column(Text, nullable=True)
-    rating = Column(Float, default=0.0)
     teacher_id = Column(Integer, ForeignKey("users.id"))   # linked to user (teacher)
 
     teacher = relationship("User", back_populates="courses")

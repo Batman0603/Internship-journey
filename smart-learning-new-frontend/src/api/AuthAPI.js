@@ -1,31 +1,45 @@
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:5000';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:5000";
+
+/**
+ * Helper function to handle fetch responses uniformly
+ */
+const handleResponse = async (response) => {
+  if (!response.ok) {
+    const errorData = await response.json().catch(() => ({}));
+    const message =
+      errorData.error || errorData.message || "Something went wrong. Please try again.";
+    throw new Error(message);
+  }
+  return response.json();
+};
 
 export const authAPI = {
-  login: async (email, password) => { // Changed parameter name for clarity
+  /**
+   * Login user and store JWT in HttpOnly cookie (set by backend)
+   */
+  login: async (email, password) => {
     const response = await fetch(`${API_BASE_URL}/auth/login`, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
-      credentials: 'include', // Important: tells the browser to send cookies
-      body: JSON.stringify({ email, password }), // Changed 'username' to 'email' to match backend
+      credentials: "include", // 🔥 Send & receive cookies (JWT HttpOnly)
+      body: JSON.stringify({ email, password }),
     });
 
-    if (!response.ok) {
-      const errorData = await response.json().catch(() => ({ error: 'Invalid Username or Password' }));
-      throw new Error(errorData.error || 'Invalid Username or Password');
-    }
-
-    return response.json();
+    return handleResponse(response);
   },
 
+  /**
+   * Register new user (backend sets JWT cookie on success)
+   */
   signup: async (username, email, password, role) => {
     const response = await fetch(`${API_BASE_URL}/auth/signup`, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
-      credentials: 'include', // Important: tells the browser to send cookies
+      credentials: "include",
       body: JSON.stringify({
         username,
         email,
@@ -34,16 +48,36 @@ export const authAPI = {
       }),
     });
 
-    if (!response.ok) {
-      let errorData;
-      try {
-        errorData = await response.json();
-      } catch (e) {
-        errorData = { message: 'An unknown registration error occurred.' };
-      }
-      throw new Error(errorData.error || 'Registration failed');
-    }
+    return handleResponse(response);
+  },
 
-    return response.json();
+  /**
+   * Logout user and clear JWT cookie
+   */
+  logout: async () => {
+    const response = await fetch(`${API_BASE_URL}/auth/logout`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      credentials: "include",
+    });
+
+    return handleResponse(response);
+  },
+
+  /**
+   * GET request to protected routes
+   */
+  get: async (endpoint) => {
+    const response = await fetch(`${API_BASE_URL}${endpoint}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      credentials: "include", // 🔒 Ensures JWT cookie is sent automatically
+    });
+
+    return handleResponse(response);
   },
 };

@@ -8,7 +8,7 @@ mysql-connector-python
 
 # Authentication & Security
 bcrypt
-PyJWT # For handling JSON Web Tokens
+Flask-JWT-Extended # For handling JSON Web Tokens
 
 # AI & Vector Search
 sentence-transformers

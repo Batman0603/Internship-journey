@@ -1,5 +1,5 @@
 from flask import Blueprint
-from auth.jwt_auth import login, signup, logout
+from auth.jwt_auth import handle_login, handle_signup, handle_logout
 
 auth_bp = Blueprint("auth", __name__)
 
@@ -7,10 +7,10 @@ auth_bp = Blueprint("auth", __name__)
 def login_route():
     """
     User Login.
-    Authenticates a user and returns a JWT access token.
+    User login route.
     ---
     tags:
-      - Authentication
+      - Auth
     parameters:
       - in: body
         name: body
@@ -29,16 +29,15 @@ def login_route():
               format: password
     responses:
       200:
-        description: Login successful, returns access token.
+        description: Login successful.
       401:
-        description: Invalid credentials.
+        description: Unauthorized.
     """
-    return login()
+    return handle_login()
 
 @auth_bp.route("/signup", methods=["POST"])
 def signup_route():
     """
-    User Signup.
     Registers a new user in the system.
     ---
     tags:
@@ -68,13 +67,12 @@ def signup_route():
       409:
         description: User with this email already exists.
     """
-    return signup()
+    return handle_signup()
 
 @auth_bp.route("/logout", methods=["POST"])
 def logout_route():
     """
-    User Logout.
-    Clears the JWT access token cookie.
+    Logs the user out by clearing the access_token cookie.
     ---
     tags:
       - Authentication
@@ -84,4 +82,4 @@ def logout_route():
       500:
         description: Logout failed.
     """
-    return logout()
+    return handle_logout()

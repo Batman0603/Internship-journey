@@ -8,7 +8,7 @@ from auth.rbac import role_required
 course_bp = Blueprint("courses", __name__)
 
 # Teacher creates a new course
-@course_bp.route("/courses", methods=["POST"])
+@course_bp.route("/new/courses", methods=["POST"])
 @role_required(["teacher"])
 def create_course(user):
     """
@@ -77,7 +77,7 @@ def enroll(user, course_id):
     return jsonify({"message": "Enrolled successfully", "course_id": enrollment.course_id})
 
 # Admin/Teacher: View all courses
-@course_bp.route("/courses", methods=["GET"])
+@course_bp.route("/all/courses", methods=["GET"])
 @role_required(["admin", "teacher","student"])
 def get_courses(user):
     """
@@ -109,8 +109,8 @@ def get_courses(user):
         name: sort
         schema:
           type: string
-          enum: [title_asc, rating_desc]
-        description: Sort courses. 'rating_desc' is a placeholder.
+          enum: [title_asc]
+        description: Sort courses by title.
     responses:
       200:
         description: A paginated list of courses.
@@ -134,14 +134,19 @@ def get_courses(user):
     page = request.args.get('page', 1, type=int)
     limit = request.args.get('limit', 5, type=int)
     category = request.args.get('category', None, type=str)
-    sort = request.args.get('sort', None, type=str)
+    sort = request.args.get('sort', 'title_asc', type=str)
 
     db: Session = next(get_db())
     courses, total_courses = service.CourseService.get_all_courses(db, page, limit, category, sort)
 
     courses_list = []
     for c in courses:
-        course_dict = {"id": c.id, "title": c.title, "teacher_id": c.teacher_id}
+        course_dict = {
+            "id": c.id, 
+            "title": c.title, 
+            "description": c.description, 
+            "teacher_id": c.teacher_id
+        }
         # Add HATEOAS links for each course
         courses_list.append(add_hateoas_links("courses", course_dict))
 
