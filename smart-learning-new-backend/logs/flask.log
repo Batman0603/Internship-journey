@@ -2017,3 +2017,7 @@ TypeError: UserService.get_all_users() takes 0 positional arguments but 1 was gi
 2025-10-13 06:20:04,079 - INFO - 127.0.0.1 - - [13/Oct/2025 06:20:04] "OPTIONS /api/courses/all HTTP/1.1" 200 -
 2025-10-13 06:20:04,176 - INFO - Request from 127.0.0.1: GET /api/courses/all
 2025-10-13 06:20:04,611 - INFO - 127.0.0.1 - - [13/Oct/2025 06:20:04] "GET /api/courses/all HTTP/1.1" 200 -
+2025-10-13 06:20:19,032 - INFO - Request from 127.0.0.1: OPTIONS /api/courses/2/enroll
+2025-10-13 06:20:19,036 - INFO - 127.0.0.1 - - [13/Oct/2025 06:20:19] "OPTIONS /api/courses/2/enroll HTTP/1.1" 200 -
+2025-10-13 06:20:19,039 - INFO - Request from 127.0.0.1: POST /api/courses/2/enroll
+2025-10-13 06:20:19,072 - INFO - 127.0.0.1 - - [13/Oct/2025 06:20:19] "POST /api/courses/2/enroll HTTP/1.1" 200 -
