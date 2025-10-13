@@ -10,9 +10,9 @@ def _create_token_and_response(user, message):
     """Helper to create token and response for login/signup."""
     # Create the claims for the JWT
     additional_claims = {"role": user.role, "username": user.username}
-    access_token = create_access_token(identity=user.id, additional_claims=additional_claims)
+    access_token = create_access_token(identity=str(user.id), additional_claims=additional_claims)
 
-    response_data = {"message": message, "role": user.role}
+    response_data = {"message": message, "role": user.role, "access_token": access_token}
     response = jsonify(response_data)
 
     set_access_cookies(response, access_token)

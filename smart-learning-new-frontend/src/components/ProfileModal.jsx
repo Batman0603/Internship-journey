@@ -6,7 +6,7 @@ import Typography from '@mui/joy/Typography';
 import Box from '@mui/joy/Box';
 
 const ProfileModal = ({ isOpen, onClose }) => {
-    const [userProfile, setUserProfile] = useState(null);
+    const [userProfile, setUserProfile] = useState('');
     const [error, setError] = useState('');
 
     useEffect(() => {

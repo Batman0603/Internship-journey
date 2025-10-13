@@ -1,5 +1,5 @@
-from flask import Blueprint, jsonify
-from auth.rbac import role_required
+from flask import Blueprint, jsonify, g
+from auth.rbac import login_required, role_required
 from course_service.service import CourseService
 from sqlalchemy.orm import Session
 
@@ -7,7 +7,7 @@ dashboard_bp = Blueprint("dashboard", __name__)
 
 @dashboard_bp.route("/admin/dashboard")
 @role_required(["admin"])
-def admin_dashboard(current_user):
+def admin_dashboard():
     """
     Admin dashboard endpoint.
     ---
@@ -21,11 +21,11 @@ def admin_dashboard(current_user):
       403:
         description: Access denied.
     """
-    return jsonify({"message": f"Welcome to the admin dashboard, {current_user.username}!"})
+    return jsonify({"message": f"Welcome to the admin dashboard, {g.user.username}!"})
 
 @dashboard_bp.route("/teacher/dashboard")
 @role_required(["teacher"])
-def teacher_dashboard(current_user):
+def teacher_dashboard():
     """
     Teacher dashboard endpoint.
     ---
@@ -39,11 +39,11 @@ def teacher_dashboard(current_user):
       403:
         description: Access denied.
     """
-    return jsonify({"message": f"Welcome to the teacher dashboard, {current_user.username}!"})
+    return jsonify({"message": f"Welcome to the teacher dashboard, {g.user.username}!"})
 
 @dashboard_bp.route("/student/dashboard")
-@role_required(["student"])
-def student_dashboard(current_user):
+@login_required
+def student_dashboard():
     """
     Student dashboard endpoint.
     ---
@@ -58,7 +58,7 @@ def student_dashboard(current_user):
         description: Access denied.
     """
     db: Session = g.db
-    enrolled_course_ids = {enrollment.course_id for enrollment in current_user.enrollments}
+    enrolled_course_ids = {enrollment.course_id for enrollment in g.user.enrollments}
     
     # Fetch all courses, assuming we don't need pagination for the dashboard view for now
     all_courses, _ = CourseService.get_all_courses(db, page=1, limit=100)
@@ -73,6 +73,6 @@ def student_dashboard(current_user):
         })
 
     return jsonify({
-        "message": f"Welcome to the student dashboard, {current_user.username}!",
+        "message": f"Welcome to the student dashboard, {g.user.username}!",
         "courses": courses_with_status
     })

@@ -1487,3 +1487,533 @@ TypeError: UserService.get_all_users() takes 0 positional arguments but 1 was gi
 2025-10-12 15:53:08,951 - INFO - 127.0.0.1 - - [12/Oct/2025 15:53:08] "[33mOPTIONS /api/dashboard/student/dashboard HTTP/1.1[0m" 404 -
 2025-10-12 15:53:08,987 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student/dashboard
 2025-10-12 15:53:09,034 - INFO - 127.0.0.1 - - [12/Oct/2025 15:53:09] "[33mOPTIONS /api/dashboard/student/dashboard HTTP/1.1[0m" 404 -
+2025-10-12 16:19:58,277 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student/dashboard
+2025-10-12 16:19:58,337 - INFO - 127.0.0.1 - - [12/Oct/2025 16:19:58] "[33mOPTIONS /api/dashboard/student/dashboard HTTP/1.1[0m" 404 -
+2025-10-12 16:19:58,339 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student/dashboard
+2025-10-12 16:19:58,410 - INFO - 127.0.0.1 - - [12/Oct/2025 16:19:58] "[33mOPTIONS /api/dashboard/student/dashboard HTTP/1.1[0m" 404 -
+2025-10-12 18:58:46,149 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student/dashboard
+2025-10-12 18:58:46,149 - INFO - 127.0.0.1 - - [12/Oct/2025 18:58:46] "[33mOPTIONS /api/dashboard/student/dashboard HTTP/1.1[0m" 404 -
+2025-10-12 18:58:46,168 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student/dashboard
+2025-10-12 18:58:46,168 - INFO - 127.0.0.1 - - [12/Oct/2025 18:58:46] "[33mOPTIONS /api/dashboard/student/dashboard HTTP/1.1[0m" 404 -
+2025-10-12 19:14:18,983 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 19:14:18,988 - INFO - 127.0.0.1 - - [12/Oct/2025 19:14:18] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 19:15:00,100 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\auth\\rbac.py', reloading
+2025-10-12 19:15:05,159 - INFO -  * Restarting with stat
+2025-10-12 19:15:14,764 - WARNING -  * Debugger is active!
+2025-10-12 19:15:14,776 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 19:15:59,071 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\auth\\rbac.py', reloading
+2025-10-12 19:15:59,544 - INFO -  * Restarting with stat
+2025-10-12 19:16:03,201 - WARNING -  * Debugger is active!
+2025-10-12 19:16:03,215 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 19:16:05,344 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\auth\\rbac.py', reloading
+2025-10-12 19:16:05,725 - INFO -  * Restarting with stat
+2025-10-12 19:16:34,361 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.73:5000
+2025-10-12 19:16:34,361 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-12 19:16:34,361 - INFO -  * Restarting with stat
+2025-10-12 19:16:36,791 - WARNING -  * Debugger is active!
+2025-10-12 19:16:36,802 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 19:16:46,499 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 19:16:46,539 - INFO - 127.0.0.1 - - [12/Oct/2025 19:16:46] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 19:16:46,542 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 19:16:46,621 - INFO - 127.0.0.1 - - [12/Oct/2025 19:16:46] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 19:16:55,380 - INFO - Request from 127.0.0.1: OPTIONS /user/profile
+2025-10-12 19:16:55,385 - INFO - 127.0.0.1 - - [12/Oct/2025 19:16:55] "OPTIONS /user/profile HTTP/1.1" 200 -
+2025-10-12 19:16:55,395 - INFO - Request from 127.0.0.1: GET /user/profile
+2025-10-12 19:16:55,398 - INFO - 127.0.0.1 - - [12/Oct/2025 19:16:55] "[31m[1mGET /user/profile HTTP/1.1[0m" 401 -
+2025-10-12 19:18:40,023 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\app.py', reloading
+2025-10-12 19:18:40,888 - INFO -  * Restarting with stat
+2025-10-12 19:18:44,019 - WARNING -  * Debugger is active!
+2025-10-12 19:18:44,030 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 19:18:49,267 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\app.py', reloading
+2025-10-12 19:18:49,873 - INFO -  * Restarting with stat
+2025-10-12 19:18:52,688 - WARNING -  * Debugger is active!
+2025-10-12 19:18:52,700 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 19:19:12,950 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 19:19:12,958 - INFO - 127.0.0.1 - - [12/Oct/2025 19:19:12] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 19:19:12,959 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 19:19:12,970 - INFO - 127.0.0.1 - - [12/Oct/2025 19:19:12] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 19:19:28,563 - INFO - Request from 127.0.0.1: OPTIONS /auth/login
+2025-10-12 19:19:28,566 - INFO - 127.0.0.1 - - [12/Oct/2025 19:19:28] "OPTIONS /auth/login HTTP/1.1" 200 -
+2025-10-12 19:19:28,586 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-12 19:19:29,271 - INFO - 127.0.0.1 - - [12/Oct/2025 19:19:29] "POST /auth/login HTTP/1.1" 200 -
+2025-10-12 19:19:29,348 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 19:19:29,350 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 19:19:29,351 - INFO - 127.0.0.1 - - [12/Oct/2025 19:19:29] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 19:19:29,357 - INFO - 127.0.0.1 - - [12/Oct/2025 19:19:29] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 19:40:46,531 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\routes\\course_routes.py', reloading
+2025-10-12 19:40:47,296 - INFO -  * Restarting with stat
+2025-10-12 19:40:53,368 - WARNING -  * Debugger is active!
+2025-10-12 19:40:53,381 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 19:40:59,663 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\routes\\course_routes.py', reloading
+2025-10-12 19:41:00,752 - INFO -  * Restarting with stat
+2025-10-12 19:41:06,311 - WARNING -  * Debugger is active!
+2025-10-12 19:41:06,321 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 19:41:16,741 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\routes\\course_routes.py', reloading
+2025-10-12 19:41:17,051 - INFO -  * Restarting with stat
+2025-10-12 19:41:21,201 - WARNING -  * Debugger is active!
+2025-10-12 19:41:21,213 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 19:41:29,521 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\routes\\course_routes.py', reloading
+2025-10-12 19:41:29,849 - INFO -  * Restarting with stat
+2025-10-12 19:41:32,358 - WARNING -  * Debugger is active!
+2025-10-12 19:41:32,369 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 19:41:38,574 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\routes\\course_routes.py', reloading
+2025-10-12 19:41:38,911 - INFO -  * Restarting with stat
+2025-10-12 19:41:41,934 - WARNING -  * Debugger is active!
+2025-10-12 19:41:41,955 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 19:41:46,745 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 19:41:46,755 - INFO - 127.0.0.1 - - [12/Oct/2025 19:41:46] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 19:41:57,144 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 19:41:57,173 - INFO - 127.0.0.1 - - [12/Oct/2025 19:41:57] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 19:42:24,750 - INFO - Request from 127.0.0.1: OPTIONS /auth/logout
+2025-10-12 19:42:24,751 - INFO - 127.0.0.1 - - [12/Oct/2025 19:42:24] "OPTIONS /auth/logout HTTP/1.1" 200 -
+2025-10-12 19:42:24,761 - INFO - Request from 127.0.0.1: POST /auth/logout
+2025-10-12 19:42:24,765 - INFO - 127.0.0.1 - - [12/Oct/2025 19:42:24] "POST /auth/logout HTTP/1.1" 200 -
+2025-10-12 19:42:37,307 - INFO - Request from 127.0.0.1: OPTIONS /auth/login
+2025-10-12 19:42:37,312 - INFO - 127.0.0.1 - - [12/Oct/2025 19:42:37] "OPTIONS /auth/login HTTP/1.1" 200 -
+2025-10-12 19:42:37,330 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-12 19:42:37,944 - INFO - 127.0.0.1 - - [12/Oct/2025 19:42:37] "POST /auth/login HTTP/1.1" 200 -
+2025-10-12 19:42:38,069 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 19:42:38,075 - INFO - 127.0.0.1 - - [12/Oct/2025 19:42:38] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 19:42:38,076 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 19:42:38,079 - INFO - 127.0.0.1 - - [12/Oct/2025 19:42:38] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 19:43:53,237 - INFO - Request from 127.0.0.1: OPTIONS /auth/login
+2025-10-12 19:43:53,241 - INFO - 127.0.0.1 - - [12/Oct/2025 19:43:53] "OPTIONS /auth/login HTTP/1.1" 200 -
+2025-10-12 19:43:53,249 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-12 19:43:53,701 - INFO - 127.0.0.1 - - [12/Oct/2025 19:43:53] "POST /auth/login HTTP/1.1" 200 -
+2025-10-12 19:43:53,812 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 19:43:53,816 - INFO - 127.0.0.1 - - [12/Oct/2025 19:43:53] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 19:43:53,818 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 19:43:53,829 - INFO - 127.0.0.1 - - [12/Oct/2025 19:43:53] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 19:44:07,339 - INFO - Request from 127.0.0.1: GET /api/dashboard/student
+2025-10-12 19:44:07,345 - INFO - 127.0.0.1 - - [12/Oct/2025 19:44:07] "[33mGET /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 19:44:07,448 - INFO - Request from 127.0.0.1: GET /favicon.ico
+2025-10-12 19:44:07,451 - INFO - 127.0.0.1 - - [12/Oct/2025 19:44:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-12 20:12:56,492 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 20:12:56,537 - INFO - 127.0.0.1 - - [12/Oct/2025 20:12:56] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 20:12:56,538 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 20:12:56,578 - INFO - 127.0.0.1 - - [12/Oct/2025 20:12:56] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 20:13:38,865 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\user_service\\service.py', reloading
+2025-10-12 20:13:39,230 - INFO -  * Restarting with stat
+2025-10-12 20:13:46,027 - WARNING -  * Debugger is active!
+2025-10-12 20:13:46,051 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 20:27:34,244 - INFO - Request from 127.0.0.1: OPTIONS /auth/logout
+2025-10-12 20:27:34,246 - INFO - 127.0.0.1 - - [12/Oct/2025 20:27:34] "OPTIONS /auth/logout HTTP/1.1" 200 -
+2025-10-12 20:27:34,257 - INFO - Request from 127.0.0.1: POST /auth/logout
+2025-10-12 20:27:34,259 - INFO - 127.0.0.1 - - [12/Oct/2025 20:27:34] "POST /auth/logout HTTP/1.1" 200 -
+2025-10-12 20:27:46,307 - INFO - Request from 127.0.0.1: OPTIONS /auth/login
+2025-10-12 20:27:46,315 - INFO - 127.0.0.1 - - [12/Oct/2025 20:27:46] "OPTIONS /auth/login HTTP/1.1" 200 -
+2025-10-12 20:27:46,323 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-12 20:27:46,912 - INFO - 127.0.0.1 - - [12/Oct/2025 20:27:46] "POST /auth/login HTTP/1.1" 200 -
+2025-10-12 20:27:46,972 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 20:27:46,974 - INFO - 127.0.0.1 - - [12/Oct/2025 20:27:46] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 20:27:46,975 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 20:27:46,984 - INFO - 127.0.0.1 - - [12/Oct/2025 20:27:46] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 20:31:02,522 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\auth\\rbac.py', reloading
+2025-10-12 20:31:02,957 - INFO -  * Restarting with stat
+2025-10-12 20:31:08,054 - WARNING -  * Debugger is active!
+2025-10-12 20:31:08,069 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 20:32:36,335 - INFO - Request from 127.0.0.1: GET /api/courses/all/courses
+2025-10-12 20:32:36,339 - INFO - 127.0.0.1 - - [12/Oct/2025 20:32:36] "[33mGET /api/courses/all/courses HTTP/1.1[0m" 404 -
+2025-10-12 20:32:51,477 - INFO - Request from 127.0.0.1: GET /api/courses/all/courses
+2025-10-12 20:32:51,478 - INFO - 127.0.0.1 - - [12/Oct/2025 20:32:51] "[33mGET /api/courses/all/courses HTTP/1.1[0m" 404 -
+2025-10-12 20:32:51,704 - INFO - Request from 127.0.0.1: GET /api/courses/all/courses
+2025-10-12 20:32:51,704 - INFO - 127.0.0.1 - - [12/Oct/2025 20:32:51] "[33mGET /api/courses/all/courses HTTP/1.1[0m" 404 -
+2025-10-12 20:33:00,199 - INFO - Request from 127.0.0.1: GET /analytics
+2025-10-12 20:33:00,201 - INFO - 127.0.0.1 - - [12/Oct/2025 20:33:00] "[31m[1mGET /analytics HTTP/1.1[0m" 403 -
+2025-10-12 20:44:41,024 - INFO - Request from 127.0.0.1: GET /auth/login
+2025-10-12 20:44:41,025 - INFO - 127.0.0.1 - - [12/Oct/2025 20:44:41] "[31m[1mGET /auth/login HTTP/1.1[0m" 405 -
+2025-10-12 20:44:46,403 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-12 20:44:47,022 - INFO - 127.0.0.1 - - [12/Oct/2025 20:44:47] "POST /auth/login HTTP/1.1" 200 -
+2025-10-12 20:45:13,790 - INFO - Request from 127.0.0.1: POST /admin/prifiles
+2025-10-12 20:45:13,791 - INFO - 127.0.0.1 - - [12/Oct/2025 20:45:13] "[33mPOST /admin/prifiles HTTP/1.1[0m" 404 -
+2025-10-12 20:45:17,813 - INFO - Request from 127.0.0.1: GET /admin/prifiles
+2025-10-12 20:45:17,813 - INFO - 127.0.0.1 - - [12/Oct/2025 20:45:17] "[33mGET /admin/prifiles HTTP/1.1[0m" 404 -
+2025-10-12 20:45:27,964 - INFO - Request from 127.0.0.1: GET /admin/profiles
+2025-10-12 20:45:27,965 - INFO - 127.0.0.1 - - [12/Oct/2025 20:45:27] "[33mGET /admin/profiles HTTP/1.1[0m" 404 -
+2025-10-12 20:45:35,531 - INFO - Request from 127.0.0.1: GET /admin/profile
+2025-10-12 20:45:35,533 - INFO - 127.0.0.1 - - [12/Oct/2025 20:45:35] "[33mGET /admin/profile HTTP/1.1[0m" 404 -
+2025-10-12 20:46:09,134 - INFO - Request from 127.0.0.1: GET /user_profile/profile
+2025-10-12 20:46:09,135 - INFO - 127.0.0.1 - - [12/Oct/2025 20:46:09] "[33mGET /user_profile/profile HTTP/1.1[0m" 404 -
+2025-10-12 20:46:09,889 - INFO - Request from 127.0.0.1: GET /user_profile/profile
+2025-10-12 20:46:09,892 - INFO - 127.0.0.1 - - [12/Oct/2025 20:46:09] "[33mGET /user_profile/profile HTTP/1.1[0m" 404 -
+2025-10-12 20:46:10,240 - INFO - Request from 127.0.0.1: GET /user_profile/profile
+2025-10-12 20:46:10,242 - INFO - 127.0.0.1 - - [12/Oct/2025 20:46:10] "[33mGET /user_profile/profile HTTP/1.1[0m" 404 -
+2025-10-12 20:46:10,472 - INFO - Request from 127.0.0.1: GET /user_profile/profile
+2025-10-12 20:46:10,473 - INFO - 127.0.0.1 - - [12/Oct/2025 20:46:10] "[33mGET /user_profile/profile HTTP/1.1[0m" 404 -
+2025-10-12 20:46:10,675 - INFO - Request from 127.0.0.1: GET /user_profile/profile
+2025-10-12 20:46:10,679 - INFO - 127.0.0.1 - - [12/Oct/2025 20:46:10] "[33mGET /user_profile/profile HTTP/1.1[0m" 404 -
+2025-10-12 20:46:10,860 - INFO - Request from 127.0.0.1: GET /user_profile/profile
+2025-10-12 20:46:10,861 - INFO - 127.0.0.1 - - [12/Oct/2025 20:46:10] "[33mGET /user_profile/profile HTTP/1.1[0m" 404 -
+2025-10-12 20:46:11,013 - INFO - Request from 127.0.0.1: GET /user_profile/profile
+2025-10-12 20:46:11,016 - INFO - 127.0.0.1 - - [12/Oct/2025 20:46:11] "[33mGET /user_profile/profile HTTP/1.1[0m" 404 -
+2025-10-12 20:53:17,766 - INFO - Request from 127.0.0.1: GET /user/profile
+2025-10-12 20:53:17,768 - INFO - 127.0.0.1 - - [12/Oct/2025 20:53:17] "[31m[1mGET /user/profile HTTP/1.1[0m" 422 -
+2025-10-12 20:54:40,992 - INFO - Request from 127.0.0.1: GET /admin/users
+2025-10-12 20:54:40,993 - INFO - 127.0.0.1 - - [12/Oct/2025 20:54:40] "[31m[1mGET /admin/users HTTP/1.1[0m" 422 -
+2025-10-12 20:56:39,402 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 20:56:39,513 - INFO - 127.0.0.1 - - [12/Oct/2025 20:56:39] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 20:56:39,555 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 20:56:39,567 - INFO - 127.0.0.1 - - [12/Oct/2025 20:56:39] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 20:57:15,230 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\auth\\jwt_auth.py', reloading
+2025-10-12 20:57:16,634 - INFO -  * Restarting with stat
+2025-10-12 20:57:21,815 - WARNING -  * Debugger is active!
+2025-10-12 20:57:21,827 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 20:58:34,260 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\auth\\jwt_auth.py', reloading
+2025-10-12 20:58:35,277 - INFO -  * Restarting with stat
+2025-10-12 20:58:39,118 - WARNING -  * Debugger is active!
+2025-10-12 20:58:39,128 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 20:58:43,264 - INFO - Request from 127.0.0.1: GET /admin/users
+2025-10-12 20:58:43,267 - INFO - 127.0.0.1 - - [12/Oct/2025 20:58:43] "[31m[1mGET /admin/users HTTP/1.1[0m" 422 -
+2025-10-12 20:58:51,565 - INFO - Request from 127.0.0.1: GET /admin/auth/login
+2025-10-12 20:58:51,567 - INFO - 127.0.0.1 - - [12/Oct/2025 20:58:51] "[33mGET /admin/auth/login HTTP/1.1[0m" 404 -
+2025-10-12 20:58:55,446 - INFO - Request from 127.0.0.1: POST /admin/auth/login
+2025-10-12 20:58:55,447 - INFO - 127.0.0.1 - - [12/Oct/2025 20:58:55] "[33mPOST /admin/auth/login HTTP/1.1[0m" 404 -
+2025-10-12 20:58:56,795 - INFO - Request from 127.0.0.1: POST /admin/auth/login
+2025-10-12 20:58:56,797 - INFO - 127.0.0.1 - - [12/Oct/2025 20:58:56] "[33mPOST /admin/auth/login HTTP/1.1[0m" 404 -
+2025-10-12 20:59:06,851 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-12 20:59:07,383 - INFO - 127.0.0.1 - - [12/Oct/2025 20:59:07] "POST /auth/login HTTP/1.1" 200 -
+2025-10-12 20:59:36,203 - INFO - Request from 127.0.0.1: POST /admin/users
+2025-10-12 20:59:36,205 - INFO - 127.0.0.1 - - [12/Oct/2025 20:59:36] "[31m[1mPOST /admin/users HTTP/1.1[0m" 422 -
+2025-10-12 20:59:51,654 - INFO - Request from 127.0.0.1: GET /admin/users
+2025-10-12 20:59:51,657 - INFO - 127.0.0.1 - - [12/Oct/2025 20:59:51] "[31m[1mGET /admin/users HTTP/1.1[0m" 422 -
+2025-10-12 20:59:52,610 - INFO - Request from 127.0.0.1: GET /admin/users
+2025-10-12 20:59:52,612 - INFO - 127.0.0.1 - - [12/Oct/2025 20:59:52] "[31m[1mGET /admin/users HTTP/1.1[0m" 422 -
+2025-10-12 21:00:11,648 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-12 21:00:11,650 - INFO - 127.0.0.1 - - [12/Oct/2025 21:00:11] "[31m[1mGET /admin/logs HTTP/1.1[0m" 422 -
+2025-10-12 21:01:48,099 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\auth\\jwt_auth.py', reloading
+2025-10-12 21:01:48,755 - INFO -  * Restarting with stat
+2025-10-12 21:01:51,795 - WARNING -  * Debugger is active!
+2025-10-12 21:01:51,808 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 21:27:02,356 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\auth\\jwt_auth.py', reloading
+2025-10-12 21:27:02,849 - INFO -  * Restarting with stat
+2025-10-12 21:27:06,057 - WARNING -  * Debugger is active!
+2025-10-12 21:27:06,065 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 21:27:10,240 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\auth\\jwt_auth.py', reloading
+2025-10-12 21:27:10,765 - INFO -  * Restarting with stat
+2025-10-12 21:27:16,756 - WARNING -  * Debugger is active!
+2025-10-12 21:27:16,766 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 21:27:23,714 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-12 21:27:23,718 - INFO - 127.0.0.1 - - [12/Oct/2025 21:27:23] "[31m[1mGET /admin/logs HTTP/1.1[0m" 422 -
+2025-10-12 21:27:24,572 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-12 21:27:24,576 - INFO - 127.0.0.1 - - [12/Oct/2025 21:27:24] "[31m[1mGET /admin/logs HTTP/1.1[0m" 422 -
+2025-10-12 21:27:24,906 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-12 21:27:24,908 - INFO - 127.0.0.1 - - [12/Oct/2025 21:27:24] "[31m[1mGET /admin/logs HTTP/1.1[0m" 422 -
+2025-10-12 21:27:25,133 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-12 21:27:25,133 - INFO - 127.0.0.1 - - [12/Oct/2025 21:27:25] "[31m[1mGET /admin/logs HTTP/1.1[0m" 422 -
+2025-10-12 21:27:25,347 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-12 21:27:25,350 - INFO - 127.0.0.1 - - [12/Oct/2025 21:27:25] "[31m[1mGET /admin/logs HTTP/1.1[0m" 422 -
+2025-10-12 21:27:25,535 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-12 21:27:25,539 - INFO - 127.0.0.1 - - [12/Oct/2025 21:27:25] "[31m[1mGET /admin/logs HTTP/1.1[0m" 422 -
+2025-10-12 21:27:25,729 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-12 21:27:25,731 - INFO - 127.0.0.1 - - [12/Oct/2025 21:27:25] "[31m[1mGET /admin/logs HTTP/1.1[0m" 422 -
+2025-10-12 21:27:25,910 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-12 21:27:25,955 - INFO - 127.0.0.1 - - [12/Oct/2025 21:27:25] "[31m[1mGET /admin/logs HTTP/1.1[0m" 422 -
+2025-10-12 21:27:26,085 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-12 21:27:26,091 - INFO - 127.0.0.1 - - [12/Oct/2025 21:27:26] "[31m[1mGET /admin/logs HTTP/1.1[0m" 422 -
+2025-10-12 21:27:26,263 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-12 21:27:26,264 - INFO - 127.0.0.1 - - [12/Oct/2025 21:27:26] "[31m[1mGET /admin/logs HTTP/1.1[0m" 422 -
+2025-10-12 21:27:26,443 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-12 21:27:26,444 - INFO - 127.0.0.1 - - [12/Oct/2025 21:27:26] "[31m[1mGET /admin/logs HTTP/1.1[0m" 422 -
+2025-10-12 21:27:26,617 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-12 21:27:26,618 - INFO - 127.0.0.1 - - [12/Oct/2025 21:27:26] "[31m[1mGET /admin/logs HTTP/1.1[0m" 422 -
+2025-10-12 21:27:26,793 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-12 21:27:26,794 - INFO - 127.0.0.1 - - [12/Oct/2025 21:27:26] "[31m[1mGET /admin/logs HTTP/1.1[0m" 422 -
+2025-10-12 21:27:26,943 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-12 21:27:26,945 - INFO - 127.0.0.1 - - [12/Oct/2025 21:27:26] "[31m[1mGET /admin/logs HTTP/1.1[0m" 422 -
+2025-10-12 21:29:08,551 - INFO - Request from 127.0.0.1: GET /login
+2025-10-12 21:29:08,552 - INFO - 127.0.0.1 - - [12/Oct/2025 21:29:08] "[33mGET /login HTTP/1.1[0m" 404 -
+2025-10-12 21:29:12,018 - INFO - Request from 127.0.0.1: POST /login
+2025-10-12 21:29:12,019 - INFO - 127.0.0.1 - - [12/Oct/2025 21:29:12] "[33mPOST /login HTTP/1.1[0m" 404 -
+2025-10-12 21:29:19,952 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-12 21:29:20,580 - INFO - 127.0.0.1 - - [12/Oct/2025 21:29:20] "POST /auth/login HTTP/1.1" 200 -
+2025-10-12 21:29:46,823 - INFO - Request from 127.0.0.1: POST /recommendations
+2025-10-12 21:29:46,825 - INFO - 127.0.0.1 - - [12/Oct/2025 21:29:46] "[31m[1mPOST /recommendations HTTP/1.1[0m" 405 -
+2025-10-12 21:29:50,803 - INFO - Request from 127.0.0.1: GET /recommendations
+2025-10-12 21:29:50,909 - INFO - 127.0.0.1 - - [12/Oct/2025 21:29:50] "[35m[1mGET /recommendations HTTP/1.1[0m" 500 -
+2025-10-12 21:30:53,423 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.73:5000
+2025-10-12 21:30:53,423 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-12 21:30:53,426 - INFO -  * Restarting with stat
+2025-10-12 21:30:55,875 - WARNING -  * Debugger is active!
+2025-10-12 21:30:55,885 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 21:30:56,157 - INFO - Request from 127.0.0.1: GET /recommendations
+2025-10-12 21:30:56,273 - INFO - 127.0.0.1 - - [12/Oct/2025 21:30:56] "[35m[1mGET /recommendations HTTP/1.1[0m" 500 -
+2025-10-12 21:34:33,418 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\routes\\admin_routes.py', reloading
+2025-10-12 21:34:34,014 - INFO -  * Restarting with stat
+2025-10-12 21:36:51,741 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.73:5000
+2025-10-12 21:36:51,742 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-12 21:36:51,744 - INFO -  * Restarting with stat
+2025-10-12 21:36:54,269 - WARNING -  * Debugger is active!
+2025-10-12 21:36:54,275 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 21:36:57,029 - INFO - Request from 127.0.0.1: GET /recommendations
+2025-10-12 21:36:57,163 - INFO - 127.0.0.1 - - [12/Oct/2025 21:36:57] "[35m[1mGET /recommendations HTTP/1.1[0m" 500 -
+2025-10-12 21:37:04,902 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-12 21:37:04,954 - INFO - 127.0.0.1 - - [12/Oct/2025 21:37:04] "[31m[1mGET /admin/logs HTTP/1.1[0m" 403 -
+2025-10-12 21:37:07,862 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-12 21:37:07,866 - INFO - 127.0.0.1 - - [12/Oct/2025 21:37:07] "[31m[1mGET /admin/logs HTTP/1.1[0m" 403 -
+2025-10-12 21:38:46,908 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\user_service\\service.py', reloading
+2025-10-12 21:38:47,816 - INFO -  * Restarting with stat
+2025-10-12 21:38:51,828 - WARNING -  * Debugger is active!
+2025-10-12 21:38:51,839 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 21:39:22,544 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\auth\\rbac.py', reloading
+2025-10-12 21:39:22,877 - INFO -  * Restarting with stat
+2025-10-12 21:39:25,402 - WARNING -  * Debugger is active!
+2025-10-12 21:39:25,415 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 21:39:35,659 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\auth\\rbac.py', reloading
+2025-10-12 21:39:35,852 - INFO -  * Restarting with stat
+2025-10-12 21:39:38,912 - WARNING -  * Debugger is active!
+2025-10-12 21:39:38,923 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 21:44:12,260 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\user_service\\service.py', reloading
+2025-10-12 21:44:13,302 - INFO -  * Restarting with stat
+2025-10-12 21:44:17,794 - WARNING -  * Debugger is active!
+2025-10-12 21:44:17,808 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 21:44:33,739 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-12 21:44:33,745 - INFO - 127.0.0.1 - - [12/Oct/2025 21:44:33] "[31m[1mGET /admin/logs HTTP/1.1[0m" 401 -
+2025-10-12 21:44:50,626 - INFO - Request from 127.0.0.1: GET /auth/login
+2025-10-12 21:44:50,628 - INFO - 127.0.0.1 - - [12/Oct/2025 21:44:50] "[31m[1mGET /auth/login HTTP/1.1[0m" 405 -
+2025-10-12 21:44:54,365 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-12 21:44:54,993 - INFO - 127.0.0.1 - - [12/Oct/2025 21:44:54] "POST /auth/login HTTP/1.1" 200 -
+2025-10-12 21:45:18,135 - INFO - Request from 127.0.0.1: POST /admin/logs
+2025-10-12 21:45:18,139 - INFO - 127.0.0.1 - - [12/Oct/2025 21:45:18] "[31m[1mPOST /admin/logs HTTP/1.1[0m" 405 -
+2025-10-12 21:45:21,985 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-12 21:45:22,032 - INFO - 127.0.0.1 - - [12/Oct/2025 21:45:22] "[35m[1mGET /admin/logs HTTP/1.1[0m" 500 -
+2025-10-12 21:47:20,407 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\routes\\assignment_routes.py', reloading
+2025-10-12 21:47:20,634 - INFO -  * Restarting with stat
+2025-10-12 21:52:23,334 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.73:5000
+2025-10-12 21:52:23,334 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-12 21:52:23,334 - INFO -  * Restarting with stat
+2025-10-12 21:52:25,575 - WARNING -  * Debugger is active!
+2025-10-12 21:52:25,591 - INFO -  * Debugger PIN: 122-296-768
+2025-10-12 21:52:40,570 - INFO - Request from 127.0.0.1: GET /admin/logs
+2025-10-12 21:52:40,809 - INFO - 127.0.0.1 - - [12/Oct/2025 21:52:40] "GET /admin/logs HTTP/1.1" 200 -
+2025-10-12 21:52:50,003 - INFO - Request from 127.0.0.1: GET /admin/users
+2025-10-12 21:52:50,035 - INFO - 127.0.0.1 - - [12/Oct/2025 21:52:50] "GET /admin/users HTTP/1.1" 200 -
+2025-10-12 22:14:15,056 - INFO - Request from 127.0.0.1: OPTIONS /auth/login
+2025-10-12 22:14:15,059 - INFO - 127.0.0.1 - - [12/Oct/2025 22:14:15] "OPTIONS /auth/login HTTP/1.1" 200 -
+2025-10-12 22:14:15,068 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-12 22:14:15,473 - INFO - 127.0.0.1 - - [12/Oct/2025 22:14:15] "POST /auth/login HTTP/1.1" 200 -
+2025-10-12 22:14:15,560 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 22:14:15,561 - INFO - 127.0.0.1 - - [12/Oct/2025 22:14:15] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 22:14:15,563 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-12 22:14:15,565 - INFO - 127.0.0.1 - - [12/Oct/2025 22:14:15] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-12 22:14:20,353 - INFO - Request from 127.0.0.1: OPTIONS /user/profile
+2025-10-12 22:14:20,353 - INFO - 127.0.0.1 - - [12/Oct/2025 22:14:20] "OPTIONS /user/profile HTTP/1.1" 200 -
+2025-10-12 22:14:20,353 - INFO - Request from 127.0.0.1: GET /user/profile
+2025-10-12 22:14:20,353 - INFO - 127.0.0.1 - - [12/Oct/2025 22:14:20] "[31m[1mGET /user/profile HTTP/1.1[0m" 401 -
+2025-10-12 22:14:39,168 - INFO - Request from 127.0.0.1: GET /user/profile
+2025-10-12 22:14:39,170 - INFO - 127.0.0.1 - - [12/Oct/2025 22:14:39] "[31m[1mGET /user/profile HTTP/1.1[0m" 401 -
+2025-10-12 22:14:53,790 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-12 22:14:54,233 - INFO - 127.0.0.1 - - [12/Oct/2025 22:14:54] "POST /auth/login HTTP/1.1" 200 -
+2025-10-12 22:15:19,682 - INFO - Request from 127.0.0.1: GET /user/profile
+2025-10-12 22:15:19,719 - INFO - 127.0.0.1 - - [12/Oct/2025 22:15:19] "GET /user/profile HTTP/1.1" 200 -
+2025-10-13 05:54:11,708 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.73:5000
+2025-10-13 05:54:11,708 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-13 05:54:11,708 - INFO -  * Restarting with stat
+2025-10-13 05:54:13,720 - WARNING -  * Debugger is active!
+2025-10-13 05:54:13,743 - INFO -  * Debugger PIN: 122-296-768
+2025-10-13 05:55:05,401 - INFO - Request from 127.0.0.1: GET /apidocs
+2025-10-13 05:55:05,549 - INFO - 127.0.0.1 - - [13/Oct/2025 05:55:05] "[32mGET /apidocs HTTP/1.1[0m" 308 -
+2025-10-13 05:55:05,989 - INFO - Request from 127.0.0.1: GET /apidocs/
+2025-10-13 05:55:06,867 - INFO - 127.0.0.1 - - [13/Oct/2025 05:55:06] "GET /apidocs/ HTTP/1.1" 200 -
+2025-10-13 05:55:07,274 - INFO - Request from 127.0.0.1: GET /flasgger_static/swagger-ui.css
+2025-10-13 05:55:07,622 - INFO - Request from 127.0.0.1: GET /flasgger_static/swagger-ui-bundle.js
+2025-10-13 05:55:07,719 - INFO - Request from 127.0.0.1: GET /flasgger_static/swagger-ui-standalone-preset.js
+2025-10-13 05:55:07,721 - INFO - 127.0.0.1 - - [13/Oct/2025 05:55:07] "GET /flasgger_static/swagger-ui.css HTTP/1.1" 200 -
+2025-10-13 05:55:07,822 - INFO - Request from 127.0.0.1: GET /flasgger_static/lib/jquery.min.js
+2025-10-13 05:55:08,557 - INFO - 127.0.0.1 - - [13/Oct/2025 05:55:08] "GET /flasgger_static/lib/jquery.min.js HTTP/1.1" 200 -
+2025-10-13 05:55:08,557 - INFO - 127.0.0.1 - - [13/Oct/2025 05:55:08] "GET /flasgger_static/swagger-ui-bundle.js HTTP/1.1" 200 -
+2025-10-13 05:55:08,892 - INFO - 127.0.0.1 - - [13/Oct/2025 05:55:08] "GET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2025-10-13 05:55:09,873 - INFO - Request from 127.0.0.1: GET /apispec_1.json
+2025-10-13 05:55:10,053 - INFO - Request from 127.0.0.1: GET /flasgger_static/favicon-32x32.png
+2025-10-13 05:55:10,082 - INFO - 127.0.0.1 - - [13/Oct/2025 05:55:10] "GET /apispec_1.json HTTP/1.1" 200 -
+2025-10-13 05:55:10,133 - INFO - 127.0.0.1 - - [13/Oct/2025 05:55:10] "GET /flasgger_static/favicon-32x32.png HTTP/1.1" 200 -
+2025-10-13 05:55:41,105 - INFO - Request from 127.0.0.1: OPTIONS /auth/login
+2025-10-13 05:55:41,194 - INFO - 127.0.0.1 - - [13/Oct/2025 05:55:41] "OPTIONS /auth/login HTTP/1.1" 200 -
+2025-10-13 05:55:41,414 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-13 05:55:42,465 - INFO - 127.0.0.1 - - [13/Oct/2025 05:55:42] "POST /auth/login HTTP/1.1" 200 -
+2025-10-13 05:55:42,593 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-13 05:55:42,596 - INFO - 127.0.0.1 - - [13/Oct/2025 05:55:42] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-13 05:55:42,597 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-13 05:55:42,722 - INFO - 127.0.0.1 - - [13/Oct/2025 05:55:42] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-13 05:55:44,888 - INFO - Request from 127.0.0.1: OPTIONS /user/profile
+2025-10-13 05:55:44,953 - INFO - 127.0.0.1 - - [13/Oct/2025 05:55:44] "OPTIONS /user/profile HTTP/1.1" 200 -
+2025-10-13 05:55:44,987 - INFO - Request from 127.0.0.1: GET /user/profile
+2025-10-13 05:55:44,993 - INFO - 127.0.0.1 - - [13/Oct/2025 05:55:44] "[31m[1mGET /user/profile HTTP/1.1[0m" 401 -
+2025-10-13 05:56:45,241 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-13 05:56:45,243 - INFO - 127.0.0.1 - - [13/Oct/2025 05:56:45] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-13 05:56:45,328 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student
+2025-10-13 05:56:45,370 - INFO - 127.0.0.1 - - [13/Oct/2025 05:56:45] "[33mOPTIONS /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-13 06:01:24,760 - INFO - Request from 127.0.0.1: OPTIONS /api/dashboard/student/dashboard
+2025-10-13 06:01:24,769 - INFO - 127.0.0.1 - - [13/Oct/2025 06:01:24] "[33mOPTIONS /api/dashboard/student/dashboard HTTP/1.1[0m" 404 -
+2025-10-13 06:02:27,606 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-13 06:02:28,089 - INFO - 127.0.0.1 - - [13/Oct/2025 06:02:28] "POST /auth/login HTTP/1.1" 200 -
+2025-10-13 06:03:08,622 - INFO - Request from 127.0.0.1: GET /api/dashboard/student/dashboard
+2025-10-13 06:03:08,622 - INFO - 127.0.0.1 - - [13/Oct/2025 06:03:08] "[33mGET /api/dashboard/student/dashboard HTTP/1.1[0m" 404 -
+2025-10-13 06:03:16,476 - INFO - Request from 127.0.0.1: GET /dashboard/student/dashboard
+2025-10-13 06:03:16,476 - INFO - 127.0.0.1 - - [13/Oct/2025 06:03:16] "[33mGET /dashboard/student/dashboard HTTP/1.1[0m" 404 -
+2025-10-13 06:03:21,734 - INFO - Request from 127.0.0.1: GET /api/dashboard/student
+2025-10-13 06:03:21,735 - INFO - 127.0.0.1 - - [13/Oct/2025 06:03:21] "[33mGET /api/dashboard/student HTTP/1.1[0m" 404 -
+2025-10-13 06:04:32,673 - INFO - Request from 127.0.0.1: GET /api/student/dashboard
+2025-10-13 06:04:32,740 - INFO - 127.0.0.1 - - [13/Oct/2025 06:04:32] "GET /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:04:42,178 - INFO - Request from 127.0.0.1: OPTIONS /api/student/dashboard
+2025-10-13 06:04:42,193 - INFO - 127.0.0.1 - - [13/Oct/2025 06:04:42] "OPTIONS /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:04:42,193 - INFO - Request from 127.0.0.1: GET /api/student/dashboard
+2025-10-13 06:04:42,193 - INFO - 127.0.0.1 - - [13/Oct/2025 06:04:42] "[31m[1mGET /api/student/dashboard HTTP/1.1[0m" 401 -
+2025-10-13 06:04:44,328 - INFO - Request from 127.0.0.1: GET /api/student/dashboard
+2025-10-13 06:04:44,340 - INFO - 127.0.0.1 - - [13/Oct/2025 06:04:44] "[31m[1mGET /api/student/dashboard HTTP/1.1[0m" 401 -
+2025-10-13 06:04:56,274 - INFO - Request from 127.0.0.1: OPTIONS /api/student/dashboard
+2025-10-13 06:04:56,284 - INFO - 127.0.0.1 - - [13/Oct/2025 06:04:56] "OPTIONS /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:04:56,296 - INFO - Request from 127.0.0.1: OPTIONS /api/student/dashboard
+2025-10-13 06:04:56,302 - INFO - 127.0.0.1 - - [13/Oct/2025 06:04:56] "OPTIONS /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:04:56,318 - INFO - Request from 127.0.0.1: GET /api/student/dashboard
+2025-10-13 06:04:56,324 - INFO - 127.0.0.1 - - [13/Oct/2025 06:04:56] "[31m[1mGET /api/student/dashboard HTTP/1.1[0m" 401 -
+2025-10-13 06:04:56,347 - INFO - Request from 127.0.0.1: GET /api/student/dashboard
+2025-10-13 06:04:56,349 - INFO - 127.0.0.1 - - [13/Oct/2025 06:04:56] "[31m[1mGET /api/student/dashboard HTTP/1.1[0m" 401 -
+2025-10-13 06:06:18,343 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\app.py', reloading
+2025-10-13 06:06:19,392 - INFO -  * Restarting with stat
+2025-10-13 06:06:22,274 - WARNING -  * Debugger is active!
+2025-10-13 06:06:22,286 - INFO -  * Debugger PIN: 122-296-768
+2025-10-13 06:06:37,799 - INFO -  * Detected change in 'C:\\Users\\Windows\\OneDrive\\Desktop\\fffff\\Internship-journey\\smart-learning-new-backend\\app.py', reloading
+2025-10-13 06:06:38,347 - INFO -  * Restarting with stat
+2025-10-13 06:06:41,703 - WARNING -  * Debugger is active!
+2025-10-13 06:06:41,703 - INFO -  * Debugger PIN: 122-296-768
+2025-10-13 06:06:45,166 - INFO - Request from 127.0.0.1: OPTIONS /auth/logout
+2025-10-13 06:06:45,168 - INFO - 127.0.0.1 - - [13/Oct/2025 06:06:45] "OPTIONS /auth/logout HTTP/1.1" 200 -
+2025-10-13 06:06:45,177 - INFO - Request from 127.0.0.1: POST /auth/logout
+2025-10-13 06:06:45,179 - INFO - 127.0.0.1 - - [13/Oct/2025 06:06:45] "POST /auth/logout HTTP/1.1" 200 -
+2025-10-13 06:06:51,112 - INFO - Request from 127.0.0.1: OPTIONS /auth/login
+2025-10-13 06:06:51,119 - INFO - 127.0.0.1 - - [13/Oct/2025 06:06:51] "OPTIONS /auth/login HTTP/1.1" 200 -
+2025-10-13 06:06:51,128 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-13 06:06:51,613 - INFO - 127.0.0.1 - - [13/Oct/2025 06:06:51] "POST /auth/login HTTP/1.1" 200 -
+2025-10-13 06:06:51,657 - INFO - Request from 127.0.0.1: OPTIONS /api/student/dashboard
+2025-10-13 06:06:51,658 - INFO - Request from 127.0.0.1: OPTIONS /api/student/dashboard
+2025-10-13 06:06:51,658 - INFO - 127.0.0.1 - - [13/Oct/2025 06:06:51] "OPTIONS /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:06:51,659 - INFO - 127.0.0.1 - - [13/Oct/2025 06:06:51] "OPTIONS /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:06:51,673 - INFO - Request from 127.0.0.1: GET /api/student/dashboard
+2025-10-13 06:06:51,718 - INFO - 127.0.0.1 - - [13/Oct/2025 06:06:51] "GET /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:06:51,723 - INFO - Request from 127.0.0.1: GET /api/student/dashboard
+2025-10-13 06:06:51,738 - INFO - 127.0.0.1 - - [13/Oct/2025 06:06:51] "GET /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:07:02,456 - INFO - Request from 127.0.0.1: OPTIONS /api/student/dashboard
+2025-10-13 06:07:02,457 - INFO - Request from 127.0.0.1: OPTIONS /api/student/dashboard
+2025-10-13 06:07:02,460 - INFO - 127.0.0.1 - - [13/Oct/2025 06:07:02] "OPTIONS /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:07:02,461 - INFO - 127.0.0.1 - - [13/Oct/2025 06:07:02] "OPTIONS /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:07:02,497 - INFO - Request from 127.0.0.1: GET /api/student/dashboard
+2025-10-13 06:07:02,518 - INFO - 127.0.0.1 - - [13/Oct/2025 06:07:02] "GET /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:07:02,534 - INFO - Request from 127.0.0.1: GET /api/student/dashboard
+2025-10-13 06:07:02,568 - INFO - 127.0.0.1 - - [13/Oct/2025 06:07:02] "GET /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:09:48,754 - INFO - Request from 127.0.0.1: OPTIONS /api/student/dashboard
+2025-10-13 06:09:48,789 - INFO - 127.0.0.1 - - [13/Oct/2025 06:09:48] "OPTIONS /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:09:48,934 - INFO - Request from 127.0.0.1: GET /api/student/dashboard
+2025-10-13 06:09:49,332 - INFO - 127.0.0.1 - - [13/Oct/2025 06:09:49] "GET /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:10:12,857 - INFO - Request from 127.0.0.1: OPTIONS /api/student/dashboard
+2025-10-13 06:10:12,861 - INFO - 127.0.0.1 - - [13/Oct/2025 06:10:12] "OPTIONS /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:10:12,877 - INFO - Request from 127.0.0.1: GET /api/student/dashboard
+2025-10-13 06:10:12,943 - INFO - 127.0.0.1 - - [13/Oct/2025 06:10:12] "GET /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:10:22,084 - INFO - Request from 127.0.0.1: OPTIONS /api/student/dashboard
+2025-10-13 06:10:22,088 - INFO - 127.0.0.1 - - [13/Oct/2025 06:10:22] "OPTIONS /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:10:22,089 - INFO - Request from 127.0.0.1: OPTIONS /api/student/dashboard
+2025-10-13 06:10:22,109 - INFO - 127.0.0.1 - - [13/Oct/2025 06:10:22] "OPTIONS /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:10:22,110 - INFO - Request from 127.0.0.1: GET /api/student/dashboard
+2025-10-13 06:10:22,149 - INFO - 127.0.0.1 - - [13/Oct/2025 06:10:22] "GET /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:10:22,168 - INFO - Request from 127.0.0.1: GET /api/student/dashboard
+2025-10-13 06:10:22,226 - INFO - 127.0.0.1 - - [13/Oct/2025 06:10:22] "GET /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:10:37,132 - INFO - Request from 127.0.0.1: OPTIONS /auth/logout
+2025-10-13 06:10:37,133 - INFO - 127.0.0.1 - - [13/Oct/2025 06:10:37] "OPTIONS /auth/logout HTTP/1.1" 200 -
+2025-10-13 06:10:37,139 - INFO - Request from 127.0.0.1: POST /auth/logout
+2025-10-13 06:10:37,141 - INFO - 127.0.0.1 - - [13/Oct/2025 06:10:37] "POST /auth/logout HTTP/1.1" 200 -
+2025-10-13 06:10:45,000 - INFO - Request from 127.0.0.1: OPTIONS /auth/login
+2025-10-13 06:10:45,002 - INFO - 127.0.0.1 - - [13/Oct/2025 06:10:45] "OPTIONS /auth/login HTTP/1.1" 200 -
+2025-10-13 06:10:45,008 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-13 06:10:45,488 - INFO - 127.0.0.1 - - [13/Oct/2025 06:10:45] "POST /auth/login HTTP/1.1" 200 -
+2025-10-13 06:10:45,542 - INFO - Request from 127.0.0.1: OPTIONS /api/student/dashboard
+2025-10-13 06:10:45,549 - INFO - 127.0.0.1 - - [13/Oct/2025 06:10:45] "OPTIONS /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:10:45,550 - INFO - Request from 127.0.0.1: OPTIONS /api/student/dashboard
+2025-10-13 06:10:45,556 - INFO - 127.0.0.1 - - [13/Oct/2025 06:10:45] "OPTIONS /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:10:45,568 - INFO - Request from 127.0.0.1: GET /api/student/dashboard
+2025-10-13 06:10:45,616 - INFO - 127.0.0.1 - - [13/Oct/2025 06:10:45] "GET /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:10:45,684 - INFO - Request from 127.0.0.1: GET /api/student/dashboard
+2025-10-13 06:10:45,713 - INFO - 127.0.0.1 - - [13/Oct/2025 06:10:45] "GET /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:10:57,743 - INFO - Request from 127.0.0.1: OPTIONS /user/profile
+2025-10-13 06:10:57,747 - INFO - 127.0.0.1 - - [13/Oct/2025 06:10:57] "OPTIONS /user/profile HTTP/1.1" 200 -
+2025-10-13 06:10:57,754 - INFO - Request from 127.0.0.1: GET /user/profile
+2025-10-13 06:10:57,835 - INFO - 127.0.0.1 - - [13/Oct/2025 06:10:57] "GET /user/profile HTTP/1.1" 200 -
+2025-10-13 06:14:48,022 - INFO - Request from 127.0.0.1: GET /api/student/dashboard
+2025-10-13 06:14:48,035 - INFO - 127.0.0.1 - - [13/Oct/2025 06:14:48] "GET /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:14:48,988 - INFO - Request from 127.0.0.1: GET /api/student/dashboard
+2025-10-13 06:14:49,002 - INFO - 127.0.0.1 - - [13/Oct/2025 06:14:49] "GET /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:16:21,798 - INFO - Request from 127.0.0.1: OPTIONS /auth/login
+2025-10-13 06:16:21,809 - INFO - 127.0.0.1 - - [13/Oct/2025 06:16:21] "OPTIONS /auth/login HTTP/1.1" 200 -
+2025-10-13 06:16:21,861 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-13 06:16:22,295 - INFO - 127.0.0.1 - - [13/Oct/2025 06:16:22] "POST /auth/login HTTP/1.1" 200 -
+2025-10-13 06:16:22,378 - INFO - Request from 127.0.0.1: OPTIONS /api/student/dashboard
+2025-10-13 06:16:22,379 - INFO - Request from 127.0.0.1: OPTIONS /api/student/dashboard
+2025-10-13 06:16:22,380 - INFO - 127.0.0.1 - - [13/Oct/2025 06:16:22] "OPTIONS /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:16:22,381 - INFO - 127.0.0.1 - - [13/Oct/2025 06:16:22] "OPTIONS /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:16:22,405 - INFO - Request from 127.0.0.1: GET /api/student/dashboard
+2025-10-13 06:16:22,444 - INFO - 127.0.0.1 - - [13/Oct/2025 06:16:22] "GET /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:16:22,476 - INFO - Request from 127.0.0.1: GET /api/student/dashboard
+2025-10-13 06:16:22,508 - INFO - 127.0.0.1 - - [13/Oct/2025 06:16:22] "GET /api/student/dashboard HTTP/1.1" 200 -
+2025-10-13 06:16:57,255 - INFO - Request from 127.0.0.1: OPTIONS /api/courses/all
+2025-10-13 06:16:57,257 - INFO - 127.0.0.1 - - [13/Oct/2025 06:16:57] "OPTIONS /api/courses/all HTTP/1.1" 200 -
+2025-10-13 06:16:57,265 - INFO - Request from 127.0.0.1: GET /api/courses/all
+2025-10-13 06:16:57,282 - INFO - 127.0.0.1 - - [13/Oct/2025 06:16:57] "GET /api/courses/all HTTP/1.1" 200 -
+2025-10-13 06:17:09,814 - INFO - Request from 127.0.0.1: OPTIONS /api/courses/all
+2025-10-13 06:17:09,827 - INFO - 127.0.0.1 - - [13/Oct/2025 06:17:09] "OPTIONS /api/courses/all HTTP/1.1" 200 -
+2025-10-13 06:17:09,827 - INFO - Request from 127.0.0.1: OPTIONS /api/courses/all
+2025-10-13 06:17:09,855 - INFO - 127.0.0.1 - - [13/Oct/2025 06:17:09] "OPTIONS /api/courses/all HTTP/1.1" 200 -
+2025-10-13 06:17:09,889 - INFO - Request from 127.0.0.1: GET /api/courses/all
+2025-10-13 06:17:09,938 - INFO - 127.0.0.1 - - [13/Oct/2025 06:17:09] "GET /api/courses/all HTTP/1.1" 200 -
+2025-10-13 06:17:09,950 - INFO - Request from 127.0.0.1: GET /api/courses/all
+2025-10-13 06:17:10,002 - INFO - 127.0.0.1 - - [13/Oct/2025 06:17:10] "GET /api/courses/all HTTP/1.1" 200 -
+2025-10-13 06:17:14,609 - INFO - Request from 127.0.0.1: OPTIONS /user/profile
+2025-10-13 06:17:14,609 - INFO - 127.0.0.1 - - [13/Oct/2025 06:17:14] "OPTIONS /user/profile HTTP/1.1" 200 -
+2025-10-13 06:17:14,609 - INFO - Request from 127.0.0.1: GET /user/profile
+2025-10-13 06:17:14,625 - INFO - 127.0.0.1 - - [13/Oct/2025 06:17:14] "GET /user/profile HTTP/1.1" 200 -
+2025-10-13 06:17:47,334 - INFO - Request from 127.0.0.1: GET /api/courses/all
+2025-10-13 06:17:47,335 - INFO - 127.0.0.1 - - [13/Oct/2025 06:17:47] "[31m[1mGET /api/courses/all HTTP/1.1[0m" 401 -
+2025-10-13 06:18:00,791 - INFO - Request from 127.0.0.1: GET /api/auth/kogin
+2025-10-13 06:18:00,791 - INFO - 127.0.0.1 - - [13/Oct/2025 06:18:00] "[33mGET /api/auth/kogin HTTP/1.1[0m" 404 -
+2025-10-13 06:18:04,291 - INFO - Request from 127.0.0.1: POST /api/auth/kogin
+2025-10-13 06:18:04,291 - INFO - 127.0.0.1 - - [13/Oct/2025 06:18:04] "[33mPOST /api/auth/kogin HTTP/1.1[0m" 404 -
+2025-10-13 06:18:05,537 - INFO - Request from 127.0.0.1: POST /api/auth/kogin
+2025-10-13 06:18:05,539 - INFO - 127.0.0.1 - - [13/Oct/2025 06:18:05] "[33mPOST /api/auth/kogin HTTP/1.1[0m" 404 -
+2025-10-13 06:18:06,920 - INFO - Request from 127.0.0.1: POST /api/auth/kogin
+2025-10-13 06:18:06,921 - INFO - 127.0.0.1 - - [13/Oct/2025 06:18:06] "[33mPOST /api/auth/kogin HTTP/1.1[0m" 404 -
+2025-10-13 06:18:07,931 - INFO - Request from 127.0.0.1: POST /api/auth/kogin
+2025-10-13 06:18:07,935 - INFO - 127.0.0.1 - - [13/Oct/2025 06:18:07] "[33mPOST /api/auth/kogin HTTP/1.1[0m" 404 -
+2025-10-13 06:18:12,375 - INFO - Request from 127.0.0.1: POST /auth/kogin
+2025-10-13 06:18:12,375 - INFO - 127.0.0.1 - - [13/Oct/2025 06:18:12] "[33mPOST /auth/kogin HTTP/1.1[0m" 404 -
+2025-10-13 06:18:14,164 - INFO - Request from 127.0.0.1: POST /auth/kogin
+2025-10-13 06:18:14,169 - INFO - 127.0.0.1 - - [13/Oct/2025 06:18:14] "[33mPOST /auth/kogin HTTP/1.1[0m" 404 -
+2025-10-13 06:18:21,024 - INFO - Request from 127.0.0.1: POST /auth/kogin
+2025-10-13 06:18:21,024 - INFO - 127.0.0.1 - - [13/Oct/2025 06:18:21] "[33mPOST /auth/kogin HTTP/1.1[0m" 404 -
+2025-10-13 06:18:22,887 - INFO - Request from 127.0.0.1: POST /auth/kogin
+2025-10-13 06:18:22,888 - INFO - 127.0.0.1 - - [13/Oct/2025 06:18:22] "[33mPOST /auth/kogin HTTP/1.1[0m" 404 -
+2025-10-13 06:18:29,719 - INFO - Request from 127.0.0.1: POST /auth/login
+2025-10-13 06:18:30,140 - INFO - 127.0.0.1 - - [13/Oct/2025 06:18:30] "POST /auth/login HTTP/1.1" 200 -
+2025-10-13 06:18:45,257 - INFO - Request from 127.0.0.1: POST /api/courses/all
+2025-10-13 06:18:45,257 - INFO - 127.0.0.1 - - [13/Oct/2025 06:18:45] "[31m[1mPOST /api/courses/all HTTP/1.1[0m" 405 -
+2025-10-13 06:18:48,382 - INFO - Request from 127.0.0.1: GET /api/courses/all
+2025-10-13 06:18:48,385 - INFO - 127.0.0.1 - - [13/Oct/2025 06:18:48] "GET /api/courses/all HTTP/1.1" 200 -
+2025-10-13 06:19:45,123 - INFO - Request from 127.0.0.1: OPTIONS /api/courses/all
+2025-10-13 06:19:45,138 - INFO - 127.0.0.1 - - [13/Oct/2025 06:19:45] "OPTIONS /api/courses/all HTTP/1.1" 200 -
+2025-10-13 06:19:45,287 - INFO - Request from 127.0.0.1: GET /api/courses/all
+2025-10-13 06:19:45,824 - INFO - 127.0.0.1 - - [13/Oct/2025 06:19:45] "GET /api/courses/all HTTP/1.1" 200 -
+2025-10-13 06:20:04,064 - INFO - Request from 127.0.0.1: OPTIONS /api/courses/all
+2025-10-13 06:20:04,079 - INFO - 127.0.0.1 - - [13/Oct/2025 06:20:04] "OPTIONS /api/courses/all HTTP/1.1" 200 -
+2025-10-13 06:20:04,176 - INFO - Request from 127.0.0.1: GET /api/courses/all
+2025-10-13 06:20:04,611 - INFO - 127.0.0.1 - - [13/Oct/2025 06:20:04] "GET /api/courses/all HTTP/1.1" 200 -

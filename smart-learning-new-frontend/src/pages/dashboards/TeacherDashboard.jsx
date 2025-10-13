@@ -20,7 +20,7 @@ const TeacherDashboard = () => {
     useEffect(() => {
         const fetchDashboardData = async () => {
             try {
-                const response = await api.get('/api/courses/all/courses');
+                const response = await api.get('/api/courses/all');
                 setCourses(response.data || []);
                 setMessage(`Welcome! Here are all courses on the platform.`);
             } catch (err) {

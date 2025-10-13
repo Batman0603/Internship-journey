@@ -1,4 +1,4 @@
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, request, jsonify, g
 from werkzeug.utils import secure_filename
 import logging
 import os
@@ -31,7 +31,7 @@ if not os.path.exists(UPLOAD_FOLDER):
 
 @assignment_bp.route("/upload-notes", methods=["POST"])
 @role_required(["teacher"])
-def upload_notes_for_rag(user):
+def upload_notes_for_rag():
     """
     Upload a .txt file of notes for the RAG system.
     ---
@@ -60,7 +60,7 @@ def upload_notes_for_rag(user):
         return jsonify({"error": "No selected file"}), 400
     if file:
         # Prefix with user ID to avoid filename conflicts
-        filename = secure_filename(f"{user.id}_{file.filename}")
+        filename = secure_filename(f"{g.user.id}_{file.filename}")
         file_path = os.path.join(UPLOAD_FOLDER, filename)
         file.save(file_path)
         
@@ -69,7 +69,7 @@ def upload_notes_for_rag(user):
 
 @assignment_bp.route("/generate", methods=["POST"])
 @role_required(["teacher"])
-def generate_assignment_questions(user):
+def generate_assignment_questions():
     """
     Generate assignment questions using the RAG system.
     ---
@@ -117,7 +117,7 @@ def generate_assignment_questions(user):
 
 @assignment_bp.route("/courses/<int:course_id>/assignments", methods=["POST"])
 @role_required(["teacher"])
-def create_assignment(user, course_id):
+def create_assignment(course_id):
     """
     Create a new assignment for a course.
     ---
@@ -154,14 +154,14 @@ def create_assignment(user, course_id):
     data = request.json
     db: Session = next(get_db())
     assignment_data = assignment_schemas.AssignmentCreate(
-        **data, course_id=course_id, teacher_id=user.id
+        **data, course_id=course_id, teacher_id=g.user.id
     )
     assignment = assignment_service.create_assignment(db, assignment_data)
     return jsonify({"message": "Assignment created", "assignment_id": assignment.id}), 201
 
 @assignment_bp.route("/courses/<int:course_id>/assignments", methods=["GET"])
 @role_required(["teacher", "student"])
-def get_assignments_for_course(user, course_id):
+def get_assignments_for_course(course_id):
     """
     Get all assignments for a specific course.
     ---
@@ -188,7 +188,7 @@ def get_assignments_for_course(user, course_id):
 
 @assignment_bp.route("/assignments/<int:assignment_id>/submit", methods=["POST"])
 @role_required(["student"])
-def submit_assignment(user, assignment_id):
+def submit_assignment(assignment_id):
     """
     Submit work for an assignment.
     Can be a text submission, a file upload, or both.
@@ -228,7 +228,7 @@ def submit_assignment(user, assignment_id):
     # Check if the assignment exists before proceeding
     assignment = assignment_service.get_assignment_by_id(db, assignment_id)
     if not assignment:
-        logging.error(f"Submission failed: User {user.id} tried to submit to non-existent assignment {assignment_id}.")
+        logging.error(f"Submission failed: User {g.user.id} tried to submit to non-existent assignment {assignment_id}.")
         return jsonify({"error": f"Assignment with id {assignment_id} not found."}), 404
 
     content = request.form.get('content')
@@ -238,17 +238,17 @@ def submit_assignment(user, assignment_id):
     if 'file' in request.files:
         file = request.files['file']
         if file.filename != '':
-            filename = secure_filename(f"{user.id}_{file.filename}")
+            filename = secure_filename(f"{g.user.id}_{file.filename}")
             file_path = os.path.join(UPLOAD_FOLDER, filename)
             file.save(file_path)
 
     if not content and not file_path:
-        logging.error(f"Submission failed for assignment {assignment_id} by user {user.id}: No content or file provided.")
+        logging.error(f"Submission failed for assignment {assignment_id} by user {g.user.id}: No content or file provided.")
         return jsonify({"error": "Submission content or file is required"}), 400
 
     submission_data = assignment_schemas.SubmissionCreate(
         assignment_id=assignment_id,
-        student_id=user.id,
+        student_id=g.user.id,
         content=content,
         file_path=file_path
     )
@@ -256,13 +256,13 @@ def submit_assignment(user, assignment_id):
         submission = assignment_service.submit_assignment(db, submission_data)
     except Exception as e:
         # Catch potential IntegrityError or other DB errors
-        logging.error(f"Database error on submission for assignment {assignment_id} by user {user.id}: {e}")
+        logging.error(f"Database error on submission for assignment {assignment_id} by user {g.user.id}: {e}")
         return jsonify({"error": "Could not process submission due to a database error."}), 500
     return jsonify({"message": "Submission successful", "submission_id": submission.id}), 201
 
 @assignment_bp.route("/assignments/<int:assignment_id>/submissions", methods=["GET"])
 @role_required(["teacher"])
-def get_submissions_for_assignment(user, assignment_id):
+def get_submissions_for_assignment(assignment_id):
     """
     Get all submissions for a specific assignment.
     ---
@@ -294,7 +294,7 @@ def get_submissions_for_assignment(user, assignment_id):
 
 @assignment_bp.route("/submissions/<int:submission_id>/grade", methods=["PUT"])
 @role_required(["teacher"])
-def grade_submission(user, submission_id):
+def grade_submission(submission_id):
     """
     Grade a student's submission.
     ---

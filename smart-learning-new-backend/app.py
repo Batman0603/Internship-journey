@@ -31,20 +31,18 @@ from utils.seed_data import seed_users
 
 app = Flask(__name__)
 
-CORS(app,
-     origins=['http://127.0.0.1:5173', 'http://localhost:5173'],  # Your frontend URL
-     supports_credentials=True,  # 🔥 Allow cookies
-     allow_headers=['Content-Type', 'Authorization'],
-     expose_headers=['Content-Type'],
-     methods=['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'])
-
 # --- JWT Configuration (using flask-jwt-extended) ---
 app.config["JWT_SECRET_KEY"] = os.getenv("JWT_SECRET_KEY", "a_very_strong_and_secret_key")
-app.config["JWT_TOKEN_LOCATION"] = ["cookies"]
-app.config["JWT_COOKIE_SECURE"] = os.getenv('FLASK_ENV') != 'development'
-app.config["JWT_COOKIE_SAMESITE"] = "Lax" # Use "None" if frontend and backend are on different domains in production
-app.config["JWT_ACCESS_COOKIE_NAME"] = "access_token_cookie" # Explicitly set the cookie name
-app.config["JWT_COOKIE_CSRF_PROTECT"] = False # Set to True for better security if needed
+app.config["JWT_TOKEN_LOCATION"] = ["cookies"]  # Expect JWTs in cookies
+
+# In a real production app, this should be True!
+# But for local development over HTTP, it must be False.
+app.config["JWT_COOKIE_SECURE"] = os.getenv('FLASK_ENV') != 'development' 
+
+# Set SameSite to 'None' to allow cross-origin cookie sending (e.g., from localhost:5173 to localhost:5000)
+app.config["JWT_COOKIE_SAMESITE"] = "None"
+app.config["JWT_ACCESS_COOKIE_NAME"] = "access_token_cookie"  # Explicitly set the cookie name
+app.config["JWT_COOKIE_CSRF_PROTECT"] = False  # Set to True for better security if needed
 
 jwt = JWTManager(app)
 
@@ -77,6 +75,14 @@ app.register_blueprint(assignment_bp, url_prefix="/api/assignments")
 app.register_blueprint(analytics_bp, url_prefix="/analytics")
 app.register_blueprint(dashboard_bp, url_prefix="/api")
 
+# Initialize CORS after all blueprints are registered
+CORS(app,
+     origins=['http://127.0.0.1:5173', 'http://localhost:5173'],  # Your frontend URL
+     supports_credentials=True,  # 🔥 Allow cookies
+     allow_headers=['Content-Type', 'Authorization'],
+     expose_headers=['Content-Type'],
+     methods=['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'])
+
 @app.route("/")
 def home():
     """
@@ -88,13 +94,14 @@ def home():
 # Dummy route for rate limiting test
 @app.route("/recommendations", methods=["GET"])
 @role_required(["student"])
-def recommendations(user):
+def recommendations():
     """
     A real recommendation engine.
     Recommends courses the student is not currently enrolled in.
     """
     # Use the session from the decorator, to which the user object is already bound.
     db = g.db
+    user = g.user
 
     # Get IDs of courses the user is enrolled in
     enrolled_course_ids = {enrollment.course_id for enrollment in user.enrollments}

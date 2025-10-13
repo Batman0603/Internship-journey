@@ -75,9 +75,50 @@ export const authAPI = {
       headers: {
         "Content-Type": "application/json",
       },
-      credentials: "include", // 🔒 Ensures JWT cookie is sent automatically
+      credentials: "include", // 🔥 Ensures JWT cookie is sent automatically
     });
 
+    return handleResponse(response);
+  },
+
+  /**
+   * POST request to protected routes
+   */
+  post: async (endpoint, data) => {
+    const response = await fetch(`${API_BASE_URL}${endpoint}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      credentials: 'include',
+      body: JSON.stringify(data),
+    });
+    return handleResponse(response);
+  },
+
+  /**
+   * PUT request to protected routes
+   */
+  put: async (endpoint, data) => {
+    const response = await fetch(`${API_BASE_URL}${endpoint}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      credentials: 'include',
+      body: JSON.stringify(data),
+    });
+    return handleResponse(response);
+  },
+
+  /**
+   * DELETE request to protected routes
+   */
+  delete: async (endpoint) => {
+    const response = await fetch(`${API_BASE_URL}${endpoint}`, {
+      method: 'DELETE',
+      credentials: 'include',
+    });
     return handleResponse(response);
   },
 };

@@ -1,5 +1,6 @@
 from user_service.models import User
 from sqlalchemy.orm import Session
+from sqlalchemy import or_
 from sqlalchemy.exc import IntegrityError
 import bcrypt
 from utils.database import SessionLocal # Keep for methods called outside request context
@@ -29,8 +30,27 @@ class UserService:
         return db.query(User).filter(User.email == email).first()
 
     @staticmethod
-    def get_all_users(db: Session):
-        return db.query(User).all()
+    def get_all_users(db: Session, page: int = 1, limit: int = 10, search: str = None, role: str = None):
+        query = db.query(User)
+
+        if role:
+            query = query.filter(User.role == role)
+
+        if search:
+            search_term = f"%{search}%"
+            query = query.filter(
+                or_(
+                    User.username.ilike(search_term),
+                    User.email.ilike(search_term)
+                )
+            )
+
+        total = query.count()
+        
+        offset = (page - 1) * limit
+        users = query.offset(offset).limit(limit).all()
+        
+        return users, total
 
     @staticmethod
     def update_user(db: Session, user_id: int, username: str = None, email: str = None):
@@ -61,6 +81,15 @@ class UserService:
             db.commit()
             db.refresh(user) # Refresh the object to load the new state
         return user
+
+    @staticmethod
+    def delete_user(db: Session, user_id: int):
+        user = db.query(User).filter(User.id == user_id).first()
+        if not user:
+            return False
+        db.delete(user)
+        db.commit()
+        return True
 
     @staticmethod
     def get_user_count(db: Session):

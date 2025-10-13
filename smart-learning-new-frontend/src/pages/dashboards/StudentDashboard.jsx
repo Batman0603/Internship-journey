@@ -21,9 +21,9 @@ const StudentDashboard = () => {
     useEffect(() => {
         const fetchDashboardData = async () => {
             try { // The backend endpoint for student dashboard is /api/student/dashboard
-                const response = await api.get('/api/dashboard/student/dashboard');
-                // This endpoint returns a paginated response with courses in a 'data' property
-                setCourses(response.data || []);
+                // This should point to the endpoint that returns all courses.
+                const response = await api.get('/api/courses/all');
+                setCourses(response.data || []); // The /api/courses/all endpoint returns an array directly
                 setMessage(`Welcome! Here are the available courses.`);
             } catch (err) {
                 setError('Failed to fetch student data. You might not have the correct permissions.');
@@ -43,6 +43,23 @@ const StudentDashboard = () => {
         } catch (err) {
             setError('Logout failed. Please try again.');
         }
+    };
+
+    const handleEnroll = async (courseId) => {
+        try {
+            await api.post(`/api/courses/${courseId}/enroll`);
+            // Refresh the dashboard data to show the new enrollment status
+            setCourses(courses.map(course => 
+                course.id === courseId ? { ...course, is_enrolled: true } : course
+            ));
+        } catch (err) {
+            setError(`Failed to enroll in course ${courseId}. Please try again.`);
+        }
+    };
+
+    const handleViewCourse = (courseId) => {
+        // Future implementation: navigate to a detailed course view page
+        console.log(`Navigate to course view for ${courseId}`);
     };
 
     return (
@@ -107,7 +124,9 @@ const StudentDashboard = () => {
                                 <thead>
                                     <tr>
                                         <th style={{ width: 'var(--Table-firstColumnWidth)' }}>Course Title</th>
-                                        <th>Description</th>
+                                        <th style={{ width: '40%' }}>Description</th>
+                                        <th style={{ width: '15%' }}>Status</th>
+                                        <th style={{ width: '20%' }}>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -115,6 +134,20 @@ const StudentDashboard = () => {
                                         <tr key={course.id}>
                                             <td>{course.title}</td>
                                             <td>{course.description}</td>
+                                            <td>
+                                                {course.is_enrolled ? (
+                                                    <Chip color="success" variant="soft">Enrolled</Chip>
+                                                ) : (
+                                                    <Chip color="neutral" variant="outlined">Not Enrolled</Chip>
+                                                )}
+                                            </td>
+                                            <td>
+                                                {course.is_enrolled ? (
+                                                    <Button size="sm" variant="outlined" onClick={() => handleViewCourse(course.id)}>View Course</Button>
+                                                ) : (
+                                                    <Button size="sm" variant="solid" color="primary" onClick={() => handleEnroll(course.id)}>Enroll</Button>
+                                                )}
+                                            </td>
                                         </tr>
                                     ))}
                                 </tbody>
