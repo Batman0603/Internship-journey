@@ -1,0 +1,24 @@
+# Web Framework
+Flask
+gunicorn # For production deployment
+
+# Database & ORM
+SQLAlchemy
+mysql-connector-python
+
+# Authentication & Security
+bcrypt
+Flask-JWT-Extended # For handling JSON Web Tokens
+
+# AI & Vector Search
+sentence-transformers
+faiss-cpu # For efficient similarity search
+
+# Utilities
+python-dotenv # For managing environment variables
+
+# Data Validation
+pydantic # For data validation and settings management
+
+# API Documentation
+flasgger # For generating Swagger/OpenAPI documentation
