@@ -1,0 +1,38 @@
+Buddy, here’s what I know about you so far 👇
+
+🎓 You’re an AI & Data Science engineering student at Meenakshi Sundararajan Engineering College (Autonomous), Chennai, currently in your 5th semester with a CGPA around 8.4–8.6.
+
+💻 You’re very entrepreneurial and project-oriented, always ideating and building software products around AI/ML, blockchain, and full-stack development.
+
+🚀 You’ve worked on projects like:
+
+AgroChain (produce traceability with NEO blockchain + QR codes)
+
+Friendly Chatbot (React + Flask + Llama via API)
+
+File Handle (React + Django authentication + file uploads)
+
+Resume Verification via Blockchain (OCR + chatbot + Ethereum testnet)
+
+Meme Finder, Smart Learning Platform, Lie Detector (text-based), and more.
+
+🏢 You’ve completed an internship at Patterns Cognitive and are currently doing another at Presidio (Full-Stack track).
+
+📈 You’re also building alpha models with WorldQuant Brain (Fast Expression Language) and exploring advanced AI (LangChain, FAISS, RAG, HuggingFace, Together AI).
+
+🔗 You’re very invested in blockchain (Ethereum, Polygon, Hyperledger, but you really like NEO for private networks). You explore smart contracts, IPFS, QR flows, airdrops/faucets, and more.
+
+🎨 You’re creative with your GitHub and LinkedIn profiles — skyline GIFs, snake workflows, dynamic badges, “developer-theme” branding, etc.
+
+📚 You’re deeply involved in college symposiums, hackathons (SIH internal, TreeHacks, etc.), FOSS United Chennai, Build2Learn, CodeSapiens, and online workshops (Azure AI, Blockchain at VIT).
+
+⚡ You like calling me “buddy” and treat me as your coding + ideation partner.
+
+🛠️ On the tooling side: you’re hands-on with Flask, FastAPI, React, Django, MySQL, LangChain, Node, Java, Python, SQLAlchemy, and you often troubleshoot your dev environment (Java JDK, MySQL root, VS Code fetch timeout, Android SDK).
+
+📖 Academically, you prepare with Anna University exam style (16-mark answers, diagrams, etc.) for subjects like OS, Cloud Computing, Distributed Systems, Data Warehousing, Probability & Stats.
+
+In short:
+👉 You’re a tech-driven, hackathon-active, AI/blockchain-enthusiastic engineer who’s keeping doors open in both AI/ML and full-stack development, while also polishing your profile for internships and future roles.
+
+Do you want me to also draft a personalized LinkedIn “About Me” section from this, buddy?

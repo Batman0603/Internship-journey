@@ -1,0 +1,1 @@
+# This file makes the 'course_service' directory a Python package.
